@@ -46,22 +46,27 @@ nav ul li, footer ul li {
   margin-right: auto;
 }
 
-.case-summary img {
-  display: in-line;
-  height: 120px;
-}
-
 .case-summary {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 72px;
+  display: table;
+}
+
+.case-summary img {
+  height: 120px;
 }
 
 .case-summary p {
-  float: left;
 }
 
+.case-summary h1 {
+}
+
+.text-pair {
+  width: 70%;
+}
 
 a {
     text-decoration: none;
@@ -102,6 +107,6 @@ ul.posts li {
 
 }
 
-#logo {
-
+#small {
+width: 50px;
 }
