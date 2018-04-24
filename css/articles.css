@@ -1,6 +1,6 @@
 @font-face {
    font-family: FagoNo;
-   src: url('/Fonts/FagoNo.otf');
+   src: url(/Fonts/FagoNo.otf);
 }
 
 @font-face {
@@ -142,7 +142,7 @@ footer {
 }
 
 .light a:hover {
-  color: #666;
+  color: #666 ;
 }
 
 #summary {
