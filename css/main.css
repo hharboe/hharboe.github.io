@@ -1,23 +1,23 @@
-
-
 @font-face {
-   font-family: FagoNo;
-   src: url('/Fonts/FagoNo.otf');
+    font-family: FagoNo;
+    src: url("/Fonts/FagoNo.otf") format("opentype");
 }
 
 @font-face {
-  font-family: FagoNo-Medium;
-  src: url('/Fonts/FagoNo-Medium.otf')
+    font-family: FagoNo;
+    font-weight: bold;
+    src: url("/Fonts/FagoNo-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: FagoNo-Bold;
-  src: url('/Fonts/FagoNo-Bold.otf')
+    font-family: FagoNo;
+    font-weight: medium;
+    src: url('/Fonts/FagoNo-Medium.otf') format("opentype");
 }
 
 @font-face {
   font-family: Calisto MT;
-  src: url('/Fonts/Calisto MT.otf')
+  src: url('/Fonts/Calisto MT.otf') format("opentype");
 }
 
 body {
@@ -118,7 +118,8 @@ a:hover {
 
 h1 {
     font-size: 1.5em;
-    font-family:'FagoNo-Medium', 'Sans-Serif';
+    font-family:'FagoNo', 'Sans-Serif';
+    font-weight: medium;
 }
 p {
   font-family:'FagoNo', 'Sans-Serif';
