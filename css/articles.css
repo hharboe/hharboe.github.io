@@ -1,21 +1,10 @@
-@font-face {
-   font-family: FagoNo;
-   src: url('/Fonts/FagoNo.otf');
-}
-
-@font-face {
-  font-family: FagoNo-Medium;
-  src: url('/Fonts/FagoNo-Medium.otf')
-}
-
-@font-face {
-  font-family: FagoNo-Bold;
-  src: url('/Fonts/FagoNo-Bold.otf')
-}
-
-@font-face {
-  font-family: Calisto MT;
-  src: url('/Fonts/Calisto MT.otf')
+@font-face {font-family: "FagoNo";
+    src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot");
+    src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.svg#FagoNo") format("svg");
 }
 
 nav {
