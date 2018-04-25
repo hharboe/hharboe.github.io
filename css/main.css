@@ -6,28 +6,11 @@
     url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.svg#FagoNo") format("svg");
 }
-/*
-@font-face {
-    font-family: FagoNo;
-    src: url("/Fonts/FagoNo.otf");
-}
 
-@font-face {
-    font-family: FagoNo;
-    font-weight: bold;
-    src: url("/Fonts/FagoNo-Bold.otf");
-}
-
-@font-face {
-    font-family: FagoNo;
-    font-weight: medium;
-    src: url('/Fonts/FagoNo-Medium.otf');
-} */
-
-@font-face {
+/* @font-face {
   font-family: Calisto MT;
   src: url('/Fonts/Calisto MT.otf');
-}
+} */
 
 body {
     background-color: #2C0D2A;
@@ -36,15 +19,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 7em auto 1fr;
-  grid-template-rows: auto auto 25% 25% auto;
+  grid-template-columns: 1fr 1fr auto auto auto 1fr 1f;
+  /* grid-template-rows: auto auto 25% 25% auto; */
   grid-template-areas:
-  "h h h h"
-  "n n n n"
-  ". i1 c1 ."
-  ". i2 c2 ."
-  "f f f f";
-  grid-column-gap: 1em;
+  "h h h h h h h"
+  "n n n n n n n"
+  ". . . i1 c1 . ."
+  ". . . i2 c2 . ."
+  "f f f f f f f";
+  /* grid-column-gap: 2em; */
 }
 
 #logo-item {
@@ -62,10 +45,9 @@ body {
 #nav-item {
   grid-area: n;
   background-color: #3D3D3D;
-  font-family:'FagoNo', 'Sans-Serif';
-  font-weight: lighter;
   text-align: center;
   padding-right: 2.3em;
+  margin-bottom: 1em;
 }
 
 #nav-item ul li, footer ul li {
@@ -76,10 +58,19 @@ body {
 #michael-img {
   grid-area: i1;
   align-self: center;
+  justify-self: end;
 }
 
 #lumened-img {
   grid-area: i2;
+  align-self: center;
+  justify-self: end;
+}
+
+#michael-img img, #lumened-img img {
+  padding: 2em;
+  height: 7em;
+  display: block;
 }
 
 #lumened-text {
@@ -91,24 +82,10 @@ body {
 }
 
 .case-summary {
-  padding-top: 4em;
-  padding-left: 1em;
-  height: 7em;
+  padding: 2em;
   width: 70%;
   min-width: 22.5em;
-  max-width: 42.5em;
-}
-
-#michael-img img {
-  padding-top: 4em;
-  height: 7em;
-  display: block;
-}
-
-#lumened-img img {
-  padding-top: 4em;
-  height: 7em;
-  display: block;
+  max-width: 60em;
 }
 
 footer {
@@ -119,6 +96,8 @@ footer {
 a {
     text-decoration: none;
     color: #ddd;
+    font-family:'FagoNo', 'Sans-Serif';
+    font-weight: lighter;
 }
 a:hover {
     /* text-decoration: underline; */
@@ -153,20 +132,11 @@ p {
   "f"
 }
 .case-summary {
-  padding-top: 2em;
-  padding-left: 1em;
-  height: 7em;
   justify-self: center;
-  /* min-width: 22.5em;
-  max-width: 42.5em; */
+  padding: 0;
 }
 
-#michael-img {
+#michael-img, #lumened-img {
   justify-self: center;
-}
-
-#lumened-img {
-  padding-top: 3em;
-  justify-self: center;
-}
+  padding-top: 1em;
 }
