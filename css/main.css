@@ -131,10 +131,10 @@ h1 {
     font-weight: medium;
 }
 p {
-  font-family:'FagoNo', 'Sans-Serif';
+  font-family:'FagoNo', sans-serif;
     font-size: 1em;
     line-height: 1.4em;
-    font-weight: ligher;
+    /* font-weight: ligher; */
 }
 
 
