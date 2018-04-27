@@ -1,4 +1,8 @@
-@font-face {font-family: "FagoNo";
+/* Importing FagoNo Regular */
+@import url(//db.onlinewebfonts.com/c/23178151f2a35dd93224374c02489308?family=FagoNo);
+
+@font-face {
+  font-family: "FagoNo";
     src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot");
     src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot?#iefix") format("embedded-opentype"),
     url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.woff2") format("woff2"),
@@ -6,6 +10,32 @@
     url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.svg#FagoNo") format("svg");
 }
+
+/* Importing FagoNo-Medium */
+@import url(//db.onlinewebfonts.com/c/5c06042dd2780c6cf51c213e80adfa39?family=FagoNo);
+
+@font-face {
+  font-family: "FagoNo-Medium";
+    src: url("//db.onlinewebfonts.com/t/5c06042dd2780c6cf51c213e80adfa39.eot");
+    src: url("//db.onlinewebfonts.com/t/5c06042dd2780c6cf51c213e80adfa39.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/5c06042dd2780c6cf51c213e80adfa39.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/5c06042dd2780c6cf51c213e80adfa39.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/5c06042dd2780c6cf51c213e80adfa39.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/5c06042dd2780c6cf51c213e80adfa39.svg#FagoNo") format("svg");
+}
+
+/* Importing Calisto MT */
+@import url(//db.onlinewebfonts.com/c/2568e173df3a278bff48d9926aa656f6?family=Calisto+MT);
+
+@font-face {font-family: "Calisto MT";
+    src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot");
+    src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.svg#Calisto MT") format("svg");
+}
+
 
 /* Nav
 -------------------------------- */
@@ -87,52 +117,6 @@ h1, h2, p, blockquote {
 }
 
 
-/* section {
-  grid-column: 1 / -1;
-  padding: 1.5em 0px 1.5em 0px;
-  z-index: 1;
-} */
-
-/* #summary {
-  grid-column: 1 / -1;
-  grid-row: 1 / span 4;
-  background-color: #3D3D3D;
-  height: auto;
-  z-index: 1;
-}
-
-p.summary, h1.summary {
-  grid-column: 4 / span 2;
-  grid-row: 1 / 3;
-  text-align: center;
-  color: #eee;
-  z-index: 2;
-} */
-
-  /* display: flex;
-  flex-direction: row; */
-  /* grid-template-columns: repeat(3, 1fr);
-  grid-area: 1 2 3 */
-
-/* figure {
-  display: grid;
-} */
-
-/* .left-fig {
-  grid-column: 4;
-  justify-self: center;
-  align-self: start;
-}
-
-.right-fig {
-  grid-column: 5;
-  justify-self: center;
-  align-self: start;
-}
- */
-
-
-
 /* Headings, Text Stylings
 ----------------------------------------------- */
 
@@ -147,6 +131,7 @@ h1 {
 h2 {
   font-family:'FagoNo-Medium', 'Sans-Serif';
   font-size: 1.4em;
+  font-weight:
   font-weight: lighter;
   text-align: left;
   padding: 1em 0 0 0;
