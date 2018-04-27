@@ -2,35 +2,136 @@
 <html>
 	<head>
 		<title>Michael: Cycling Companion</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/articles.css">
+		<link rel="stylesheet" href="/css/articles2.css">
+		<link rel="stylesheet" href="/"
 	</head>
 	<body>
+		<img id = "main-logo" src = "/images/hh-logo.png">
 		<nav>
-      <div>
-        <img src="/images/hh-logo.png">
-      </div>
-    		<ul>
-	        	<li><a href="/cases">Cases</a></li>
-						<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-    		</ul>
+		<ul>
+	  	<li><a href="/cases">Cases</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/cv">CV</a></li>
+			</ul>
 		</nav>
-    <div id="summary">
-      <h1>MICHAEL: CYCLING COMPANION</h1>
-      <p>In October 2017, a friend contracted me to prototype and pitch a chatbot to his employer, an electric bike startup in San Francisco. This is the story of how I helped create a software companion to urban cyclists.</p>
-</div>
-<div class="dark">
-  <h1>MY ROLE</h1>
-  <p>I was responsible for the experience strategy of the chatbot, from preliminary research through beta testing. I also designed the character, conversation scheme, and all visual components within the chatbot interface.</p>
-	<p>Development in Microsoft’s bot framework was lead by <a href="http://prakashpaudel.com">Prakash Paudel</a> with help from <a href="https://medium.com/@tkreek">Thomas Kreek</a>.</p>
-</div>
-<div class="light">
-  <h2>BACKSTORY</h2>
-  <h1>OF BICYCLES AND CHATBOTS</h1>
-  <p>This project was initiated by my past collaborator, Thomas Kreek, who for years has been frustrated by the lack of commuter cycling in the US.</p>
-<p>In fall 2017, he started developing a chatbot for his employer, electric bike startup, Faraday Bicycles. He hoped a chatbot would improve customer engagement, and bring more attention to Faraday’s brand in the cycling and tech communities.</p>
-<p>Faraday contracted me to build a prototype around this concept. With their brand styleguides in hand, I went to work creating a character and iOS interface around the “cycling companion” concept Thomas proposed. I used the likeness of <a href="https://en.wikipedia.org/wiki/Michael_Faraday">Michael Faraday</a>, famous 19th century physicist (and namesake of the company), as the chatbot character providing tools to cyclists.</p></div>
+		<article>
+			<section class="summary">
+	      <h1>MICHAEL: CYCLING COMPANION</h1>
+	      <p>In October 2017, a friend contracted me to prototype and pitch a chatbot to his employer, an electric bike startup in San Francisco. This is the story of how I helped create a software companion to urban cyclists.</p></section>
+			<section class="dark">
+				<h1>MY ROLE</h1>
+				<p>I was responsible for the experience strategy of the chatbot, from preliminary research through beta testing. I also designed the character, conversation scheme, and all visual components within the chatbot interface.</p>
+				<p>Development in Microsoft’s bot framework was lead by <a href="http://prakashpaudel.com">Prakash Paudel</a> with help from <a href="https://medium.com/@tkreek">Thomas Kreek</a>.</p></section>
+			<section class="light">
+			  <h2>BACKSTORY</h2>
+			  <h1>OF BICYCLES AND CHATBOTS</h1>
+			  <p>This project was initiated by my past collaborator, Thomas Kreek, who for years has been frustrated by the lack of commuter cycling in the US.</p>
+				<p>In fall 2017, he started developing a chatbot for his employer, electric bike startup, Faraday Bicycles. He hoped a chatbot would improve customer engagement, and bring more attention to Faraday’s brand in the cycling and tech communities.</p>
+				<p>Faraday contracted me to build a prototype around this concept. With their brand styleguides in hand, I went to work creating a character and iOS interface around the “cycling companion” concept Thomas proposed. I used the likeness of <a href="https://en.wikipedia.org/wiki/Michael_Faraday">Michael Faraday</a>, famous 19th century physicist (and namesake of the company), as the chatbot character providing tools to cyclists.</p></section>
+			<figure class = "small light">
+				<img style = "max-width: 240px" src = "/images/logo.gif">
+				<video style = "max-width: 240px" src = "/images/proto.mov"></figure>
+			<section class="light" id="row5">
+				<p>Faraday passed on this project, but Thomas was enthusiastic enough to continue on his own. In October 2017, he offered me and a developer friend contracts to build out a Beta version. The vision was to create a motivational and helpful chatbot around cycling—a tool to educate and inspire cyclists, and a mascot cycling evangelists could rally behind.</p>
+				<div id="line"></div>
+				<blockquote><em>“The vision was to create a motivational and helpful chatbot around cycling—a tool to educate and inspire cyclists, and a mascot cycling evangelists could rally behind.”</em></blockquote>
+				<div id="line"></div>
+				<p>Inspired by the mission and challenge, I accepted the contract and started planning the next 6-months. My process began with a month of research and observation, consisting of a literature review, interviews with cyclists, and a discovery process into technical requirements.</p>
+				<h1>6-MONTH PROCESS</h1>
+				<figure class="small">
+					<img style = "max-width: 360px" src="images/timeline.png">
+				</figure></section>
+			<aside class="comment" id="row5">
+				<b>Afterthought: More impetus for our work</b></br>There are many benefits to cycling in a city—studies show it makes people happier and healthier. For trips under 3 miles in a city, cycling often takes equal or less time than other modes of transportation.</aside>
+			<section class="dark">
+				<h2>LITERATURE REVIEW</h2>
+				<h1>WHAT MOTIVATES CYCLISTS?</h1>
+				<p>I hoped existing literature on urban cycling would shed light on factors leading non-cyclists to become active cyclists. While I found no causal claims about changes in cycling behavior, there were many studies on the environmental and personal qualities conducive to cycling for transportation.</p>
+				<p>Early on, I compiled a list of common deterrents to cycling, separating hard deterrents from those easier to overcome. These deterrents became early candidates for problem areas our chatbot could address.</p>
+			</section>
+			<figure class="data-figure">
+				<h3>HARD DETERRENTS TO CYCLING</h3>
+				<div class="data-container">
+					<div class ="data-details"><h4>ENVIRONMENTAL</h4>
+						<ul>
+							<li>Lives near steep hills</li>
+							<li>Relies on highways for most trips</li>
+							<li>Travels more than 10 km for most trips</li>
+							<li>Lives near high-traffic, poor cycling infrastructure</li>
+						</ul></div>
+					<div class ="data-details"><h4>PERSONAL</h4>
+						<ul>
+							<li>Unable to cycle due to injury, illness or age</li>
+							<li>Has personal distate for cycling or cyclists</li>
+							<li>Must travel by car (kids, hauling, etc.)</li>
+							<li>Rates comfort as highest commute concern</li>
+						</ul></div></figure>
+			<section class = "dark">
+				<p>We quickly decided a chatbot would have a challenging time helping anyone get past these environmental or personal barriers. Instead, these deterrents became the basis for negative personas, or users whose problems we wouldn’t address in our Beta.</p>
+				<p>With more research, we learned that some environmental barrers are regularly ignored by cyclists. These “soft” environmental barriers, such as manageable traffic, small elevation changes, or distances under 10 km, are regularly overcome by individuals with a high level of self-efficacy and motivation to cycle.</p>
+				<p>Confidence- and motivation-building seemed like a better-suited approach for our chatbot Beta. It was now that I started reading more into the factors tied to cycling self-efficacy. To learn more, reviewed more studies to and compiled a list of deterrents to confidence and motivation.</p></section>
+			<figure class="data-figure">
+				<h3>MOTIVATIONAL CYCLING DETERRENTS</h3>
+				<div class="data-container">
+					<div class ="data-details"><h4>LOW CONFIDENCE</h4>
+						<ul>
+							<li> Negative prior experiences cycling</li>
+							<li>No cycling ability or knowledge of rules</li>
+							<li>No knowledge of local cycling infrastructure</li>
+							<li>Lack of functional cycling equipment</li>
+						</ul></div>
+					<div class ="data-details"><h4>LOW ENTHUSIASM</h4>
+						<ul>
+							<li>Lifestyle allows little time or energy to cycle</li>
+							<li>Enjoys current transportation options</li>
+							<li>Uninterested in fitness benefits of cycling</li>
+							<li>Has no opportunities to bicycle socially</li>
+						</ul></div></div></figure>
+			<section class = "dark">
+				<p>We formed an early hypothesis that some mix of cycling education or guidance could mitigate most of these deterrents. Our next step was to speak with real people to learn how cyclists of different backgrounds prioritize these factors.</p></section>
+			<section class="light">
+				<h2>CYCLIST INTERVIEWS</h2>
+				<h1>WHAT DO CYCLIST'S PRIORITIZE?</h1>
+				<p>We spoke with thirty people living in American cities, fitting a range of personal backgrounds and cycling experiences. I prepared a survey on cycling, urban transportation and fitness motivation, hoping to learn more about the beliefs and experiences of confident, motivated cyclists.</p>
+				<p>We asked several background questions that ensured we were speaking with a variety of cyclists, and we could compare responses of people with similar backgrounds. Our analysis involved combining some responses into new variables, such as “cycling aptitude,” based on questions of cycling skill and cycling frequency.</p></section>
+			<figure class = "figure-grid light">
+				<img style="max-width: 360px" src="/images/survey.png">
+				<figcaption class="box-caption-dark">Over half of respondents are skilled enough to ride a few times a month, weather permitting</figcaption>
+				<figcaption class="box-caption-light">Under a quarter of respondents don’t ride, and wouldn’t be able to without more education </figcaption></figure>
+			<section class = "light">
+				<p>An important takeaway from our interviews was a ranked list of common factors contributing to confidence, comfort and enthusiasm to cycle. We knew these were all topics we should consider addressing in our bot.</p></section>
+			<figure class="data-figure">
+				<h3>MOTIVATIONAL CONTRIBUTORS TO CYCLING</h3>
+				<div class="data-container">
+					<div class ="data-details"><h4>CONFIDENCE</h4>
+						<ol>
+							<li>Knowing safe routes</li>
+							<li>Regular practice</li>
+							<li>Knowledge of riding in the dark, rain</li>
+						</ol></div>
+					<div class ="data-details"><h4>COMFORT</h4>
+						<ol>
+							<li>Having appropriate equipment</li>
+							<li>Riding in comfortable areas</li>
+						</ol></div>
+					<div class ="data-details"><h4>ENTHUSIASM</h4>
+						<ol>
+							<li>Having places to bike to</li>
+							<li>Having friends to bike with</li>
+							<li>Having a fitness goal or routine</li>
+						</ol></div></div></figure>
+					
+
+
+
+
+
+
+
+
+
+
+	</article>
 		<footer>
     		<ul>
         		<li><a href="mailto:henry.harboe@gmail.com">email</a></li>
