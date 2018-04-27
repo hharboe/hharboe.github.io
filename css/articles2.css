@@ -37,7 +37,6 @@
     url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.svg#Calisto MT") format("svg");
 }
 
-
 /* Nav
 -------------------------------- */
 #main-logo {
@@ -91,6 +90,7 @@ article > * {
   /* grid-column: 3; */
   z-index: 1;
   border: 0;
+  padding: .5em 0 .5em 0;
 }
 
 h1, h2, p, blockquote {
@@ -98,6 +98,8 @@ h1, h2, p, blockquote {
   max-width: 680px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 0;
   z-index: 4;
 }
 
@@ -127,13 +129,12 @@ h1 {
     font-size: 1.6em;
     letter-spacing: .04em;
     text-align: left;
-    padding: .5em 0 .5em 0;
+    padding: .5em 0 .25em 0;
 }
 
 h2 {
   font-family:'FagoNo-Medium', 'Sans-Serif';
   font-size: 1.4em;
-  font-weight:
   font-weight: lighter;
   text-align: left;
   padding: 1em 0 0 0;
@@ -147,7 +148,7 @@ h3, h4 {
 
 h3 {
   font-size: 1.5em;
-  margin-bottom: 1.51em;
+  margin-bottom: 1em;
 }
 h4 {
   font-size: 1.3em;
@@ -170,7 +171,7 @@ a:hover {
 }
 
 section a {
-  font-weight: bolder;
+  font-weight: 600;
   color: #000000;
 }
 
@@ -224,11 +225,10 @@ blockquote {
 }
 
 #line {
-  background-color: #CCC;
+  background-color: #DDD;
   width: 3em;
-  height: 1.5px;
+  height: 2px;
   margin: 1.5em auto 2em auto;
-  grid-column: 4;
 }
 
 /* Figures
@@ -251,7 +251,7 @@ figure.small {
 
 figure.small > * {
   margin: 0;
-  padding: 0 1em 0 1em;
+  padding: 0 1em .5em 1em;
   flex: 1 1;
   align-self: start;
 }
@@ -260,7 +260,7 @@ figure.small > * {
 ----------------------------------------------- */
 
 .data-figure {
-  padding: 2em 0px 2.5em 0px;
+  padding: 1.5em 0px 2em 0px;
   background-color: #575757;
   color: #f1f1f1;
 }
@@ -290,6 +290,7 @@ figure.small > * {
   font-size: 1.2em;
   font-family: 'Calisto MT', 'Serif';
   line-height: 1.5em;
+  font-weight: lighter;
 }
 
 
@@ -302,6 +303,7 @@ figure.small > * {
   grid-template-rows: repeat(auto, 3);
   justify-items: start;
   align-items: start;
+  padding: .5em 0 .5em 0;
 }
 
 .figure-grid img {
