@@ -1,0 +1,158 @@
+@font-face {font-family: "FagoNo";
+    src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot");
+    src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.svg#FagoNo") format("svg");
+}
+
+/* @font-face {
+  font-family: Calisto MT;
+  src: url('/Fonts/Calisto MT.otf');
+} */
+
+body {
+    background-color: #2C0D2A;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  padding: 3.5em 0 3.5em 0;
+}
+
+#logo img {
+  height: 6.5em;
+}
+
+nav {
+  background-color: #3D3D3D;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-family:'FagoNo', 'Sans-Serif';
+  font-weight: lighter;
+  width: 40%;
+}
+
+nav ul li {
+  padding-right: 4em;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 3em;
+}
+
+.case-image {
+  display: flex;
+  height: 7em;
+  justify-content: center;
+  align-items: center;
+  padding: .5em 3em;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 22.5em;
+  max-width: 41em;
+  /* padding-top: 3em; */
+}
+
+
+
+.summary-container {
+
+}
+
+
+/* #michael-img {
+  grid-area: i1;
+  align-self: center;
+  justify-self: end;
+}
+
+#lumened-img {
+  grid-area: i2;
+  align-self: center;
+  justify-self: end;
+} */
+
+/* #michael-img img, #lumened-img img {
+  padding: 2em;
+  height: 7em;
+  display: block;
+} */
+
+#lumened-text {
+  grid-area: c2;
+}
+
+#michael-text {
+  grid-area: c1;
+}
+
+.case-summary {
+  padding: 2em;
+  width: 70%;
+  min-width: 22.5em;
+  max-width: 60em;
+}
+
+footer {
+  grid-area: f;
+  display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ddd;
+    font-family:'FagoNo', 'Sans-Serif';
+    font-weight: lighter;
+}
+a:hover {
+    /* text-decoration: underline; */
+    color: #fff;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family:'FagoNo', 'Sans-Serif';
+    font-weight: medium;
+}
+p {
+  font-family:'FagoNo', sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    /* font-weight: ligher; */
+}
+
+
+@media screen and (max-width: 39.9375em) {
+
+#logo {
+  display: flex;
+  justify-content: center;
+  padding: 3em 0 3em 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-family:'FagoNo', 'Sans-Serif';
+  font-weight: lighter;
+  width: 70%;
+}
