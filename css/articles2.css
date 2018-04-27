@@ -27,7 +27,8 @@
 /* Importing Calisto MT */
 @import url(//db.onlinewebfonts.com/c/2568e173df3a278bff48d9926aa656f6?family=Calisto+MT);
 
-@font-face {font-family: "Calisto MT";
+@font-face {
+  font-family: "Calisto MT";
     src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot");
     src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot?#iefix") format("embedded-opentype"),
     url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.woff2") format("woff2"),
@@ -89,6 +90,7 @@ article > * {
   grid-column: 1 / -1;
   /* grid-column: 3; */
   z-index: 1;
+  border: 0;
 }
 
 h1, h2, p, blockquote {
@@ -168,8 +170,8 @@ a:hover {
 }
 
 section a {
-  font-weight: bold;
-  color: #242424;
+  font-weight: bolder;
+  color: #000000;
 }
 
 section a:hover {
@@ -238,6 +240,7 @@ blockquote {
 figure {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 figure.small {
@@ -315,6 +318,7 @@ figure.small > * {
 .box-caption-dark, .box-caption-light {
   font-family: 'FagoNo', 'sans-serif';
   font-size: 1em;
+  font-weight: lighter;
   line-height: 1.5em;
   padding: 1em 1.4em 1.2em 1.4em;
   /* display: inline-block; */
