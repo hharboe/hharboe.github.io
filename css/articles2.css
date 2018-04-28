@@ -383,7 +383,7 @@ figure.small > * {
 
     .figure-grid figcaption {
       grid-column: 3;
-      margin: 1em 2em 1em 2em;
+      margin: 1em 1em 1em 1em;
       justify-self: center;
       max-width: 65%;
     }
@@ -392,6 +392,12 @@ figure.small > * {
     padding: 0 1em 2em 1em;
     width: 80%;
     }
+
+#timeline {
+  width: 80%;
+  padding-right: 1em;
+  padding-left: 1em;
+}
 
     .comment {
       display: none;
@@ -456,7 +462,7 @@ h3, h4 {
 
     .figure-grid figcaption {
       grid-column: 3;
-      margin: 1em 2em 1em 2em;
+      margin: 1em 1em 1em 1em;
       justify-self: center;
       max-width: 65%;
     }
@@ -466,8 +472,13 @@ h3, h4 {
     width: 80%;
     }
 
+    #timeline {
+      width: 80%;
+      padding-right: 1em;
+      padding-left: 1em;
+    }
 
-    .figure-grid figcaption {
+    .figure-grid {
       grid-column: 3;
       margin: 1em 2em 1em 2em;
     }
