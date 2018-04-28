@@ -353,6 +353,11 @@ figure.small > * {
 
 @media screen and (max-width: 39.9375em) {
 
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+
     article {
       max-width: 100%;
       display: flex;
@@ -399,7 +404,7 @@ figure.small > * {
     }
 
     nav ul li {
-      padding: 0em 2em 0em 0em;
+      padding: .25em 2em 0em 0em;
       font-size: 1.1em;
 }
 
@@ -478,8 +483,13 @@ h3, h4 {
     }
 
     nav ul li {
-      padding: 0em 2em 0em 0em;
+      padding: .25em 2em 0em 0em;
       font-size: 1.1em;
+}
+
+nav ul {
+  flex-direction: column;
+  text-align: center;
 }
 
 h3, h4 {
