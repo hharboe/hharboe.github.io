@@ -405,7 +405,7 @@ figure.small > * {
 }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 600px) {
 
     article {
       max-width: 40em;
