@@ -379,6 +379,7 @@ figure.small > * {
       grid-column: 3;
       margin: 1em 2em 1em 2em;
       justify-self: center;
+      width: 80%;
     }
 
     .figure-grid img {
@@ -405,6 +406,14 @@ figure.small > * {
 figure.small > * {
   padding: 1em;
   align-self: center;
+}
+
+h3, h4 {
+  padding: 0 1em 0 1em;
+}
+
+#summary > * {
+  padding 0 1em 0 1em;
 }
 
 }
@@ -436,11 +445,12 @@ figure.small > * {
     h1 {
       font-weight: 100;
     }
-    
+
     .figure-grid figcaption {
       grid-column: 3;
       margin: 1em 2em 1em 2em;
       justify-self: center;
+      width: 80%;
     }
 
     .figure-grid img {
@@ -469,5 +479,12 @@ figure.small > * {
       font-size: 1.1em;
 }
 
+h3, h4 {
+  padding: 0 1em 0 1em;
+}
+
+#summary > * {
+  padding 0 1em 0 1em;
+}
 
 }
