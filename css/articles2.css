@@ -373,20 +373,20 @@ figure.small > * {
 
     h1 {
       font-weight: 100;
+      text-align: center;
     }
 
     .figure-grid figcaption {
       grid-column: 3;
       margin: 1em 2em 1em 2em;
       justify-self: center;
-      width: 80%;
+      max-width: 65%;
     }
 
     .figure-grid img {
     padding: 0 1em 2em 1em;
     width: 80%;
     }
-
 
     .comment {
       display: none;
@@ -409,11 +409,13 @@ figure.small > * {
 }
 
 h3, h4 {
-  padding: 0 1em 0 1em;
+  padding: 0 2em 0 2em;
+  text-align: center;
 }
 
-#summary > * {
-  padding 0 1em 0 1em;
+.summary {
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 }
@@ -444,13 +446,14 @@ h3, h4 {
 
     h1 {
       font-weight: 100;
+      text-align: center;
     }
 
     .figure-grid figcaption {
       grid-column: 3;
       margin: 1em 2em 1em 2em;
       justify-self: center;
-      width: 80%;
+      max-width: 65%;
     }
 
     .figure-grid img {
@@ -480,11 +483,12 @@ h3, h4 {
 }
 
 h3, h4 {
-  padding: 0 1em 0 1em;
+  padding: 0 2em 0 2em;
+  text-align: center;
 }
 
-#summary > * {
-  padding 0 1em 0 1em;
+.summary {
+  padding-right: 2em;
+  padding-left: 2em;
 }
-
 }
