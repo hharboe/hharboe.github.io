@@ -354,14 +354,14 @@ figure.small > * {
 @media screen and (max-width: 39.9375em) {
 
     article {
-      max-width: 40em;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       /* grid-template-columns: 1fr; */
     }
 
     article > * {
-      /* max-width: 24em; */
+      max-width: 100%;
       padding: 1em;
       display: flex;
       flex-direction: column;
@@ -375,19 +375,17 @@ figure.small > * {
       font-weight: 100;
     }
 
-    /* .figure-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(auto, 3);
-      justify-items: start;
-      align-items: start;
-      padding: 1em 0 1.5em 0;
-    } */
-
     .figure-grid figcaption {
       grid-column: 3;
       margin: 1em 2em 1em 2em;
+      justify-self: center;
     }
+
+    .figure-grid img {
+    padding: 0 1em 2em 1em;
+    width: 80%;
+    }
+
 
     .comment {
       display: none;
@@ -403,19 +401,29 @@ figure.small > * {
       padding: 0em 2em 0em 0em;
       font-size: 1.1em;
 }
+
+figure.small > * {
+  padding: 1em;
+  align-self: center;
+}
+
 }
 
 @media only screen and (max-device-width: 600px) {
 
+    nav {
+      max-width: 100%;
+    }
+
     article {
-      max-width: 40em;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       /* grid-template-columns: 1fr; */
     }
 
     article > * {
-      /* max-width: 24em; */
+      max-width: 100%;
       padding: 1em;
       display: flex;
       flex-direction: column;
@@ -428,15 +436,18 @@ figure.small > * {
     h1 {
       font-weight: 100;
     }
+    
+    .figure-grid figcaption {
+      grid-column: 3;
+      margin: 1em 2em 1em 2em;
+      justify-self: center;
+    }
 
-    /* .figure-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(auto, 3);
-      justify-items: start;
-      align-items: start;
-      padding: 1em 0 1.5em 0;
-    } */
+    .figure-grid img {
+    padding: 0 1em 2em 1em;
+    width: 80%;
+    }
+
 
     .figure-grid figcaption {
       grid-column: 3;
@@ -457,4 +468,6 @@ figure.small > * {
       padding: 0em 2em 0em 0em;
       font-size: 1.1em;
 }
+
+
 }
