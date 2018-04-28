@@ -385,7 +385,7 @@ figure.small > * {
       grid-column: 3;
       margin: 1em 1em 1em 1em;
       justify-self: center;
-      max-width: 65%;
+      max-width: 40%;
     }
 
     .figure-grid img {
@@ -464,7 +464,7 @@ h3, h4 {
       grid-column: 3;
       margin: 1em 1em 1em 1em;
       justify-self: center;
-      max-width: 65%;
+      max-width: 40%;
     }
 
     .figure-grid img {
