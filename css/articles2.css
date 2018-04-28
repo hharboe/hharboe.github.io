@@ -265,6 +265,9 @@ figure.small > * {
   align-self: start;
 }
 
+#timeline {
+  max-width: 360px;
+}
 /* Data Figure
 ----------------------------------------------- */
 
@@ -385,7 +388,8 @@ figure.small > * {
       grid-column: 3;
       margin: 1em 1em 1em 1em;
       justify-self: center;
-      max-width: 40%;
+      text-align: center;
+      max-width: 55%;
     }
 
     .figure-grid img {
@@ -394,7 +398,7 @@ figure.small > * {
     }
 
 #timeline {
-  width: 80%;
+  max-width: 80%;
   padding-right: 1em;
   padding-left: 1em;
 }
@@ -464,7 +468,8 @@ h3, h4 {
       grid-column: 3;
       margin: 1em 1em 1em 1em;
       justify-self: center;
-      max-width: 40%;
+      text-align: center;
+      max-width: 55%;
     }
 
     .figure-grid img {
@@ -473,7 +478,7 @@ h3, h4 {
     }
 
     #timeline {
-      width: 80%;
+      max-width: 80%;
       padding-right: 1em;
       padding-left: 1em;
     }
