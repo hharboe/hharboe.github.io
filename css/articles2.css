@@ -269,7 +269,7 @@ figure.small > * {
 ----------------------------------------------- */
 
 .data-figure {
-  padding: 1.5em 0px 1.75em 0px;
+  padding: 1.5em 0px 2em 0px;
   background-color: #575757;
   color: #f1f1f1;
 }
@@ -285,6 +285,7 @@ figure.small > * {
   justify-content: start;
   flex: 1 1;
   max-width: 408px;
+  min-width: 16em;
   padding: 0 .5em 0 .5em;
 }
 
@@ -349,3 +350,56 @@ figure.small > * {
   width: 17.3em;
   border: 1px solid #979797;
 }
+
+@media screen and (max-width: 39.9375em) {
+
+
+    article {
+      max-width: 40em;
+      display: flex;
+      flex-direction: column;
+      /* grid-template-columns: 1fr; */
+    }
+
+    article > * {
+      /* max-width: 24em; */
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .data-details {
+      font-size: .9em;
+    }
+
+    h1 {
+      font-weight: 100;
+    }
+
+    /* .figure-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto, 3);
+      justify-items: start;
+      align-items: start;
+      padding: 1em 0 1.5em 0;
+    } */
+
+    .figure-grid figcaption {
+      grid-column: 3;
+      margin: 1em 2em 1em 2em;
+    }
+
+    .comment {
+      display: none;
+    }
+
+    #main-logo {
+      height: 4em;
+      width: 5em;
+      padding: 1.5em 1.5em 1.5em 1.5em;
+    }
+
+    nav ul li {
+      padding: 0em 2em 0em 0em;
+      font-size: 1.1em;
