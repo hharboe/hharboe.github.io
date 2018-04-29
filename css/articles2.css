@@ -37,12 +37,12 @@
     url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.svg#Calisto MT") format("svg");
 }
 
-/* Nav
+/* Structure
 -------------------------------- */
-#main-logo {
-  height: 4em;
-  width: 5em;
-  padding: 1.5em 2.5em 1.5em 2.5em;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2C0D2A;
 }
 
 nav {
@@ -65,19 +65,6 @@ nav ul li {
   font-size: 1.1em;
 }
 
-footer {
-  display: none;
-}
-
-
-/* Structure
--------------------------------- */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #2C0D2A;
-}
-
 article {
   display: grid;
   grid-template-columns: 1fr 1fr 680px 1fr 1fr;
@@ -93,7 +80,7 @@ article > * {
   padding: 1.5em 0 1.5em 0;
 }
 
-h1, h2, p, blockquote {
+h1, h2, p, blockquote, h5 {
   min-width: 0;
   max-width: 680px;
   margin-left: auto;
@@ -101,6 +88,10 @@ h1, h2, p, blockquote {
   margin-bottom: 0;
   margin-top: 0;
   z-index: 4;
+}
+
+footer {
+  display: none;
 }
 
 .comment {
@@ -149,11 +140,16 @@ h3, h4 {
 h3 {
   font-size: 1.4em;
   margin-bottom: 1em;
-  font-weight: lighter;
 }
 h4 {
   font-size: 1.2em;
-  font-weight: lighter;
+}
+
+h5 {
+  font-family:'FagoNo', 'Sans-Serif';
+  font-size: 1.2em;
+  font-weight: bolder;
+  padding: 1em 0 0 0;
 }
 
 p {
@@ -227,10 +223,12 @@ section a:hover {
 
 blockquote {
     text-align: center;
+    font-style: italic;
     color: #444;
     line-height: 1.36em;
     margin: .5em auto 1.2em;
     font-size: 1.7em;
+
 }
 
 #line {
@@ -242,6 +240,15 @@ blockquote {
 
 /* Figures
 ----------------------------------------------- */
+
+/* Main Logo
+----------------------------------------------- */
+
+#main-logo {
+  height: 4em;
+  width: 5em;
+  padding: 1.5em 2.5em 1.5em 2.5em;
+}
 
 /* Small Figure
 ----------------------------------------------- */
@@ -268,6 +275,7 @@ figure.small > * {
 #timeline {
   max-width: 360px;
 }
+
 /* Data Figure
 ----------------------------------------------- */
 
@@ -281,12 +289,13 @@ figure.small > * {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .data-details {
   align-self: start;
   justify-content: start;
-  flex: 1 1;
+  /* flex: 1 1; */
   max-width: 408px;
   min-width: 16em;
   padding: 0 .5em 0 .5em;
@@ -294,10 +303,12 @@ figure.small > * {
 
 .data-details-row {
   align-self: start;
-  justify-content: start;
-  flex: 1 1;
-  flex-direction: column;
+  /* justify-content: center; */
+  /* flex: 1 1; */
+  flex-direction: row;
+  padding: 0 2em 1em 2em;
 }
+
 
 .data-container ul li, .data-container ol li {
   font-size: 1.2em;
@@ -305,7 +316,6 @@ figure.small > * {
   line-height: 1.5em;
   font-weight: lighter;
 }
-
 
 /* Grid Figure
 ----------------------------------------------- */
@@ -354,18 +364,25 @@ figure.small > * {
   border: 1px solid #979797;
 }
 
+/* Mobile Resizing
+----------------------------------------------- */
 @media screen and (max-width: 39.9375em) {
 
+  /* Structure */
     nav ul {
       flex-direction: column;
       text-align: center;
     }
 
+    nav ul li {
+      padding: .25em 2em 0em 0em;
+      font-size: 1.1em;
+  }
+
     article {
       max-width: 100%;
       display: flex;
       flex-direction: column;
-      /* grid-template-columns: 1fr; */
     }
 
     article > * {
@@ -375,106 +392,38 @@ figure.small > * {
       flex-direction: column;
     }
 
+  /* Sections */
+    .comment {
+      display: none;
+    }
+
+    .summary {
+      padding-right: 2em;
+      padding-left: 2em;
+    }
+
     .data-details {
       font-size: .9em;
     }
+
+  /* Headings, Text */
 
     h1 {
       font-weight: 100;
       text-align: center;
     }
 
-    .figure-grid figcaption {
-      grid-column: 3;
-      margin: 1em 1em 1em 1em;
-      justify-self: center;
+    h3, h4 {
+      padding: 0 2em 0 2em;
       text-align: center;
-      max-width: 55%;
     }
 
-    .figure-grid img {
-    padding: 0 1em 2em 1em;
-    width: 80%;
-    }
-
-#timeline {
-  max-width: 80%;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-    .comment {
-      display: none;
-    }
+  /* Figures  */
 
     #main-logo {
       height: 4em;
       width: 5em;
       padding: 1.5em 1.5em 1.5em 1.5em;
-    }
-
-    nav ul li {
-      padding: .25em 2em 0em 0em;
-      font-size: 1.1em;
-}
-
-figure.small > * {
-  padding: 1em;
-  align-self: center;
-}
-
-h3, h4 {
-  padding: 0 2em 0 2em;
-  text-align: center;
-}
-
-.summary {
-  padding-right: 2em;
-  padding-left: 2em;
-}
-
-}
-
-@media only screen and (max-width: 600px) {
-
-    nav {
-      max-width: 100%;
-    }
-
-    article {
-      max-width: 100%;
-      display: flex;
-      flex-direction: column;
-      /* grid-template-columns: 1fr; */
-    }
-
-    article > * {
-      max-width: 100%;
-      padding: 1em;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .data-details {
-      font-size: .9em;
-    }
-
-    h1 {
-      font-weight: 100;
-      text-align: center;
-    }
-
-    .figure-grid figcaption {
-      grid-column: 3;
-      margin: 1em 1em 1em 1em;
-      justify-self: center;
-      text-align: center;
-      max-width: 55%;
-    }
-
-    .figure-grid img {
-    padding: 0 1em 2em 1em;
-    width: 80%;
     }
 
     #timeline {
@@ -483,25 +432,92 @@ h3, h4 {
       padding-left: 1em;
     }
 
-    .figure-grid {
+    .figure-grid figcaption {
       grid-column: 3;
-      margin: 1em 2em 1em 2em;
+      margin: 1em 1em 1em 1em;
+      justify-self: center;
+      text-align: center;
+      max-width: 55%;
     }
 
-    .comment {
-      display: none;
+    .figure-grid img {
+    padding: 0 1em 2em 1em;
+    width: 80%;
     }
 
-    #main-logo {
-      height: 4em;
-      width: 5em;
-      padding: 1.5em 1.5em 1.5em 1.5em;
+    figure.small > * {
+      padding: 1em;
+      align-self: center;
     }
+  }
 
-    nav ul li {
-      padding: .25em 2em 0em 0em;
-      font-size: 1.1em;
-}
+  @media only screen and (max-width: 600px) {
+
+      nav {
+        max-width: 100%;
+      }
+
+      article {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr; */
+      }
+
+      article > * {
+        max-width: 100%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .data-details {
+        font-size: .9em;
+      }
+
+      h1 {
+        font-weight: 100;
+        text-align: center;
+      }
+
+      .figure-grid figcaption {
+        grid-column: 3;
+        margin: 1em 1em 1em 1em;
+        justify-self: center;
+        text-align: center;
+        max-width: 55%;
+      }
+
+      .figure-grid img {
+      padding: 0 1em 2em 1em;
+      width: 80%;
+      }
+
+      #timeline {
+        max-width: 80%;
+        padding-right: 1em;
+        padding-left: 1em;
+      }
+
+      .figure-grid {
+        grid-column: 3;
+        margin: 1em 2em 1em 2em;
+      }
+
+      .comment {
+        display: none;
+      }
+
+      #main-logo {
+        height: 4em;
+        width: 5em;
+        padding: 1.5em 1.5em 1.5em 1.5em;
+      }
+
+      nav ul li {
+        padding: .25em 2em 0em 0em;
+        font-size: 1.1em;
+  }
 
 nav ul {
   flex-direction: column;
