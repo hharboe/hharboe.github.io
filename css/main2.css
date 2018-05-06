@@ -7,11 +7,6 @@
     url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.svg#FagoNo") format("svg");
 }
 
-/* @font-face {
-  font-family: Calisto MT;
-  src: url('/Fonts/Calisto MT.otf');
-} */
-
 body {
     background-color: #2C0D2A;
     margin: 0;
@@ -70,31 +65,6 @@ nav ul li {
   max-width: 41em;
   /* padding-top: 3em; */
 }
-
-
-
-.summary-container {
-
-}
-
-
-/* #michael-img {
-  grid-area: i1;
-  align-self: center;
-  justify-self: end;
-}
-
-#lumened-img {
-  grid-area: i2;
-  align-self: center;
-  justify-self: end;
-} */
-
-/* #michael-img img, #lumened-img img {
-  padding: 2em;
-  height: 7em;
-  display: block;
-} */
 
 #lumened-text {
   grid-area: c2;
