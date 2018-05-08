@@ -133,8 +133,24 @@ footer {
   grid-row: 23/24;
 }
 
+#row24 {
+  grid-row: 24/25;
+}
+
 #row25 {
   grid-row: 25/26;
+}
+
+#row26 {
+  grid-row: 26/27;
+}
+
+#row27 {
+  grid-row: 27/28;
+}
+
+#row28 {
+  grid-row: 28/29;
 }
 
 .break-end {
