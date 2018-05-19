@@ -70,6 +70,7 @@ article {
 
 article > * {
   grid-column: 1 / -1;
+  /* display: contents; */
   z-index: 1;
   border: 0;
   padding: 1.5em 0 1.5em 0;
@@ -267,7 +268,7 @@ nav ul li {
 ----------------------------------------------- */
 
 .summary {
-  background-color: #3D3D3D;
+  background-color: #5D5D5D;
   color: #eee;
   grid-row: 1 / 2;
   padding: 3.5em 0 4.5em 0;
@@ -387,7 +388,7 @@ figure.small > * {
 
 .data-figure {
   padding: 1.5em 0px 2em 0px;
-  background-color: #575757;
+  background-color: #5D5D5D;
   color: #f1f1f1;
 }
 

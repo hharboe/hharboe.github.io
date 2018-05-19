@@ -19,7 +19,45 @@
 		<article>
 			<section class="summary">
 	      <h1>LUMENED: CONNECTING CLASSROOMS</h1>
-	      <p>LumenEd was the education technology startup I co-founded my junior year at Oberlin College, and worked on full-time post-graduation. We designed and shipped a hardware, software, and curriculum product package to K-8 classrooms. For every package sold, we donated the equivalent to an underprivileged classroom in India.</p></section>
+	      <p>LumenEd was the education technology startup I co-founded my junior year at Oberlin College, and worked on full-time post-graduation. We designed and shipped a hardware, software, and curriculum product package to K-8 classrooms. For every package sold, we donated the equivalent to an underprivileged classroom in India.</p>
+<!-- <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://example.com/the.pdf" width="500" height="375">
+	<iframe class="scribd_iframe_embed" title="LumenEd Program Details 16-17" src="https://www.scribd.com/embeds/379428751/content?start_page=1&view_mode=scroll&access_key=key-jtRbTEnrscQ0pfJRAJkJ&show_recommendations=true" data-auto-height="false" data-aspect-ratio="1.2941176470588236" scrolling="no" id="doc_74232" width="100%" height="600" frameborder="0"></iframe>
+	<script type="text/javascript" src="https://raw.github.com/mozilla/pdf.js/gh-pages/build/pdf.js"></script> -->
+<script type="text/javascript">
+function renderPDF(url, canvasContainer, options) {
+    var options = options || { scale: 1 };
+
+    function renderPage(page) {
+        var viewport = page.getViewport(options.scale);
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+        canvasContainer.appendChild(canvas);
+
+        page.render(renderContext);
+    }
+
+    function renderPages(pdfDoc) {
+        for(var num = 1; num <= pdfDoc.numPages; num++)
+            pdfDoc.getPage(num).then(renderPage);
+    }
+    PDFJS.disableWorker = true;
+    PDFJS.getDocument(url).then(renderPages);
+}
+</script>
+
+<div id="holder"></div>
+
+<script type="text/javascript">
+renderPDF('/images/LumenEd Program Details.pdf', document.getElementById('holder'));
+</script>
+			</section>
 			<section class="role end">
 				<h1>MY ROLE</h1>
 				<p>I was one of three co-founders, and the design, sales, and marketing lead. In addition to grunt work and strategic planning as co-founder, my responsibilities included curriculum and software design, sales to K-8 schools, and designing our web, print, and video materials.</p>
@@ -191,9 +229,17 @@
 					<p>As the year went by, we gained more traction by writing to more schools. We made sales trips over Spring Break to schools in Cleveland, New York, and D.C., where we were able to secure about $10k in our accounts receivable that summer.</p>
 					<h3 style = "padding-top: 1.5em">KICKSTARTER CAMPAIGNS CAN BE ALL-ENCOMPASSING</h3>
 					<p>Succeeding on Kickstarter would simultaneously raise capital, and earn us a story in EdTech journals that may catch attention from prospective schools. We went through several drafts of campaign videos, award ideas, and outreach to news outlets before our campaignwent live, a process that took significantly longer than expected.</p>
+					<!-- <iframe width="820" height="315"
+					src="https://www.youtube.com/watch?v=OvXifK3wTt4">
+					</iframe> -->
 					<figure class = "light small">
 						<img src="/images/shirts.png" style = "height: 300px; padding: 0 1em 0 1em">
-						<img src="/images/kickstarter_video.png" style = "height: 300px; padding: 0 1em 0 1em"></figure>
+						<!-- <img src="/images/kickstarter_video.png" style = "height: 300px; padding: 0 1em 0 1em"> -->
+						<!-- <iframe width="420" height="315"
+						src="https://www.youtube.com/watch?v=OvXifK3wTt4">
+						</iframe> -->
+
+					</figure>
 					<p>We didn't have enough time to get many verbal commitments ahead of time, so outreach to friends, family, and alumni was an all-hands task while the campaign was live. We <a href="https://www.kickstarter.com/projects/1066037724/the-bright-orange-box-connecting-classrooms">succeeded in raising $40,000</a> one day before our deadline, in large part due to generosity and interest from Oberlin College alumni.</p>
 					<p>The day after we graduated, we moved into a temporary office in Oberlin for the summer. We had a total of $50k to assemble 50 units of the new Bright Orange Box. Much of my time the next two months would be spent selling Video Pen Pals to K-8 schools, our sole source of revenue for the upcoming year.</p>
 				</section>
