@@ -563,3 +563,7 @@
     .wide-figure {
       flex-wrap: wrap;
     }
+
+    nav {
+      flex-wrap: wrap;
+    }

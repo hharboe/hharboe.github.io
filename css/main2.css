@@ -126,3 +126,7 @@ nav ul {
   font-weight: lighter;
   width: 70%;
 }
+
+.summary {
+  flex-wrap: wrap;
+}
