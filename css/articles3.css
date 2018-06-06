@@ -41,9 +41,9 @@
 -------------------------------- */
 
   :root {
-    --copy-width: 688px;
-    --copy-margin-width: 64px;
-    --img-max-width: 240px;
+    --copy-width: 672px;
+    /* --copy-margin-width: 64px; */
+    /* --img-max-width: 240px; */
   }
 
 /* Structure
@@ -53,6 +53,7 @@
     margin: 0;
     /* background-color: #2C0D2A; */
     background-color: #2B132A;
+    /* font-size: 137.5%; */
   }
 
   nav {
@@ -66,16 +67,6 @@
     display: flex;
   }
 
-  nav ul li {
-    padding: 0em 3em 0em 0em;
-    list-style: none;
-    text-align: center;
-  }
-
-  section {
-    padding: 1em 0 2.5em 0;
-  }
-
   .row {
     display: flex;
     flex-direction: row;
@@ -84,12 +75,17 @@
     padding-top: 0em;
   }
 
+  /* Spacing
+  -------------------------------- */
 
+  section {
+    padding: 1em 0 2.5em 0;
+  }
 
-  .copy {
-    max-width: var(--copy-width);
-    margin: 0 16px;
-    padding-top: .5em;
+  nav ul li {
+    padding: 0em 3em 0em 0em;
+    list-style: none;
+    text-align: center;
   }
 
   .copy-data {
@@ -104,12 +100,18 @@
   }
 
   figcaption {
-    /* max-width: var(--copy-width); */
     margin: 0 auto;
   }
 
   .end {
     /* padding-bottom: 10em; */
+  }
+
+
+  .copy {
+    max-width: var(--copy-width);
+    margin: 0 16px;
+    padding-top: .5em;
   }
 
 /* Image Structure
@@ -277,6 +279,7 @@
       padding: 1.8em 0 1.3em 0;
       margin: 0 auto;
       color: #333;
+      /* font-weight: bold; */
   }
 
   h3, h4 {
@@ -320,8 +323,8 @@
   p {
     font-family:'Calisto MT', 'Serif';
     text-align: left;
-    font-size: 1.2em;
-    line-height: 1.5em;
+    font-size: 22px;
+    line-height: 33px;
     padding: .5em 0 .5em 0;
     margin: 0 auto;
   }

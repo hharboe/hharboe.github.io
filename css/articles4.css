@@ -1,0 +1,578 @@
+/* Importing FagoNo Regular */
+@import url(//db.onlinewebfonts.com/c/23178151f2a35dd93224374c02489308?family=FagoNo);
+
+@font-face {
+  font-family: "FagoNo";
+    src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot");
+    src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.svg#FagoNo") format("svg");
+}
+
+/* Importing Calisto MT */
+@import url(//db.onlinewebfonts.com/c/2568e173df3a278bff48d9926aa656f6?family=Calisto+MT);
+
+@font-face {
+  font-family: "Calisto MT";
+    src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot");
+    src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.svg#Calisto MT") format("svg");
+}
+
+/* Variables
+-------------------------------- */
+
+  :root {
+    --copy-width: 672px;
+    /* --center-copy-width: 840px; */
+    --center-copy-width: 740px;
+    --img-mobile-width: 300px;
+  }
+
+/* Structure
+-------------------------------- */
+
+  body {
+    font-size: 22px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2B132A;
+    height: 132px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 0em 3em 0em 0em;
+    list-style: none;
+    text-align: center;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  section > * {
+    /* padding-left: 264px; */
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+  .center-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .copy {
+    max-width: var(--copy-width);
+  }
+
+  .center-copy {
+    max-width: var(--center-copy-width);
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .flat-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 99px;
+  }
+
+  .end {
+    padding-bottom: 38px;
+  }
+
+  /* Spacing
+  -------------------------------- */
+
+  .center-copy p {
+    padding: 66px 0 66px;
+    text-align: left;
+  }
+
+  .center-copy h1 {
+    font-family: 'FagoNo', 'Sans-Serif';
+    letter-spacing: 2px;
+  }
+
+  .center-copy h2 {
+    font-size: 33px;
+    color: #EEE;
+    text-align: center;
+    width: 740px;
+    padding: 33px 0 66px 0;
+  }
+
+  .flat-ul li {
+    padding: 0em 66px 0em 66px;
+    list-style: none;
+    text-align: center;
+  }
+
+  .bg-color-dark a {
+    color: #eee;
+    font-size: 33px;
+    font-weight: normal;
+    line-height: 33px;
+  }
+
+  /* Images
+  -------------------------------- */
+
+  figure > * {
+    margin: 0 auto;
+  }
+
+  .fig-multi-caption {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 20px;
+  }
+
+  .center-row .fig-multi-caption {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 26px;
+    padding: 0 33px;
+  }
+
+  .center-row .fig-single-caption {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 26px;
+    padding: 0 33px;
+  }
+
+  .multi-caption {
+    font-family: 'FagoNo', 'Sans-Serif';
+    font-size: 16px;
+    text-align: left;
+    line-height: 26px;
+    padding: 17px 0 48px 0;
+  }
+
+  .fig-single-caption {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 20px;
+  }
+
+  .single-caption {
+    font-size: 16px;
+    /* line-height: 16px; */
+    color: #666666;
+    display: block;
+    line-height: 26px;
+    padding: 17px 0 48px 0;
+  }
+
+  .no-caption {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 20px;
+    padding-bottom: 44px;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fig-multi-caption:first-child {
+    padding-right: 76px;
+  }
+
+  nav img {
+    max-width: 99px;
+    padding-left: 1em;
+  }
+
+  .article-logo {
+    max-width: 231px;
+
+  }
+
+  .article-logo-div {
+    padding: 66px 0 66px 0;
+    margin: 0 auto;
+  }
+
+  .img-small {
+    max-width: 297px;
+  }
+
+  .img-med {
+    max-width: 426px;
+  }
+
+  .img-med-big {
+    max-width: 760px;
+  }
+
+  .img-large {
+    max-width: 890px;
+  }
+
+  .img-banner {
+    max-width: 400px;
+  }
+
+  .img-gif {
+    width: 329px;
+    /* padding: 0 33em; */
+  }
+
+  /* Headings, Text Stylings
+  ----------------------------------------------- */
+
+  .row-paragraph {
+    padding: 16px 24px 28px 32px;
+    background-color: #eee;
+  }
+
+  h1, h2, h3, h4, h5, figcaption {
+    font-family:'FagoNo', 'Sans-Serif';
+    line-height: 34px;
+    text-align: left;
+  }
+
+  .bg-color-med h1, .bg-color-light h1 {
+    padding: 90px 0 16px 0;
+    font-size: 30px;
+    line-height: 34px;
+    color: #827281;
+  }
+
+  .bg-color-med h2, .bg-color-light h2 {
+    padding: 56px 0 48px 0;
+    font-size: 46px;
+    line-height: 34px;
+    color: #333333;
+    letter-spacing: normal;
+    max-width: 780px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 34px;
+    padding: 28px 0 28px 0;
+  }
+
+  h4 {
+    font-family: 'Calisto MT', 'Serif';
+    font-size: 24px;
+    line-height: 38px;
+    font-style: italic;
+    font-weight: normal;
+
+  }
+
+  h5 {
+  }
+
+  p {
+    font-family: 'Calisto MT', 'Serif';
+    text-align: left;
+    font-size: 23px;
+    line-height: 34px;
+    padding: 0 0 28px 0;
+  }
+
+
+  ul, ol {
+    padding: 8px 0 28px 58px;
+    line-height: 32px;
+  }
+
+  ul li {
+    font-size: 23px;
+    padding: 0 0 8px 0px;
+  }
+
+  ol li {
+    font-size: 23px;
+    padding: 0 0 8px 0px;
+    /* font-style: italic; */
+  }
+
+  a {
+      text-decoration: none;
+      color: #BBB;
+      font-weight: lighter;
+  }
+  a:hover {
+      color: #f2f2f2
+  }
+
+  section a {
+    font-weight: bolder;
+    color: #111;
+  }
+
+  section a:hover {
+    color: #666;
+  }
+
+  nav ul li {
+    font-family:'FagoNo', 'Sans-Serif';
+    font-weight: lighter;
+    padding: 0em 3em 0em 0em;
+    font-size: 1.1em;
+  }
+
+  /* .bg-color-light li, .bg-color-mid li {
+    font-family:'Calisto MT', 'Serif';
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding-bottom: .25em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /* Section Styling
+  ----------------------------------------------- */
+
+  .bg-color-dark {
+    background-color: #4F434E;
+    color: #eee;
+    padding-top: 0;
+  }
+
+  .bg-color-med {
+    background-color: #DAD4DA;
+    color: #111;
+  }
+
+  .bg-color-light {
+    background-color: #EEE;
+    color: #333;
+  }
+
+  .bg-color-dark h1 {
+    font-size: 44px;
+    text-align: center;
+    color: #eee;
+  }
+
+  .bg-color-data {
+     color: #111;
+  }
+
+  .bg-color-mid h1 {
+    color: #666;
+  }
+
+  .bg-color-light h1 {
+    color: #999;
+  }
+
+  blockquote {
+      text-align: center;
+      font-style: italic;
+      color: #444;
+      line-height: 1.36em;
+      margin: .5em auto 1.2em;
+      font-size: 1.7em;
+      max-width: 888px;
+  }
+
+  .line-mid {
+    background-color: #CCC;
+    width: 2em;
+    height: 2px;
+    margin: 1.5em auto 2em auto;
+  }
+
+  .line-light {
+    background-color: #BAB1B9;
+    width: 5em;
+    height: 2px;
+    margin: 2em auto 0em auto;
+  }
+
+
+
+  /* Data Structure
+  -------------------------------- */
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      /* padding: 0 0 2em 0; */
+      align-items: center;
+      padding: 0;
+    }
+
+    .data-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: .5em 0;
+    }
+
+    .data-container {
+      align-self: start;
+      justify-content: start;
+      max-width: 28em;
+      min-width: 14em;
+      margin: 0 1em;
+    }
+
+    .data-wrapper ul li, .data-wrapper ol li {
+      font-size: 1.2em;
+      font-family: 'Calisto MT', 'Serif';
+      line-height: 1.5em;
+      font-weight: lighter;
+      padding-top: 1em;
+      list-style: none;
+    }
+
+    .data-wrapper ul li:first-child, .data-wrapper ol li:first-child {
+      padding-top: .5em;
+    }
+
+    .copy-data {
+      width: var(--copy-width);
+      margin: 0 16px;
+      padding-top: .5em;
+      background-color: #4759FF;
+    }
+
+    .copy-data h3 {
+      margin: 0 auto;
+    }
+
+
+
+/*
+@media all and (max-width: 1024px) {
+
+  .icon-figure {
+    margin: 0 1em;
+    align-content: center;
+  }
+
+  .basic-figure {
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .basic-figure > * {
+    max-width: 100%;
+  }
+
+  .icon-figure > * {
+    max-width: 100%;
+    padding: 1em 1em;
+  }
+
+  .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .vertical-bar {
+    display: none;
+  }
+
+  .data-container {
+    align-self: start;
+    justify-content: start;
+    margin: 0 .5em;
+  }
+
+  .data-container ul {
+    padding-left: .5em;
+    padding-bottom: 0em;
+  }
+
+
+  @media all and (max-width: 640px) {
+    .icon-figure {
+      flex-wrap: wrap;
+    }
+
+    .icon-figure > * {
+      max-width: 100%;
+    }
+
+    .video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .long-fig-caption-light {
+      padding: 1em 1em 0 1em;
+    }
+
+    .wide-figure {
+      flex-wrap: wrap;
+    }
+
+    nav {
+      flex-wrap: wrap;
+    } */
