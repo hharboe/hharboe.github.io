@@ -7,10 +7,26 @@
     url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.svg#FagoNo") format("svg");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: #2B132A;
+    font-size: 22px;
     margin: 0;
     padding: 0;
+    background-color: #DAD4DA;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2B132A;
+  height: 132px;
 }
 
 #logo {
@@ -23,73 +39,30 @@ body {
   height: 6.5em;
 }
 
-nav {
-  /* background-color: #3D3D3D; */
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+nav img {
+  max-width: 99px;
+  padding: 6px 0 0 38px;
 }
 
-nav ul {
+
+
+/* nav ul {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
   font-family:'FagoNo', 'Sans-Serif';
   font-weight: lighter;
   width: 40%;
-}
+} */
 
-nav ul li {
+/* nav ul li {
   padding-right: 4em;
-}
-
+} */
+/*
 nav ul li a {
   font-family:'FagoNo', 'Sans-Serif';
   font-size: 24px;
-}
-
-.summary {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  padding-top: 3em;
-}
-
-.case-image {
-  display: flex;
-  height: 7em;
-  justify-content: center;
-  align-items: center;
-  padding: .5em 3em;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  min-width: 22.5em;
-  max-width: 41em;
-  /* padding-top: 3em; */
-}
-
-#lumened-text {
-  grid-area: c2;
-}
-
-#michael-text {
-  grid-area: c1;
-}
-
-.case-summary {
-  padding: 2em;
-  width: 70%;
-  min-width: 22.5em;
-  max-width: 60em;
-}
-
-footer {
-  grid-area: f;
-  display: none;
-}
+} */
 
 a {
     text-decoration: none;
@@ -97,23 +70,137 @@ a {
     font-family:'FagoNo', 'Sans-Serif';
     font-weight: lighter;
 }
+
 a:hover {
-    /* text-decoration: underline; */
     color: #fff;
 }
 
-h1 {
-    font-size: 1.5em;
+.top h1, .top h2, .top h3, .top p {
     font-family:'FagoNo', 'Sans-Serif';
-    font-weight: medium;
-}
-p {
-  font-family:'FagoNo', sans-serif;
-    font-size: 1em;
-    line-height: 1.4em;
-    /* font-weight: ligher; */
+    font-weight: lighter;
+    color: #aaa;
 }
 
+p {
+    font-size: 22px;
+    line-height: 31px;
+}
+
+.top h1 {
+  font-family:'FagoNo', sans-serif;
+  font-size: 22px;
+  line-height: 31px;
+  font-weight: normal;
+  padding: 56px 0 56px 0;
+  color: #bbb;
+}
+
+h1, h2, h3, p {
+    font-family:'FagoNo', 'Sans-Serif';
+    font-weight: normal;
+    color: #aaa;
+}
+
+h1 {
+  font-family:'FagoNo', sans-serif;
+  font-size: 22px;
+  line-height: 31px;
+  font-weight: normal;
+  padding: 24px 0 56px 0;
+  color: #222;
+  padding: 76px 0 70px 0
+
+}
+
+h2 {
+  font-family:'FagoNo', sans-serif;
+  font-size: 32px;
+  letter-spacing: .5px;
+  font-weight: lighter;
+  line-height: 40px;
+  padding: 0 0 8px 0;
+  color: #222;
+}
+
+.cs-summary p {
+  color: #222;
+}
+
+h3 {
+  color: #666;
+  padding: 0 0 32px 0;
+  font-style: italic;
+}
+
+.center-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  max-width: 400px;
+  padding-right: 38px;
+}
+
+.profile-summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-summary p {
+  max-width: 432px;
+  line-height: 28px;
+  padding-bottom: 28px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-summary {
+  max-width: 299px;
+  padding: 0 76px;
+}
+
+.about-summary p {
+  color: #888;
+  padding-bottom: 28px;
+}
+
+.case-img {
+  max-width: 250px;
+  padding-right: 75px;
+}
+
+.cs-summary {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  max-width: 432px;
+}
+
+.cs-container {
+  padding-bottom: 72px;
+}
+
+.top {
+  background-color: #2B132A;
+  padding-bottom: 60px;
+}
+
+.mid {
+  background-color: #2B132A;
+}
+
+.bottom {
+  background-color: #2B132A;
+
+}
 
 @media screen and (max-width: 39.9375em) {
 
@@ -121,6 +208,10 @@ p {
   display: flex;
   justify-content: center;
   padding: 3em 0 3em 0;
+}
+
+.center-row {
+  flex-wrap: wrap;
 }
 
 nav ul {
