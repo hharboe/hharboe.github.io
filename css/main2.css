@@ -43,6 +43,11 @@ nav ul li {
   padding-right: 4em;
 }
 
+nav ul li a {
+  font-family:'FagoNo', 'Sans-Serif';
+  font-size: 24px;
+}
+
 .summary {
   display: flex;
   justify-content: center;
@@ -88,7 +93,7 @@ footer {
 
 a {
     text-decoration: none;
-    color: #ddd;
+    color: #bbb;
     font-family:'FagoNo', 'Sans-Serif';
     font-weight: lighter;
 }
