@@ -76,12 +76,6 @@
     justify-content: center;
   }
 
-  .row {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-
   .center-row {
     display: flex;
     flex-direction: row;
@@ -116,12 +110,14 @@
 
   .center-copy p {
     padding: 66px 0 66px;
+    /* padding: 0 0 38px; */
     text-align: left;
   }
 
   .center-copy h1 {
     font-family: 'FagoNo', 'Sans-Serif';
     letter-spacing: 2px;
+    /* padding-bottom: 66px; */
   }
 
   .center-copy h2 {
@@ -239,7 +235,7 @@
   }
 
   .img-small {
-    max-width: 297px;
+    max-width: 253px;
   }
 
   .img-med {
@@ -261,6 +257,15 @@
   .img-gif {
     width: 329px;
     /* padding: 0 33em; */
+  }
+
+  .img-icon {
+    /* padding: 0 38px 0 38px; */
+  }
+
+  .img-big {
+    width: 380px;
+    /* padding: 0 14px; */
   }
 
   /* Headings, Text Stylings
@@ -296,7 +301,7 @@
   h3 {
     font-size: 28px;
     line-height: 34px;
-    padding: 28px 0 28px 0;
+    padding: 28px 0 26px 0;
   }
 
   h4 {
@@ -433,6 +438,44 @@
     margin: 2em auto 0em auto;
   }
 
+  .fig-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+  }
+
+  .data-container {
+
+  }
+
+  .data-header {
+    /* width: 100%; */
+    color: #eee;
+    padding: 36px 100px;
+    background-color: #111;
+  }
+
+  .data-body {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  h5 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h6 {
+    font-family: 'Calisto MT', 'Serif';
+    font-size: 24px;
+    line-height: 38px;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+
 
 
   /* Data Structure
@@ -452,15 +495,15 @@
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
-      padding: .5em 0;
+      /* padding: .5em 0; */
     }
 
     .data-container {
       align-self: start;
       justify-content: start;
-      max-width: 28em;
+      /* max-width: 28em;
       min-width: 14em;
-      margin: 0 1em;
+      margin: 0 1em; */
     }
 
     .data-wrapper ul li, .data-wrapper ol li {
