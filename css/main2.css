@@ -13,26 +13,140 @@
 }
 
 body {
-    font-size: 22px;
+    font-size: 24px;
+    line-height: 38px;
     margin: 0;
     padding: 0;
-    background-color: #DAD4DA;
+    background-color: #2C0D2A;
+}
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 15em;
+  max-width: 22em; */
+}
+
+.nav-logo {
+  max-width: 5.5em;
+  padding-top: 5.375em;
+  margin: 0 auto;
+}
+
+.site-title {
+  padding-right: 6.8em;
+  align-self: flex-start;
+  min-width: 8.2em;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #2B132A;
-  height: 132px;
+  width: 550px;
+  margin: 2.8em 0 2em 0;
+  border-bottom: 1.5px solid #cfcfcf;
 }
 
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  /* margin: 0 auto; */
+  display: flex;
+  /* align-self: flex-end; */
+  /* align-items: flex-end;
+  justify-content: flex-end; */
+}
+
+nav ul li {
+  padding-left: 1em;
+  align-self: flex-end;
+}
+
+main {
+  width: 550px;
+  margin: 0 auto;
+  border-bottom: 1.5px solid #cfcfcf;
+}
+
+/* .site-content:first-child {
+  text-indent: 0;
+}
+
+.site-content p {
+  text-indent: 1.5em;
+} */
+
+a:hover {
+    color: #759DDA;
+}
+
+p, ul li, a {
+  list-style: none;
+  /* padding: 0; */
+  /* margin: 0; */
+  color: #cfcfcf;
+  font-family: 'Georgia', 'Calisto MT', 'Serif';
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+
+h2, footer p, footer a {
+  color: #887A87;
+  font-family:'Helvetica','FagoNo', 'Sans-Serif';
+  font-weight: normal;
+  padding-bottom: .7em;
+}
+
+h2 {
+  font-size: .667em;
+}
+
+.personal-photo {
+  padding: 2em 0 1.778em 0;
+  max-width: 550px;
+}
+
+.personal-details {
+  padding-bottom: 1.778em;
+}
+
+.personal-details ul {
+
+}
+
+footer {
+  display: flex;
+  padding: 0.5em 0 1em 1.778em;
+  font-size: 24px;
+  justify-content: center;
+  /* align-self: center; */
+
+}
+
+footer p {
+  /* margin: 0 auto; */
+  min-width: 6.5em;
+  font-size: .667em;
+  /* max-width 550px; */
+}
+
+footer a{
+  font-size: 1em;
+
+}
+
+/* ------------------- */
+/*
 #logo {
   display: flex;
   justify-content: center;
   padding: 3.5em 0 3.5em 0;
+  list-style: none;
 }
 
 #logo img {
@@ -40,9 +154,9 @@ nav {
 }
 
 nav img {
-  max-width: 99px;
+  max-width: 5.5em;
   padding: 6px 0 0 38px;
-}
+} */
 
 
 
@@ -63,7 +177,7 @@ nav ul li a {
   font-family:'FagoNo', 'Sans-Serif';
   font-size: 24px;
 } */
-
+/*
 a {
     text-decoration: none;
     color: #bbb;
@@ -225,4 +339,4 @@ nav ul {
 
 .summary {
   flex-wrap: wrap;
-}
+} */
