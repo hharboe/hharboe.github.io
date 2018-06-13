@@ -200,9 +200,13 @@ footer a{
 
 @media all and (max-width: 480px) {
 
-  nav ul li a, .site-title {
+  .site-title {
+    margin-right: .25em;
     font-size: .8em;
   }
+  nav ul li a {
+    margin-left: 0em;
+    font-size: .8em;
 
 }
 
