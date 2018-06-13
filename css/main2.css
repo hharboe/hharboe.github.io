@@ -16,7 +16,7 @@ header {
   align-items: center;
   margin: 0 auto;
   max-width: 550px;
-  padding: 0 1.5em 0 1.5em;
+  padding: 0 1em 0 1em;
 }
 
 nav {
@@ -112,7 +112,7 @@ nav ul li {
 main {
   max-width: 550px;
   margin: 0 auto;
-  padding: 0 1.5em 0 1.5em;
+  padding: 0 1em 0 1em;
 }
 
 /* .site-content:first-child {
@@ -209,6 +209,9 @@ footer a{
     font-size: .8em;
 
 }
+
+p, ul li, a, footer, footer p, footer a {
+  font-size: .8em;
 
 /* ------------------- */
 /*
