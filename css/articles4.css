@@ -11,37 +11,52 @@
     url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.svg#FagoNo") format("svg");
 }
 
-/* Importing Calisto MT */
-@import url(//db.onlinewebfonts.com/c/2568e173df3a278bff48d9926aa656f6?family=Calisto+MT);
+/* Importing Calisto MT W01 */
+/* @import url(//db.onlinewebfonts.com/c/2568e173df3a278bff48d9926aa656f6?family=Calisto+MT);
 
 @font-face {
-  font-family: "Calisto MT";
+  font-family: "Calisto MT W01";
     src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot");
     src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot?#iefix") format("embedded-opentype"),
     url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.woff2") format("woff2"),
     url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.woff") format("woff"),
     url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.svg#Calisto MT") format("svg");
-}
+    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.svg#Calisto MT W01") format("svg");
+} */
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=1fb4849c-31b7-4d41-ae78-b44432d5eefc");
+    @font-face{
+        font-family:"Calisto MT W01";
+        src:url("Fonts/11c0afbb-00d6-4d28-bffb-8258617d799c.eot?#iefix");
+        src:url("Fonts/11c0afbb-00d6-4d28-bffb-8258617d799c.eot?#iefix") format("eot"),url("Fonts/e8ebb48e-83d5-4fa7-90dc-2a9b2ddac200.woff2") format("woff2"),url("Fonts/0733af84-0892-4502-b0ae-43c8a240535d.woff") format("woff"),url("Fonts/9c18d7bc-649b-4028-bea7-aa891b203dce.ttf") format("truetype"),url("Fonts/1d363a70-3e11-4e61-b494-ef377abf13f9.svg#1d363a70-3e11-4e61-b494-ef377abf13f9") format("svg");
+    }
+    @font-face{
+        font-family:"Calisto MT W01 Italic";
+        src:url("Fonts/5a135341-0d32-4dfe-afcb-74f555e44f16.eot?#iefix");
+        src:url("Fonts/5a135341-0d32-4dfe-afcb-74f555e44f16.eot?#iefix") format("eot"),url("Fonts/18448bbd-67d3-43c0-ab5d-d9d8110382e3.woff2") format("woff2"),url("Fonts/553dcba7-c642-42f1-a6f0-9a26fad95d71.woff") format("woff"),url("Fonts/07532ea6-1226-4c31-b8ff-ab8e3b88fb2f.ttf") format("truetype"),url("Fonts/4a051e2e-9b7b-4239-82bb-e8ec09413050.svg#4a051e2e-9b7b-4239-82bb-e8ec09413050") format("svg");
+    }
+    @font-face{
+        font-family:"Calisto MT W01 Bold";
+        src:url("Fonts/92c05e46-601e-42d5-a49c-06704e3a4140.eot?#iefix");
+        src:url("Fonts/92c05e46-601e-42d5-a49c-06704e3a4140.eot?#iefix") format("eot"),url("Fonts/005e02d9-ea2f-4026-adbc-0c18cf2780ba.woff2") format("woff2"),url("Fonts/d528e644-82d3-4866-8aa2-97384b1d0b56.woff") format("woff"),url("Fonts/5f364268-4f54-40ff-9740-9a68ee89d7f3.ttf") format("truetype"),url("Fonts/ca6c6552-4a34-40c9-a5e7-1f4d599b2793.svg#ca6c6552-4a34-40c9-a5e7-1f4d599b2793") format("svg");
+    }
+    @font-face{
+        font-family:"CalistoMTW01-BoldItalic";
+        src:url("Fonts/3f55f03e-72ba-4287-964b-dbf951223e0b.eot?#iefix");
+        src:url("Fonts/3f55f03e-72ba-4287-964b-dbf951223e0b.eot?#iefix") format("eot"),url("Fonts/958f3866-d813-43d9-b227-03dcd8cb35ac.woff2") format("woff2"),url("Fonts/c52f3f16-e3ce-4132-89ea-cb332c3f4424.woff") format("woff"),url("Fonts/f86fda6a-d378-488f-8111-0ce6a67c33f8.ttf") format("truetype"),url("Fonts/9641924b-58f7-48ca-b089-b8b2d6f32550.svg#9641924b-58f7-48ca-b089-b8b2d6f32550") format("svg");
+    }
 
 /* Variables
 -------------------------------- */
-
   :root {
     --copy-width: 672px;
-    /* --center-copy-width: 840px; */
+    --center-copy-width: 840px;
     --center-copy-width: 740px;
     --img-mobile-width: 300px;
   }
 
 /* Structure
 -------------------------------- */
-
-  /* .chapters {
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-  } */
 
  * {
    padding: 0;
@@ -52,7 +67,7 @@
     font-size: 22px;
   }
 
-  nav {
+  header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,7 +76,7 @@
     height: 132px;
   }
 
-  /* nav ul {
+  nav ul {
     padding-top: 28px;
     display: flex;
     align-items: center;
@@ -71,11 +86,12 @@
     padding: 0em 3em 0em 0em;
     list-style: none;
     text-align: center;
-  } */
+  }
 
   section > * {
     /* padding-left: 264px; */
     margin: 0 auto;
+    padding: 0 1.5em 0 1.5em;
   }
 
   .row {
@@ -88,7 +104,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0;
   }
 
   .copy {
@@ -99,7 +114,6 @@
     max-width: var(--center-copy-width);
     text-align: left;
     margin: 0 auto;
-    padding: 0;
   }
 
   .flat-ul {
@@ -123,8 +137,11 @@
   }
 
   .center-copy h1 {
-    font-family: 'FagoNo', 'Sans-Serif';
-    letter-spacing: 2px;
+    /* font-family: 'FagoNo', 'Sans-Serif'; */
+    font-family: 'pt-sans', sans-serif;
+font-style: normal;
+font-weight: 700;
+    /* letter-spacing: 2px; */
     /* padding-bottom: 66px; */
   }
 
@@ -227,7 +244,7 @@
     padding-right: 76px;
   }
 
-  nav img {
+  header img {
     max-width: 99px;
     padding: 8px 0 0 38px;
   }
@@ -289,7 +306,8 @@
   }
 
   h1, h2, h3, h4, h5, figcaption {
-    font-family:'FagoNo', 'Sans-Serif';
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
     line-height: 34px;
     text-align: left;
   }
@@ -303,7 +321,7 @@
 
   .bg-color-med h2, .bg-color-light h2 {
     padding: 56px 0 48px 0;
-    font-size: 46px;
+    font-size: 48px;
     line-height: 34px;
     color: #333333;
     letter-spacing: normal;
@@ -318,7 +336,7 @@
   }
 
   h4 {
-    font-family: 'Calisto MT', 'Serif';
+    font-family: 'Calisto MT W01', 'Serif';
     font-size: 24px;
     line-height: 38px;
     font-style: italic;
@@ -330,10 +348,11 @@
   }
 
   p {
-    font-family: 'Calisto MT', 'Serif';
+    font-family: 'Calisto MT W01', 'Serif';
     text-align: left;
+    font-weight: 200;
     font-size: 23px;
-    line-height: 34px;
+    line-height: 35px;
     padding: 0 0 28px 0;
   }
 
@@ -379,7 +398,7 @@
   }
 
   /* .bg-color-light li, .bg-color-mid li {
-    font-family:'Calisto MT', 'Serif';
+    font-family:'Calisto MT W01', 'Serif';
     text-align: left;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -480,7 +499,7 @@
   }
 
   h6 {
-    font-family: 'Calisto MT', 'Serif';
+    font-family: 'Calisto MT W01', 'Serif';
     font-size: 24px;
     line-height: 38px;
     font-style: italic;
@@ -520,7 +539,7 @@
 
     .data-wrapper ul li, .data-wrapper ol li {
       font-size: 1.2em;
-      font-family: 'Calisto MT', 'Serif';
+      font-family: 'Calisto MT W01', 'Serif';
       line-height: 1.5em;
       font-weight: lighter;
       padding-top: 1em;
