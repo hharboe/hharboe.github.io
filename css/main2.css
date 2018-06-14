@@ -202,11 +202,21 @@ footer a{
 
   .site-title {
     margin-right: .25em;
-    font-size: .8em;
+    font-size: .9em;
   }
   nav ul li a {
     margin-left: 0em;
-    font-size: .8em;
+    font-size: 1em;
+  }
+
+    p, ul li {
+      font-size: .9em;
+    }
+
+    a {
+      font-size: 1em;
+    }
+
 
 }
 
