@@ -137,6 +137,9 @@
     max-width: var(--wide-copy-width);
   }
 
+/* Introduction
+-------------------------------- */
+
   .article-logo {
     max-width: 231px;
     padding: calc(2*var(--baseline-padding)) 0 0 0;
@@ -295,6 +298,7 @@
   .row-paragraph {
     padding: 16px 24px 28px 32px;
     background-color: #eee;
+    justify-content: center;
   }
 
   h1, h2, h3, h4, h5, figcaption {
@@ -554,6 +558,17 @@
   figure {
     padding: 0;
     margin: 0;
+  }
+
+  .row-paragraph {
+    padding: var(--baseline-padding);
+    padding-left: calc(2*var(--baseline-padding));
+    background-color: #eee;
+    width: 100%;
+  }
+
+  .row-paragraph > * {
+    margin: 0 auto;
   }
 
   .flat-ul li {

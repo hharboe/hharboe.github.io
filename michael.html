@@ -32,7 +32,8 @@
 	<body>
 		<header>
 			<div>
-				<img class= "header-logo" src = "/images/hh-logo.png">
+				<a href="/index.html">
+				<img class= "header-logo" src = "/images/hh-logo.png"></a>
 			</div>
 			<nav>
 				<ul>
@@ -49,8 +50,10 @@
 				<div class="copy">
 		      <h1>MICHAEL: CYCLING COMPANION</h1>
 		      <p>In October 2017, I was contracted to design the UI and persona behind an electric bicycle startup’s new chatbot. The project soon became focused on educating and motivating users about cycling.</p>
+					<h2>MY ROLE</h2>
 					<p>I worked part-time for six months with one developer and our client, the product manager, to release a Beta version. As the sole designer, I was responsible for product scoping, research, design, and testing.</p>
-					<h2>SECTIONS</h2>
+				</div>
+				<div class = "wide-copy">
 					<ul class = "flat-ul chapters">
 						<li><a href="#refinement">1. Refinement</a></li>
 						<li><a href="#research">2. Research</a></li>
@@ -152,197 +155,184 @@
 						</div>
 				 	</figure>
 				</div>
-			 	<div class = "row">
-				 <div class="copy">
-					 <p>Using insights from our interviews, I was able to the most common and crucial tasks to our behavioral change process. This list would guide the direction for confidence-building and motivational trigger features.</p>
-				 </div>
-			 </div>
-			 <figure class = "fig-caption">
-				 <div><img class = "img-med-big" src = "/images2/michael/tasks.png"></div>
-			 </figure>
-			 <div class = "row">
-				 <div class="copy">
-					 <h2>EXPLORING TECH CONSTRAINTS</h2>
-					 <p>Before any prototyping, we had to decide whether we wanted to release our chatbot in a native app, or through a chatbot platform like Facebook Messenger or Slack. We opted to release on Facebook Messenger, partially because of its cross-device support and ubiquity, and partially due to our limited budget and timeline.</p>
-					 <h3>TWO-SIDED CONVERSATIONS</h3>
-					 <p>We found that Messenger offered a few unique chatbot affordances: Card Carousels and Quick Replies.</p>
-				 </div>
-			 </div>
-			 <div class = "row">
-				 <figure class = "fig-caption">
-					 <div><img class = "img-gif" src = "/images2/michael/carousel.png"></div>
-					 <figcaption class = "multi-caption img-gif">Messenger’s card carousels support images, descrriptions, and buttons</figcaption>
-				 </figure>
-				 <figure class = "fig-caption">
-					 <img class = "img-gif" src = "/images2/michael/reply.png">
-					 <figcaption class = "multi-caption img-gif">Messenger’s quick replies support multiple-choice type questions</figcaption>
+				<div class="copy">
+					<p>Using insights from our interviews, I was able to the most common and crucial tasks to our behavioral change process. This list would guide the direction for confidence-building and motivational trigger features.</p>
+			 	</div>
+				<div class = "fig-container">
+			 		<figure class = "img-med-big">
+				 		<div>
+							<img src = "/images2/michael/tasks.png">
+						</div>
+			 		</figure>
+				</div>
+				<div class="copy">
+					<h2>EXPLORING TECH CONSTRAINTS</h2>
+					<p>Before any prototyping, we had to decide whether we wanted to release our chatbot in a native app, or through a chatbot platform like Facebook Messenger or Slack. We opted to release on Facebook Messenger, partially because of its cross-device support and ubiquity, and partially due to our limited budget and timeline.</p>
+				 	<h3>TWO-SIDED CONVERSATIONS</h3>
+				 	<p>We found that Messenger offered a few unique chatbot affordances: Card Carousels and Quick Replies.</p>
+				</div>
+			 	<div class = "fig-container">
+					<figure class = "img-gif">
+					 	<div>
+							<img src = "/images2/michael/carousel.png">
+						</div>
+						<figcaption class = "multi-caption img-gif">Messenger’s card carousels support images, descrriptions, and buttons</figcaption>
+					</figure>
+					<figure class = "img-gif">
+						<div>
+					 		<img src = "/images2/michael/reply.png">
+						</div>
+					 	<figcaption class = "multi-caption img-gif">Messenger’s quick replies support multiple-choice type questions</figcaption>
+					</figure>
+			 	</div>
+				<div class="copy">
+					<p><em>Card Carousels</em> and <em>Quick Replies</em> would allow us to write both sides of users' conversations. Traversing users through predetermined conversation paths would hopefully avoid most instances of misinterpretted user intent.</p>
+					<h3>SUPPORTING FREE-TEXT USER ENTRIES</h3>
+					<p>Microsoft’s Bot Framework gave us access to LUIS, a natural language processing tool. LUIS would allow us to train a machine learning-based language model to interpret users’ messages and direct them to a particular chatbot function.</p>
+				</div>
+			 	<div class = "fig-container">
+					<figure class = "img-med-big">
+						<div>
+							<img src = "/images2/michael/luis.png">
+						</div>
+				 		<figcaption class = "single-caption img-med-big">Diagram from LUIS’ website showing a trained model's parsing and interpretation of a user-inputted string</figcaption>
+					</figure>
+				</div>
+				<div class="copy">
+					<p>We hoped supporting free text responses would be necessary given users’ experience and understanding of the Messenger interface. As an added benefit, we could map user-inputted keywords to common features or functions. For example, keywords such as “Weather” or “Exit” could respectively direct users to our weather feature, or escape from the middle of an in-progress conversation.</p>
+				</div>
+			</section>
+		 	<section class = "bg-color-med" id="design" name="design">
+				<div class="copy">
+					<h1>DESIGN</h1>
+					<h2>BUILDING A CHARACTER</h2>
+					<p>My client was adamant about designing a rich character behind our chatbot’s messaging, to inspire emotional connections from our users. Keeping my original concept of Michael Faraday, I wrote guidelines for how our team should write conversation flows.</p>
+				</div>
+				<figure class = "fig-container">
+					<div class="row-paragraph">
+						<h3>1. MAINTAIN PERSONALITY</h3>
+					 	<ul>
+							<li>Write in-character with familiar language</li>
+							<li>Avoid monotonous enthusiasm; excessive '!’s</li>
+							<li>Avoid platitudes; emphasize factual statements</li>
+						</ul>
+						<h4><s>“Everyone can ride if the weather’s nice!”</s></h4>
+						<h4>"Cycling in a t-shirt is comfortable above 70°.”</h4>
+					</div>
+					<div class="row-paragraph">
+						<h3>2. BUILD USER CONFIDENCE</h3>
+						<ul>
+							<li>Treat users as if they're confident</li>
+						 	<li>Ask users to one-up their presonal best</li>
+						 	<li>Avoid vapid praise, recognize accomplishments</li>
+					 	</ul>
+				 		<h4><s>“Great job! You are doing amazing.”</s></h4>
+				 		<h4>“21 miles cycled this week. How about 30 next week?”</h4>
+			 		</div>
+					<figcaption class = "single-caption">Above is a sample from my full list of guidelines, published <a href="https://paper.dropbox.com/doc/Dialogue-Style-Guide-nSx8XXsOCb9MGjDOXsorh">here</a>.</figcaption>
 				</figure>
-			 </div>
-			 <div class = "row">
-				 <div class="copy">
-					 <p><em>Card Carousels</em> and <em>Quick Replies</em> would allow us to write both sides of users' conversations. Traversing users through predetermined conversation paths would hopefully avoid most instances of misinterpretted user intent.</p>
-					 <h3>SUPPORTING FREE-TEXT USER ENTRIES</h3>
-					 <p>Microsoft’s Bot Framework gave us access to LUIS, a natural language processing tool. LUIS would allow us to train a machine learning-based language model to interpret users’ messages and direct them to a particular chatbot function.</p>
-				 </div>
-			 </div>
-			 <figure class = "fig-caption">
-				 <img class = "img-med-big" src = "/images2/michael/luis.png">
-				 <figcaption class = "single-caption img-med-big">Diagram from LUIS’ website showing a trained model's parsing and interpretation of a user-inputted string</figcaption>
-			 </figure>
-			 <div class = "row end">
-				 <div class="copy">
-					 <p>We hoped supporting free text responses would be necessary given users’ experience and understanding of the Messenger interface. As an added benefit, we could map user-inputted keywords to common features or functions. For example, keywords such as “Weather” or “Exit” could respectively direct users to our weather feature, or escape from the middle of an in-progress conversation.</p>
-				 </div>
-			 </div>
-		 </section>
-		 <section class = "bg-color-med" id="design" name="design">
-			 <div class = "row">
-				 <div class="copy">
-					 <h1>DESIGN</h1>
-					 <h2>BUILDING A CHARACTER</h2>
-					 <p>My client was adamant about designing a rich character behind our chatbot’s messaging, to inspire emotional connections from our users. Keeping my original concept of Michael Faraday, I wrote guidelines for how our team should write conversation flows.</p>
-				 </div>
-			 </div>
-			 <div class = "row">
-				 <div class="center-copy row-paragraph">
-					 <h3>1. MAINTAIN PERSONALITY</h3>
-					 <ul>
-						<li>Write in-character with familiar language</li>
-						<li>Avoid monotonous enthusiasm; excessive '!’s</li>
-						<li>Avoid platitudes; emphasize factual statements</li>
-					</ul>
-					<h4><s>“Everyone can ride if the weather’s nice!”</s></h4>
-					<h4>"Cycling in a t-shirt is comfortable above 70°.”</h4>
+			 	<div class="copy">
+					<p>My guidelines were inspired by a few books and articles on <a href="https://www.goodreads.com/book/show/12910715-designing-for-emotion">designing for emotion</a>, <a href="https://www.nngroup.com/articles/legibility-readability-comprehension/">writing for mobile interfaces</a>, and <a href-"https://www.goodreads.com/book/show/32758034-designing-bots">avoiding common pitfalls</a> of monotonous software characters.</p>
+				 	<h2>DESIGNING EDUCATION</h2>
+				 	<p>The first education feature we worked on were <em>Knowledge Cards</em>, images providing bite-size motivational and confidence-boosting information on topics and tasks we identified were important or challenging for our users.</p>
+			 	</div>
+				<div class = "fig-container">
+		 			<figure class = "img-gif">
+			 			<div>
+			 				<video autoplay controls loop class = "img-gif" src = "/vids/knowledge.mov">
+			 			</div>
+			 			<figcaption class = "multi-caption img-gif">Users could browse cards by topic after selecting “Cycling Guide” from our menu</figcaption>
+		 			</figure>
 				</div>
-				<div class="center-copy row-paragraph">
-					<h3>2. BUILD USER CONFIDENCE</h3>
-					<ul>
-					 <li>Treat users as if they're confident</li>
-					 <li>Ask users to one-up their presonal best</li>
-					 <li>Avoid vapid praise, recognize accomplishments</li>
-				 </ul>
-				 <h4><s>“Great job! You are doing amazing.”</s></h4>
-				 <h4>“21 miles cycled this week. How about 30 next week?”</h4>
-			 </div>
-		 </div>
-		 <figure class = "fig-caption">
-			 <figcaption class = "single-caption">Above is a sample from my full list of guidelines, published <a href="https://paper.dropbox.com/doc/Dialogue-Style-Guide-nSx8XXsOCb9MGjDOXsorh">here</a>.</figcaption>
-		 </figure>
-		 <div class = "row">
-			 <div class="copy">
-				 <p>My guidelines were inspired by a few books and articles on <a href="https://www.goodreads.com/book/show/12910715-designing-for-emotion">designing for emotion</a>, <a href="https://www.nngroup.com/articles/legibility-readability-comprehension/">writing for mobile interfaces</a>, and <a href-"https://www.goodreads.com/book/show/32758034-designing-bots">avoiding common pitfalls</a> of monotonous software characters.</p>
-				 <h2>DESIGNING EDUCATION</h2>
-				 <p>The first education feature we worked on were <em>Knowledge Cards</em>, images providing bite-size motivational and confidence-boosting information on topics and tasks we identified were important or challenging for our users.</p>
-			 </div>
-		 </div>
-		 <figure class = "fig-caption">
-			 <div class = "img-gif">
-			 <video autoplay controls loop class = "img-gif" src = "/vids/knowledge.mov">
-			 </div>
-			 <figcaption class = "multi-caption img-gif">Users could browse cards by topic after selecting “Cycling Guide” from our menu</figcaption>
-		 </figure>
-		 <div class = "row">
-			<div class="copy">
-			 <p>Early usability testing revealed that non-cyclists felt intimidated when asked to explore cards by topic. One user said, <em>“This is hard for me to get through, because, to be honest, I’m not sure what I don’t know.”</em> Another user said, <em>“I can see how this would help people, but it’s too tedious for me.”</em></p>
-			 <p>I identified two problems with our current design based on feedback:</p>
-			 <ol>
-				 <li>Lack of context: Knowledge Cards alone were not substantial 		enough to create a lasting effect on users’ confidence.</li>
-				 <li>Poor navigation: Our navigation structure for Knowledge Cards did not match users’ mental models for learning</li>
-			 </ol>
-			 <h3>CONSIDERING SCENARIOS TO IMPROVE CONTEXT</h3>
-			 <p>To add substance to users' interaction with Knowledge Cards, we wrote conversational procedures that included multiple cards, calls to APIs, and even reminders to finish tasks. We mapped these procedures to complicated scenarios that single cards could not address on their own.</p>
-		 	</div>
-		 </div>
-		 <figure class = "fig-caption">
-			<div class = "img-gif">
-				<video autoplay controls loop class = "img-gif" src = "/vids/safety.mov">
-			</div>
-			<figcaption class = "multi-caption img-gif">Instead of searching for and choosing cards from our <em>Maintenance</em> topic, users could now follow a guided <em>Bicycle Safety Check</em></figcaption>
-	 	 </figure>
-	 	 <div class = "row">
-		 	<div class="copy">
-			 <h3>CONSIDERING MENTAL MODELS TO IMPROVE NAVIGATION</h3>
-			 <p>Our solution to the navigation problem was allowing users to interact with our Knowledge Cards in a question-and-answer format. Users would be able to ask unique questions from our chatbot, and our language model would map their question to the best-fitting card.</p>
-		 </div>
-	 	</div>
-	 	<figure class = "fig-caption">
-		 <div class = "img-gif">
-		 	<video autoplay controls loop class = "img-gif" src = "/vids/luis.mov">
-		 </div>
-		 <figcaption class = "multi-caption img-gif">Our model mapped user queries to all Knowledge Cards, Procedures, and Settings</figcaption>
-		</figure>
-		<div class = "row">
-			<div class="copy">
-				<h3>GOING ONE STEP FURTHER WITH GAMIFICATION</h3>
-				<p>With intentions to increase user engagement, my client directed me to write text-based, educational games around our existing features. His vision was to provide users with end-to-end guidance along real-world goals, e.g. learning to cycle in traffic, or attempting a commute to work.</p>
-				<p>We brainstormed ideas for these games, and sent a web survey asking participants to rank each concept. After identifying the three games most popular for each persona type, I wrote outlines for the three games in collaboration with my developer.</p>
-			</div>
-		</div>
-		<figure class = "fig-caption">
-			<img class = "img-med-big" src = "/images2/michael/mindmap.png">
-			<figcaption class = "single-caption img-med-big">Sample of our map for the <em>Zero to One</em> game, created in <a href="https://mindnode.com">MindNode</a>. Click for a view of the full map.</figcaption>
-		</figure>
-		<div class = "row">
-			<div class="copy">
-				<p>With approval from our client, I started writing detailed game logic and conversation scripts, and my developer started development. Designing, developing, and shipping three games took over a month to complete.</p>
-			</div>
-		</div>
-		<div class = "row">
-			<figure class = "fig-caption">
-				<div class = "img-gif">
-				<video autoplay controls loop class = "img-gif" src = "/vids/zto.mov">
+				<div class="copy">
+			 		<p>Early usability testing revealed that non-cyclists felt intimidated when asked to explore cards by topic. One user said, <em>“This is hard for me to get through, because, to be honest, I’m not sure what I don’t know.”</em> Another user said, <em>“I can see how this would help people, but it’s too tedious for me.”</em></p>
+			 		<p>I identified two problems with our current design based on feedback:</p>
+			 		<ol>
+				 		<li>Lack of context: Knowledge Cards alone were not substantial 		enough to create a lasting effect on users’ confidence.</li>
+				 		<li>Poor navigation: Our navigation structure for Knowledge Cards did not match users’ mental models for learning</li>
+			 		</ol>
+			 		<h3>CONSIDERING SCENARIOS TO IMPROVE CONTEXT</h3>
+			 		<p>To add substance to users' interaction with Knowledge Cards, we wrote conversational procedures that included multiple cards, calls to APIs, and even reminders to finish tasks. We mapped these procedures to complicated scenarios that single cards could not address on their own.</p>
+		 		</div>
+				<div class = "fig-container">
+			 		<figure class = "img-gif">
+						<div>
+							<video autoplay controls loop class = "img-gif" src = "/vids/safety.mov">
+						</div>
+						<figcaption class = "multi-caption img-gif">Instead of searching for and choosing cards from our <em>Maintenance</em> topic, users could now follow a guided <em>Bicycle Safety Check</em></figcaption>
+		 	 		</figure>
 				</div>
-				<figcaption class = "multi-caption img-gif">Non-cyclists could use <em>Zero to One</em> to refamiliarize themselves with cycling</figcaption>
-		 </figure>
-			<figure class = "fig-caption">
-				<div class = "img-gif">
-				<video autoplay controls loop loop class = "img-gif" src = "/vids/mp.mov">
+		 		<div class="copy">
+				 	<h3>CONSIDERING MENTAL MODELS TO IMPROVE NAVIGATION</h3>
+				 	<p>Our solution to the navigation problem was allowing users to interact with our Knowledge Cards in a question-and-answer format. Users would be able to ask unique questions from our chatbot, and our language model would map their question to the best-fitting card.</p>
+		 		</div>
+				<div class = "fig-container">
+					<figure class = "img-gif">
+		 				<div>
+		 					<video autoplay controls loop class = "img-gif" src = "/vids/luis.mov">
+		 				</div>
+		 				<figcaption class = "multi-caption img-gif">Our model mapped user queries to all Knowledge Cards, Procedures, and Settings</figcaption>
+					</figure>
 				</div>
-				<figcaption class = "multi-caption img-gif"><em>Marco Polo</em> challenged users to take more recreational rides, recommending destinations along the way</figcaption>
-		 </figure>
-		</div>
-		<div class = "row">
-			<div class="copy">
-				<h3>BUILDING HABITS INTO ONBOARDING</h3>
-				<p>Once our games were live, I added a simple onboarding process during users’ first login. The onboarding process asked users to self-select their persona type, and a game that best fits their cycling goals. I also used this opportunity to introduce users to our character, recommend tools they may find useful, and share two helpful navigation tricks.</p>
-			</div>
-		</div>
-		<figure class = "fig-caption">
-			<div class = "img-gif">
-			<video autoplay controls loop class = "img-gif" src = "/vids/onboard.mov">
-			</div>
-			<figcaption class = "multi-caption img-gif">Our onboarding process required users to make two selections that would guide the rest of their experience with our chatbot</figcaption>
-	 </figure>
-	</section>
-	<section class = "bg-color-light" id="impact" name="impact">
-		<div class = "row">
-			<div class="copy end">
-				<h1>ASSESSING IMPACT</h1>
-				<h2>IDENTIFYING POOR DECISIONS</h2>
-				<p>In our last few weeks, we made a big push for more users, but received a lackluster response. While disappointed, we were not overly surprised. We had received plenty of skepticism towards our product concept.</p>
-				<p>As I reached the end of my six month contract, I had many ideas where  both I and our team could have made different decision to benefit the outcome of the project. I think two changes would have had the most impact.</p>
-				<h3>STARTING WITH A PRODUCT IN MIND</h3>
-				<p>This project began as a product searching for a user base, which ultimately clouded our decision-making throughout the project. When faced with low interst, our efforts to course-correct were often directed towards the initial vision, rather than exploring new ideas which may have better solved user needs.</p>
-				<p>I wish I had pushed back on my client’s product vision, and encouraged open-mindedness while exploring solutions to the problem. Considering platforms outside of chatbots, and directions outside of broad, full-service motivation might have lead to a more successful solution.
-				<h3>TAKING TOO BROAD AN APPROACH TO PROBLEM SOLVING</h3>
-				<p>While games, our most developed feature, were built on sound motivational tactics, they were limited by the problems we failed to solve for users. By focusing on full-service motivation, we were ignoring the details of users’ emotions and experiences within each step of the process. As a result, our motivational triggers failed to be convincing, and became more annoying than useful.</p>
-				<p>Were I to start this project again, I would pick a problem identified in our research phase, such as bicycle purchasing or commute planning, and use more research methods to understand it deeply. In-person research such as ride-alongs, shop-alongs, repair-alongs, could have uncovered rich insights that lead to more focused, and potentially successful solution.</p>
-				<h1 style="margin: 0 auto"><a href="/index.html">Thanks for reading. Want to go back?</a></h1>
-			</div>
-		</div>
-	</section>
-
-
-
-
-
-
-
-
-
-
-
-				</article>
+				<div class="copy">
+					<h3>GOING ONE STEP FURTHER WITH GAMIFICATION</h3>
+					<p>With intentions to increase user engagement, my client directed me to write text-based, educational games around our existing features. His vision was to provide users with end-to-end guidance along real-world goals, e.g. learning to cycle in traffic, or attempting a commute to work.</p>
+					<p>We brainstormed ideas for these games, and sent a web survey asking participants to rank each concept. After identifying the three games most popular for each persona type, I wrote outlines for the three games in collaboration with my developer.</p>
+				</div>
+				<div class = "fig-container">
+					<figure class = "img-med-big">
+						<div>
+							<img src = "/images2/michael/mindmap.png">
+						</div>
+						<figcaption class = "single-caption img-med-big">Sample of our map for the <em>Zero to One</em> game, created in <a href="https://mindnode.com">MindNode</a>. Click for a view of the full map.</figcaption>
+					</figure>
+				</div>
+				<div class="copy">
+					<p>With approval from our client, I started writing detailed game logic and conversation scripts, and my developer started coding. Designing, developing, and shipping three games took over a month to complete.</p>
+				</div>
+				<div class = "fig-container">
+					<figure class = "img-gif">
+		 				<div>
+							<video autoplay controls loop class = "img-gif" src = "/vids/zto.mov">
+						</div>
+						<figcaption class = "multi-caption img-gif">Non-cyclists could use <em>Zero to One</em> to refamiliarize themselves with cycling</figcaption>
+		 			</figure>
+					<figure class = "img-gif">
+						<div>
+							<video autoplay controls loop src = "/vids/mp.mov">
+						</div>
+						<figcaption class = "multi-caption img-gif"><em>Marco Polo</em> challenged users to take more recreational rides, recommending destinations along the way</figcaption>
+					</figure>
+				</div>
+				<div class="copy">
+					<h3>BUILDING HABITS INTO ONBOARDING</h3>
+					<p>Once our games were live, I added a simple onboarding process during users’ first login. The onboarding process asked users to self-select their persona type, and a game that best fits their cycling goals. I also used this opportunity to introduce users to our character, recommend tools they may find useful, and share two helpful navigation tricks.</p>
+				</div>
+				<div class = "fig-container">
+					<figure class = "img-gif">
+		 				<div>
+							<video autoplay controls loop src = "/vids/onboard.mov">
+						</div>
+						<figcaption class = "multi-caption img-gif">Our onboarding process required users to make two selections that would guide the rest of their experience with our chatbot</figcaption>
+	 				</figure>
+				</div>
+			</section>
+			<section class = "bg-color-light" id="impact" name="impact">
+				<div class="copy">
+					<h1>ASSESSING IMPACT</h1>
+					<h2>IDENTIFYING POOR DECISIONS</h2>
+					<p>In our last few weeks, we made a big push for more users, but received a lackluster response. While disappointed, we were not overly surprised. We had received plenty of skepticism towards our product concept.</p>
+					<p>As I reached the end of my six month contract, I had many ideas where  both I and our team could have made different decision to benefit the outcome of the project. I think two changes would have had the most impact.</p>
+					<h3>STARTING WITH A PRODUCT IN MIND</h3>
+					<p>This project began as a product searching for a user base, which ultimately clouded our decision-making throughout the project. When faced with low interst, our efforts to course-correct were often directed towards the initial vision, rather than exploring new ideas which may have better solved user needs.</p>
+					<p>I wish I had pushed back on my client’s product vision, and encouraged open-mindedness while exploring solutions to the problem. Considering platforms outside of chatbots, and directions outside of broad, full-service motivation might have lead to a more successful solution.
+					<h3>TAKING TOO BROAD AN APPROACH TO PROBLEM SOLVING</h3>
+					<p>While games, our most developed feature, were built on sound motivational tactics, they were limited by the problems we failed to solve for users. By focusing on full-service motivation, we were ignoring the details of users’ emotions and experiences within each step of the process. As a result, our motivational triggers failed to be convincing, and became more annoying than useful.</p>
+					<p>Were I to start this project again, I would pick a problem identified in our research phase, such as bicycle purchasing or commute planning, and use more research methods to understand it deeply. In-person research such as ride-alongs, shop-alongs, repair-alongs, could have uncovered rich insights that lead to more focused, and potentially successful solution.</p>
+					<h1 style="margin: 0 auto"><a href="/index.html">Thanks for reading. Want to go back?</a></h1>
+				</div>
+			</section>
+		</article>
 				<!-- <footer>
 				<ul>
 				    <li><a href="mailto:henry.harboe@gmail.com">email</a></li>
