@@ -62,9 +62,22 @@
   }
 
   nav ul li {
-    padding: 0em 3em .1em 0em;
+    padding: 0em 2em .1em 0em;
     list-style: none;
   }
+
+  nav ul li a {
+      text-decoration: none;
+      color: #cfcfcf;
+      font-family: 'Georgia', 'Serif';
+      font-size: 24px;
+  }
+
+  nav a:hover {
+      color: #759DDA;
+    }
+
+
 
 /* Body
 -------------------------------- */
@@ -96,6 +109,11 @@
   .article-logo {
     max-width: 231px;
     padding: calc(2*var(--baseline-padding)) 0 0 0;
+  }
+
+  .bg-color-dark {
+    background-color: #4F434E;
+    color: #eee;
   }
 
   .bg-color-dark h1 {
@@ -132,11 +150,43 @@
     align-self: baseline;
   }
 
+  .bg-color-dark h1 {
+    font-size: 44px;
+    text-align: center;
+    color: #eee;
+  }
+
   .bg-color-dark a {
     color: #eee;
     font-size: var(--line-height);
     font-weight: normal;
     line-height: var(--line-height);
+    text-decoration: none;
+  }
+
+  .bg-color-dark a:hover {
+    color: #999;
+    font-size: var(--line-height);
+    font-weight: normal;
+    line-height: var(--line-height);
+    text-decoration: none;
+  }
+
+  .bg-color-dark .fig-container-row div img {
+    padding: calc(2*var(--baseline-padding)) var(--baseline-padding) 0 var(--baseline-padding);
+  }
+
+  .bg-color-dark figcaption {
+    font-family: 'Source Sans Pro', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+    /* color: #555; */
+    display: block;
+    padding: var(--baseline-padding) 0 calc(2*var(--baseline-padding)) 0;
+    color: #ccc;
+    max-width: 600px;
   }
 
   /* .bg-color-dark .fig-multi-caption {
@@ -301,36 +351,19 @@
     line-height: 35px;
   }
 
-  nav ul li a {
-      text-decoration: none;
-      color: #cfcfcf;
-      font-family: 'Georgia', 'Serif';
-      font-size: 24px;
-  }
-
-  nav a:hover {
-      color: #759DDA;
-    }
-
   section a, figcaption a {
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Calisto MT W01', 'Serif';
     color: #111;
     line-height: 35px;
   }
 
   a:hover {
-    color: #444;
+    color: #555;
   }
 
   /* Section Styling
   ----------------------------------------------- */
 
-  .bg-color-dark {
-    background-color: #4F434E;
-    color: #eee;
-  }
+
 
   .bg-color-med {
     background-color: #DAD4DA;
@@ -340,12 +373,6 @@
   .bg-color-light {
     background-color: #EEE;
     color: #333;
-  }
-
-  .bg-color-dark h1 {
-    font-size: 44px;
-    text-align: center;
-    color: #eee;
   }
 
   .bg-color-mid h1 {
@@ -490,6 +517,14 @@
     margin: 0;
   }
 
+  .bg-color-dark .fig-container-row div img {
+    padding: calc(2*var(--baseline-padding)) var(--baseline-padding) 0 var(--baseline-padding);
+  }
+
+  .bg-color-dark figcaption {
+    padding: var(--baseline-padding) 0 0 0;
+  }
+
   nav ul {
     display: flex;
     flex-direction: column;
@@ -501,6 +536,8 @@
 
   nav ul li {
     flex-wrap: wrap;
+    padding: 0em 1.5em .1em 0em;
+  }
 
   }
 
