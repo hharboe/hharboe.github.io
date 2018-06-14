@@ -297,6 +297,7 @@
     /* background-color: #4759FF; */
 
   }
+
   h4 {
     font-size: 1.2em;
     padding: .5em 0 .5em 0;
@@ -387,17 +388,18 @@
     /* padding: 3.5em 0 4.5em 0; */
   }
 
- .bg-color-data {
-   /* background-color: #595359; */
-   color: #111;
-   /* padding: 3.5em 0 4.5em 0; */
- }
+  .bg-color-data {
+     /* background-color: #595359; */
+     color: #111;
+     /* padding: 3.5em 0 4.5em 0; */
+  }
 
   .bg-color-mid {
     /* background-color: #D4C5D3; */
     background-color: #D6CBD5;
     color: #111;
   }
+
   .bg-color-light {
     background-color: #EEE;
     color: #333;

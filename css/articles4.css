@@ -1,55 +1,9 @@
-/* Importing FagoNo Regular */
-@import url(//db.onlinewebfonts.com/c/23178151f2a35dd93224374c02489308?family=FagoNo);
-
-@font-face {
-  font-family: "FagoNo";
-    src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot");
-    src: url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/23178151f2a35dd93224374c02489308.svg#FagoNo") format("svg");
-}
-
-/* Importing Calisto MT W01 */
-/* @import url(//db.onlinewebfonts.com/c/2568e173df3a278bff48d9926aa656f6?family=Calisto+MT);
-
-@font-face {
-  font-family: "Calisto MT W01";
-    src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot");
-    src: url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/2568e173df3a278bff48d9926aa656f6.svg#Calisto MT W01") format("svg");
-} */
-
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=1fb4849c-31b7-4d41-ae78-b44432d5eefc");
-    @font-face{
-        font-family:"Calisto MT W01";
-        src:url("Fonts/11c0afbb-00d6-4d28-bffb-8258617d799c.eot?#iefix");
-        src:url("Fonts/11c0afbb-00d6-4d28-bffb-8258617d799c.eot?#iefix") format("eot"),url("Fonts/e8ebb48e-83d5-4fa7-90dc-2a9b2ddac200.woff2") format("woff2"),url("Fonts/0733af84-0892-4502-b0ae-43c8a240535d.woff") format("woff"),url("Fonts/9c18d7bc-649b-4028-bea7-aa891b203dce.ttf") format("truetype"),url("Fonts/1d363a70-3e11-4e61-b494-ef377abf13f9.svg#1d363a70-3e11-4e61-b494-ef377abf13f9") format("svg");
-    }
-    @font-face{
-        font-family:"Calisto MT W01 Italic";
-        src:url("Fonts/5a135341-0d32-4dfe-afcb-74f555e44f16.eot?#iefix");
-        src:url("Fonts/5a135341-0d32-4dfe-afcb-74f555e44f16.eot?#iefix") format("eot"),url("Fonts/18448bbd-67d3-43c0-ab5d-d9d8110382e3.woff2") format("woff2"),url("Fonts/553dcba7-c642-42f1-a6f0-9a26fad95d71.woff") format("woff"),url("Fonts/07532ea6-1226-4c31-b8ff-ab8e3b88fb2f.ttf") format("truetype"),url("Fonts/4a051e2e-9b7b-4239-82bb-e8ec09413050.svg#4a051e2e-9b7b-4239-82bb-e8ec09413050") format("svg");
-    }
-    @font-face{
-        font-family:"Calisto MT W01 Bold";
-        src:url("Fonts/92c05e46-601e-42d5-a49c-06704e3a4140.eot?#iefix");
-        src:url("Fonts/92c05e46-601e-42d5-a49c-06704e3a4140.eot?#iefix") format("eot"),url("Fonts/005e02d9-ea2f-4026-adbc-0c18cf2780ba.woff2") format("woff2"),url("Fonts/d528e644-82d3-4866-8aa2-97384b1d0b56.woff") format("woff"),url("Fonts/5f364268-4f54-40ff-9740-9a68ee89d7f3.ttf") format("truetype"),url("Fonts/ca6c6552-4a34-40c9-a5e7-1f4d599b2793.svg#ca6c6552-4a34-40c9-a5e7-1f4d599b2793") format("svg");
-    }
-    @font-face{
-        font-family:"CalistoMTW01-BoldItalic";
-        src:url("Fonts/3f55f03e-72ba-4287-964b-dbf951223e0b.eot?#iefix");
-        src:url("Fonts/3f55f03e-72ba-4287-964b-dbf951223e0b.eot?#iefix") format("eot"),url("Fonts/958f3866-d813-43d9-b227-03dcd8cb35ac.woff2") format("woff2"),url("Fonts/c52f3f16-e3ce-4132-89ea-cb332c3f4424.woff") format("woff"),url("Fonts/f86fda6a-d378-488f-8111-0ce6a67c33f8.ttf") format("truetype"),url("Fonts/9641924b-58f7-48ca-b089-b8b2d6f32550.svg#9641924b-58f7-48ca-b089-b8b2d6f32550") format("svg");
-    }
 
 /* Variables
 -------------------------------- */
   :root {
     --primary-bg-color: #2B132A;
+    --alt-bg-color: #2C0D2A;
 
 
     --body-font-size: 22px;
@@ -78,7 +32,6 @@
  * {
    padding: 0;
    margin: 0;
-   /* box-sizing: border-box; */
    position: relative;
  }
 
@@ -109,7 +62,7 @@
   }
 
   nav ul li {
-    padding: .46em 3em 0em 0em;
+    padding: 0em 3em .1em 0em;
     list-style: none;
   }
 
@@ -186,7 +139,7 @@
     line-height: var(--line-height);
   }
 
-  .bg-color-dark .fig-multi-caption {
+  /* .bg-color-dark .fig-multi-caption {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -200,12 +153,7 @@
     flex-direction: row;
     justify-content: center;
     padding: 0 var(--baseline-padding);
-  }
-
-  /* .end {
-    padding-bottom: 38px;
   } */
-
 
   /* Figures
   -------------------------------- */
@@ -217,13 +165,20 @@
     justify-content: center;
   }
 
-  figure {
+  .fig-container-col {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: start;
-    align-content: center;
+    align-items: center;
     padding: 0 var(--baseline-padding);
+  }
+
+  .fig-container-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: baseline;
   }
 
   figcaption {
@@ -237,7 +192,26 @@
     padding: var(--baseline-padding) 0 calc(2*var(--baseline-padding)) 0;
   }
 
+  .no-caption {
+    padding: calc(.5*(var(--baseline-padding))) 0 calc(1.5*(var(--baseline-padding))) 0;
+  }
 
+  .center-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .paragraph-container {
+    padding: 16px 24px 28px 32px;
+    background-color: #eee;
+    justify-content: center;
+  }
+
+
+  /* Images
+  -------------------------------- */
 
   .img-gif > *, .img-gif > * > * {
     width: 329px;
@@ -251,55 +225,20 @@
     width: 760px;
   }
 
-
-
-  .center-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-  }
-
-
-
-  .img-small {
+  .img-small > *, .img-small > * > * {
     max-width: 253px;
   }
 
-  .img-large {
-    max-width: 890px;
+  .img-big > *, .img-big > * > * {
+    max-width: 380px;
   }
 
-  .img-banner {
-    max-width: 250px;
-  }
-
-  .img-gif {
-    width: 329px;
-    /* padding: 0 33em; */
-  }
-
-  .img-icon {
-    /* padding: 0 38px 0 38px; */
-  }
-
-  .img-big {
-    width: 380px;
-    /* padding: 0 14px; */
-  }
-
-  .img-big-half {
-    width: 550px;
+  .img-big-half > *, .img-big-half > * > * {
+    max-width: 550px;
   }
 
   /* Headings, Text Stylings
   ----------------------------------------------- */
-
-  .row-paragraph {
-    padding: 16px 24px 28px 32px;
-    background-color: #eee;
-    justify-content: center;
-  }
 
   h1, h2, h3, h4, h5, figcaption {
     font-family: 'Source Sans Pro', sans-serif;
@@ -325,7 +264,7 @@
   .bg-color-med h2, .bg-color-light h2 {
     padding: 56px 0 48px 0;
     font-size: 48px;
-    line-height: 34px;
+    line-height: 52px;
     color: #333333;
     letter-spacing: normal;
     max-width: 780px;
@@ -359,34 +298,28 @@
     line-height: 35px;
   }
 
-  a {
+  nav ul li a {
       text-decoration: none;
-      color: #BBB;
-      font-weight: lighter;
-  }
-  a:hover {
-      color: #f2f2f2
+      color: #cfcfcf;
+      font-family: 'Georgia', 'Serif';
+      font-size: 24px;
   }
 
-  section a {
-    font-weight: bolder;
+  nav a:hover {
+      color: #759DDA;
+    }
+
+  section a, figcaption a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Calisto MT W01', 'Serif';
     color: #111;
+    line-height: 35px;
   }
 
-  section a:hover {
-    color: #666;
+  a:hover {
+    color: #444;
   }
-
-  /* .bg-color-light li, .bg-color-mid li {
-    font-family:'Calisto MT W01', 'Serif';
-    text-align: left;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    padding-bottom: .25em;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  } */
 
   /* Section Styling
   ----------------------------------------------- */
@@ -394,7 +327,6 @@
   .bg-color-dark {
     background-color: #4F434E;
     color: #eee;
-    /* padding-top: 0; */
   }
 
   .bg-color-med {
@@ -413,64 +345,12 @@
     color: #eee;
   }
 
-  .bg-color-data {
-     color: #111;
-  }
-
   .bg-color-mid h1 {
     color: #666;
   }
 
   .bg-color-light h1 {
     color: #999;
-  }
-
-  blockquote {
-      text-align: center;
-      font-style: italic;
-      color: #444;
-      line-height: 1.36em;
-      margin: .5em auto 1.2em;
-      font-size: 1.7em;
-      max-width: 888px;
-  }
-
-  .line-mid {
-    background-color: #CCC;
-    width: 2em;
-    height: 2px;
-    margin: 1.5em auto 2em auto;
-  }
-
-  .line-light {
-    background-color: #BAB1B9;
-    width: 5em;
-    height: 2px;
-    margin: 2em auto 0em auto;
-  }
-
-  .fig-data {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 900px;
-  }
-
-  .data-container {
-
-  }
-
-  .data-header {
-    /* width: 100%; */
-    color: #eee;
-    padding: 36px 100px;
-    background-color: #111;
-  }
-
-  .data-body {
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
   }
 
   h5 {
@@ -486,17 +366,46 @@
     font-weight: normal;
   }
 
+  /* Extra Unused
 
+ blockquote {
+     text-align: center;
+     font-style: italic;
+     color: #444;
+     line-height: 1.36em;
+     margin: .5em auto 1.2em;
+     font-size: 1.7em;
+     max-width: 888px;
+ }
 
+ .line-mid {
+   background-color: #CCC;
+   width: 2em;
+   height: 2px;
+   margin: 1.5em auto 2em auto;
+ }
 
-  /* Data Structure
+ .line-light {
+   background-color: #BAB1B9;
+   width: 5em;
+   height: 2px;
+   margin: 2em auto 0em auto;
+ }
+
+ */
+
+  /* Data Section
   -------------------------------- */
+/*
+
+    .bg-color-data {
+       color: #111;
+    }
 
     .col {
       display: flex;
       flex-direction: column;
       margin: 0;
-      /* padding: 0 0 2em 0; */
       align-items: center;
       padding: 0;
     }
@@ -506,15 +415,11 @@
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
-      /* padding: .5em 0; */
     }
 
     .data-container {
       align-self: start;
       justify-content: start;
-      /* max-width: 28em;
-      min-width: 14em;
-      margin: 0 1em; */
     }
 
     .data-wrapper ul li, .data-wrapper ol li {
@@ -541,8 +446,30 @@
       margin: 0 auto;
     }
 
+    .fig-data {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+    }
 
+    .data-container {
 
+    }
+
+    .data-header {
+      color: #eee;
+      padding: 36px 100px;
+      background-color: #111;
+    }
+
+    .data-body {
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+    }
+
+     */
 
 @media all and (max-width: 740px) {
 
@@ -558,6 +485,20 @@
   figure {
     padding: 0;
     margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 0;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    flex-wrap: wrap;
+
   }
 
   .row-paragraph {
@@ -665,3 +606,11 @@
     nav {
       flex-wrap: wrap;
     } */
+
+
+    /*
+    This CSS resource incorporates links to font software which is the valuable copyrighted
+    property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+    redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+    Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+    */

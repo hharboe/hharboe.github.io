@@ -6,7 +6,7 @@
 body {
     font-size: 24px;
     line-height: 38px;
-    background-color: #2C0D2A;
+    background-color: #2B132A;
 }
 
 header {
@@ -91,7 +91,7 @@ nav ul li {
   color: #cfcfcf;
   font-family: 'Georgia', 'Serif';
   font-size: 19px;
-  font-weight: lighter;
+  font-weight: ligshter;
 }
 
 .button:hover {

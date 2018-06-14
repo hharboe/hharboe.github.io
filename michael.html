@@ -69,15 +69,15 @@
           <p>In fall 2017, Faraday Bicycles Inc. was exploring a new chatbot concept to help riders get more out of their electric bicycles. Thomas Kreek, an employee at Faraday, and past collaborator of mine, contracted me to build an early prototype behind their vision of a "cycling companion.”</p>
         </div>
 				<div class = "fig-container">
-					<figure class = "img-gif">
+					<figure class = "fig-container-col img-gif">
 						<div>
 							<img src = "/images2/michael/logo.gif">
 						</div>
 						<figcaption>I chose to use the likeness of Michael Faraday, famous 19th century physicist and namesake of the company, as the chatbot persona</figcaption>
 				 	</figure>
-					<figure class = "img-gif">
+					<figure class = "fig-container-col img-gif">
 						<div>
-							<video autoplay loop src = "/vids/proto.mov">
+							<video autoplay muted loop src = "/vids/proto.mov">
 						</div>
 						<figcaption>My proof-of-concept prototype used Faraday brand colors and provided users a variety of activity tracking and bike integration features</figcaption>
 				 	</figure>
@@ -93,8 +93,8 @@
 					</ul>
 					<p>Given our limited resources, I pushed to find one area to focus on. At the start of our contract, I lead a “NUF” (Novelty, Usefulness, Feasibility) brainstorming session to rank our potential directions.</p>
 				</div>
-				<div class = "fig-container">
-					<figure class = "img-med-big">
+				<div class = "fig-container no-caption">
+					<figure class = "fig-container-col img-med-big">
 						<div>
 							<img src = "/images2/michael/NUF.png">
 						</div>
@@ -125,7 +125,7 @@
 				 	<p>As I read more into studies of motivation and behavioral change, and found a model published by Stanford University’s Persuasive Technology Lab. This model served as inspiration for the educative process we would design for our target demographic.</p>
 			 	</div>
 				<div class = "fig-container">
-				 	<figure class = "img-med">
+				 	<figure class = "fig-container-col img-med">
 					 	<div>
 							<img src = "/images2/michael/fogg.png">
 						</div>
@@ -136,7 +136,7 @@
 					<p>At the end of my literature review, we wrote our own process to convince our demographic to start cycling regularly.</p>
 			 	</div>
 				<div class = "fig-container">
-				 	<figure class = "img-med-big">
+				 	<figure class = "fig-container-col img-med-big  no-caption">
 					 	<div>
 							<img src = "/images2/michael/motivation_process.png">
 						</div>
@@ -149,7 +149,7 @@
 				 	<p>I formed distinct persona archetypes by aligning similar responses from interview subjects. This lead to three positive personas we would build for, and three we would avoid.</p>
 			 	</div>
 				<div class = "fig-container">
-				 	<figure class = "img-med-big">
+				 	<figure class = "fig-container-col img-med-big  no-caption">
 					 	<div>
 							<img src = "/images2/michael/personas.png">
 						</div>
@@ -159,7 +159,7 @@
 					<p>Using insights from our interviews, I was able to the most common and crucial tasks to our behavioral change process. This list would guide the direction for confidence-building and motivational trigger features.</p>
 			 	</div>
 				<div class = "fig-container">
-			 		<figure class = "img-med-big">
+			 		<figure class = "fig-container-col img-med-big  no-caption">
 				 		<div>
 							<img src = "/images2/michael/tasks.png">
 						</div>
@@ -172,13 +172,13 @@
 				 	<p>We found that Messenger offered a few unique chatbot affordances: Card Carousels and Quick Replies.</p>
 				</div>
 			 	<div class = "fig-container">
-					<figure class = "img-gif">
+					<figure class = "fig-container-col img-gif">
 					 	<div>
 							<img src = "/images2/michael/carousel.png">
 						</div>
 						<figcaption class = "multi-caption img-gif">Messenger’s card carousels support images, descrriptions, and buttons</figcaption>
 					</figure>
-					<figure class = "img-gif">
+					<figure class = "fig-container-col img-gif">
 						<div>
 					 		<img src = "/images2/michael/reply.png">
 						</div>
@@ -191,7 +191,7 @@
 					<p>Microsoft’s Bot Framework gave us access to LUIS, a natural language processing tool. LUIS would allow us to train a machine learning-based language model to interpret users’ messages and direct them to a particular chatbot function.</p>
 				</div>
 			 	<div class = "fig-container">
-					<figure class = "img-med-big">
+					<figure class = "fig-container-col img-med-big">
 						<div>
 							<img src = "/images2/michael/luis.png">
 						</div>
@@ -208,10 +208,10 @@
 					<h2>BUILDING A CHARACTER</h2>
 					<p>My client was adamant about designing a rich character behind our chatbot’s messaging, to inspire emotional connections from our users. Keeping my original concept of Michael Faraday, I wrote guidelines for how our team should write conversation flows.</p>
 				</div>
-				<figure class = "fig-container">
-					<div class="row-paragraph">
+				<figure class = "fig-container-row">
+					<div class="paragraph-container">
 						<h3>1. MAINTAIN PERSONALITY</h3>
-					 	<ul>
+					 	<ul class = "copy-ul">
 							<li>Write in-character with familiar language</li>
 							<li>Avoid monotonous enthusiasm; excessive '!’s</li>
 							<li>Avoid platitudes; emphasize factual statements</li>
@@ -219,9 +219,9 @@
 						<h4><s>“Everyone can ride if the weather’s nice!”</s></h4>
 						<h4>"Cycling in a t-shirt is comfortable above 70°.”</h4>
 					</div>
-					<div class="row-paragraph">
+					<div class="paragraph-container">
 						<h3>2. BUILD USER CONFIDENCE</h3>
-						<ul>
+						<ul class = "copy-ul">
 							<li>Treat users as if they're confident</li>
 						 	<li>Ask users to one-up their presonal best</li>
 						 	<li>Avoid vapid praise, recognize accomplishments</li>
@@ -237,9 +237,9 @@
 				 	<p>The first education feature we worked on were <em>Knowledge Cards</em>, images providing bite-size motivational and confidence-boosting information on topics and tasks we identified were important or challenging for our users.</p>
 			 	</div>
 				<div class = "fig-container">
-		 			<figure class = "img-gif">
+		 			<figure class = "fig-container-col img-gif">
 			 			<div>
-			 				<video autoplay controls loop class = "img-gif" src = "/vids/knowledge.mov">
+			 				<video autoplay muted controls loop class = "img-gif" src = "/vids/knowledge.mov">
 			 			</div>
 			 			<figcaption class = "multi-caption img-gif">Users could browse cards by topic after selecting “Cycling Guide” from our menu</figcaption>
 		 			</figure>
@@ -247,17 +247,17 @@
 				<div class="copy">
 			 		<p>Early usability testing revealed that non-cyclists felt intimidated when asked to explore cards by topic. One user said, <em>“This is hard for me to get through, because, to be honest, I’m not sure what I don’t know.”</em> Another user said, <em>“I can see how this would help people, but it’s too tedious for me.”</em></p>
 			 		<p>I identified two problems with our current design based on feedback:</p>
-			 		<ol>
-				 		<li>Lack of context: Knowledge Cards alone were not substantial 		enough to create a lasting effect on users’ confidence.</li>
-				 		<li>Poor navigation: Our navigation structure for Knowledge Cards did not match users’ mental models for learning</li>
+			 		<ol class = "copy-ol">
+				 		<li><em>Lack of context:</em> Knowledge Cards alone were not substantial enough to create a lasting effect on users’ confidence.</li>
+				 		<li><em>Poor navigation:</em> Our navigation structure for Knowledge Cards did not match users’ mental models for learning</li>
 			 		</ol>
 			 		<h3>CONSIDERING SCENARIOS TO IMPROVE CONTEXT</h3>
 			 		<p>To add substance to users' interaction with Knowledge Cards, we wrote conversational procedures that included multiple cards, calls to APIs, and even reminders to finish tasks. We mapped these procedures to complicated scenarios that single cards could not address on their own.</p>
 		 		</div>
 				<div class = "fig-container">
-			 		<figure class = "img-gif">
+			 		<figure class = "fig-container-col img-gif">
 						<div>
-							<video autoplay controls loop class = "img-gif" src = "/vids/safety.mov">
+							<video autoplay muted controls loop class = "img-gif" src = "/vids/safety.mov">
 						</div>
 						<figcaption class = "multi-caption img-gif">Instead of searching for and choosing cards from our <em>Maintenance</em> topic, users could now follow a guided <em>Bicycle Safety Check</em></figcaption>
 		 	 		</figure>
@@ -267,9 +267,9 @@
 				 	<p>Our solution to the navigation problem was allowing users to interact with our Knowledge Cards in a question-and-answer format. Users would be able to ask unique questions from our chatbot, and our language model would map their question to the best-fitting card.</p>
 		 		</div>
 				<div class = "fig-container">
-					<figure class = "img-gif">
+					<figure class = "fig-container-col img-gif">
 		 				<div>
-		 					<video autoplay controls loop class = "img-gif" src = "/vids/luis.mov">
+		 					<video autoplay muted controls loop class = "img-gif" src = "/vids/luis.mov">
 		 				</div>
 		 				<figcaption class = "multi-caption img-gif">Our model mapped user queries to all Knowledge Cards, Procedures, and Settings</figcaption>
 					</figure>
@@ -280,7 +280,7 @@
 					<p>We brainstormed ideas for these games, and sent a web survey asking participants to rank each concept. After identifying the three games most popular for each persona type, I wrote outlines for the three games in collaboration with my developer.</p>
 				</div>
 				<div class = "fig-container">
-					<figure class = "img-med-big">
+					<figure class = "fig-container-col img-med-big">
 						<div>
 							<img src = "/images2/michael/mindmap.png">
 						</div>
@@ -291,15 +291,15 @@
 					<p>With approval from our client, I started writing detailed game logic and conversation scripts, and my developer started coding. Designing, developing, and shipping three games took over a month to complete.</p>
 				</div>
 				<div class = "fig-container">
-					<figure class = "img-gif">
+					<figure class = "fig-container-col img-gif">
 		 				<div>
-							<video autoplay controls loop class = "img-gif" src = "/vids/zto.mov">
+							<video autoplay muted controls loop class = "img-gif" src = "/vids/zto.mov">
 						</div>
 						<figcaption class = "multi-caption img-gif">Non-cyclists could use <em>Zero to One</em> to refamiliarize themselves with cycling</figcaption>
 		 			</figure>
-					<figure class = "img-gif">
+					<figure class = "fig-container-col img-gif">
 						<div>
-							<video autoplay controls loop src = "/vids/mp.mov">
+							<video autoplay muted controls loop src = "/vids/mp.mov">
 						</div>
 						<figcaption class = "multi-caption img-gif"><em>Marco Polo</em> challenged users to take more recreational rides, recommending destinations along the way</figcaption>
 					</figure>
@@ -309,9 +309,9 @@
 					<p>Once our games were live, I added a simple onboarding process during users’ first login. The onboarding process asked users to self-select their persona type, and a game that best fits their cycling goals. I also used this opportunity to introduce users to our character, recommend tools they may find useful, and share two helpful navigation tricks.</p>
 				</div>
 				<div class = "fig-container">
-					<figure class = "img-gif">
+					<figure class = "fig-container-col img-gif">
 		 				<div>
-							<video autoplay controls loop src = "/vids/onboard.mov">
+							<video autoplay muted controls loop src = "/vids/onboard.mov">
 						</div>
 						<figcaption class = "multi-caption img-gif">Our onboarding process required users to make two selections that would guide the rest of their experience with our chatbot</figcaption>
 	 				</figure>
