@@ -214,15 +214,18 @@
   -------------------------------- */
 
   .img-gif > *, .img-gif > * > * {
-    width: 329px;
+    max-width: 329px;
+    width: 100%;
   }
 
   .img-med > *, .img-med > * > * {
-    width: 426px;
+    max-width: 426px;
+    width: 100%;
   }
 
   .img-med-big > *, .img-med-big > * > * {
-    width: 760px;
+    max-width: 760px;
+    width: 100%;
   }
 
   .img-small > *, .img-small > * > * {
