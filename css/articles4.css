@@ -177,16 +177,10 @@
   }
 
   .bg-color-dark figcaption {
-    font-family: 'Source Sans Pro', 'sans-serif';
-    font-weight: 400;
-    font-size: 16px;
     text-align: center;
-    line-height: 26px;
-    /* color: #555; */
     display: block;
     padding: var(--baseline-padding) 0 calc(2*var(--baseline-padding)) 0;
     color: #ccc;
-    max-width: 600px;
   }
 
   /* .bg-color-dark .fig-multi-caption {
@@ -213,6 +207,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: calc(.5*(var(--baseline-padding)))
   }
 
   .fig-container-col {
@@ -239,11 +234,11 @@
     line-height: 26px;
     color: #555;
     display: block;
-    padding: var(--baseline-padding) 0 calc(2*var(--baseline-padding)) 0;
+    padding: var(--baseline-padding) 0 calc(1.5*var(--baseline-padding)) 0;
   }
 
   .no-caption {
-    padding: calc(.5*(var(--baseline-padding))) 0 calc(1.5*(var(--baseline-padding))) 0;
+    padding: 0 0 calc(1.5*(var(--baseline-padding))) 0;
   }
 
   .center-container {
@@ -316,7 +311,7 @@
 
   .bg-color-med h2, .bg-color-light h2 {
     padding: 56px 0 48px 0;
-    font-size: 48px;
+    font-size: 47px;
     line-height: 52px;
     color: #333333;
     letter-spacing: normal;
@@ -324,7 +319,7 @@
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 34px;
     padding: 28px 0 26px 0;
     color: #222;

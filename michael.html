@@ -39,6 +39,7 @@
 				<ul>
 					<li><a href="/work.html">Work</a></li>
 					<li><a href="/journal.html">Journal</a></li>
+
 				</ul>
 			</nav>
 		</header>
@@ -187,7 +188,7 @@
 			 	</div>
 				<div class="copy">
 					<p><em>Card Carousels</em> and <em>Quick Replies</em> would allow us to write both sides of users' conversations. Traversing users through predetermined conversation paths would hopefully avoid most instances of misinterpretted user intent.</p>
-					<h3>SUPPORTING FREE-TEXT USER ENTRIES</h3>
+					<h3>SUPPORTING FREE-TEXT QUERIES</h3>
 					<p>Microsoft’s Bot Framework gave us access to LUIS, a natural language processing tool. LUIS would allow us to train a machine learning-based language model to interpret users’ messages and direct them to a particular chatbot function.</p>
 				</div>
 			 	<div class = "fig-container">
@@ -205,7 +206,7 @@
 		 	<section class = "bg-color-med" id="design" name="design">
 				<div class="copy">
 					<h1>DESIGN</h1>
-					<h2>BUILDING A CHARACTER</h2>
+					<h2>CREATING A CHARACTER</h2>
 					<p>My client was adamant about designing a rich character behind our chatbot’s messaging, to inspire emotional connections from our users. Keeping my original concept of Michael Faraday, I wrote guidelines for how our team should write conversation flows.</p>
 				</div>
 				<figure class = "fig-container-row">
@@ -233,8 +234,8 @@
 				</figure>
 			 	<div class="copy">
 					<p>My guidelines were inspired by a few books and articles on <a href="https://www.goodreads.com/book/show/12910715-designing-for-emotion">designing for emotion</a>, <a href="https://www.nngroup.com/articles/legibility-readability-comprehension/">writing for mobile interfaces</a>, and <a href-"https://www.goodreads.com/book/show/32758034-designing-bots">avoiding common pitfalls</a> of monotonous software characters.</p>
-				 	<h2>DESIGNING EDUCATION</h2>
-				 	<p>The first education feature we worked on were <em>Knowledge Cards</em>, images providing bite-size motivational and confidence-boosting information on topics and tasks we identified were important or challenging for our users.</p>
+				 	<h2>ITERATING ON CONTENT</h2>
+				 	<p>The first educational content we worked on were <em>Knowledge Cards</em>, images providing bite-size motivational and confidence-boosting information on topics and tasks we identified were important or challenging for our users.</p>
 			 	</div>
 				<div class = "fig-container">
 		 			<figure class = "fig-container-col img-gif">
@@ -251,7 +252,7 @@
 				 		<li><em>Lack of context:</em> Knowledge Cards alone were not substantial enough to create a lasting effect on users’ confidence.</li>
 				 		<li><em>Poor navigation:</em> Our navigation structure for Knowledge Cards did not match users’ mental models for learning</li>
 			 		</ol>
-			 		<h3>CONSIDERING SCENARIOS TO IMPROVE CONTEXT</h3>
+			 		<h3>IMPROVING CONTEXT WITH SCENARIOS</h3>
 			 		<p>To add substance to users' interaction with Knowledge Cards, we wrote conversational procedures that included multiple cards, calls to APIs, and even reminders to finish tasks. We mapped these procedures to complicated scenarios that single cards could not address on their own.</p>
 		 		</div>
 				<div class = "fig-container">
@@ -263,7 +264,7 @@
 		 	 		</figure>
 				</div>
 		 		<div class="copy">
-				 	<h3>CONSIDERING MENTAL MODELS TO IMPROVE NAVIGATION</h3>
+				 	<h3>ADHERING TO "Q&A" MENTAL MODELS</h3>
 				 	<p>Our solution to the navigation problem was allowing users to interact with our Knowledge Cards in a question-and-answer format. Users would be able to ask unique questions from our chatbot, and our language model would map their question to the best-fitting card.</p>
 		 		</div>
 				<div class = "fig-container">
@@ -275,9 +276,16 @@
 					</figure>
 				</div>
 				<div class="copy">
-					<h3>GOING ONE STEP FURTHER WITH GAMIFICATION</h3>
-					<p>With intentions to increase user engagement, my client directed me to write text-based, educational games around our existing features. His vision was to provide users with end-to-end guidance along real-world goals, e.g. learning to cycle in traffic, or attempting a commute to work.</p>
-					<p>We brainstormed ideas for these games, and sent a web survey asking participants to rank each concept. After identifying the three games most popular for each persona type, I wrote outlines for the three games in collaboration with my developer.</p>
+					<h2>USING 'CHALLENGES' TO BOOST ENGAGEMENT</h2>
+					<!-- <h3>ATTEMPTING TO BOOST USER ENGAGEMENT</h3> -->
+					<p>Despite our efforts to craft emotional character interactions, and make discoverable/usable educational content, users still weren't swayed to use Michael regularly. This was understandable—chatbots are still unfamiliar to many, and our cycling educational content was not necessarily attention-grabbing.</p>
+					<p> With intentions to increase user engagement, our team considered writing text-based, educational games around our existing features. The vision was to provide users with end-to-end guidance along real-world goals, e.g. learning to cycle in traffic, or commuting to work.</p>
+					<h3>GAUGING INTEREST WITH SURVEYS</h3>
+					<p>I distributed <a href="www.surveymonkey.com">SurveyMonkey</a> survey asking users to provide feedback on our initial game concepts. We received a ranking of concepts, suggesting a feasible product roadmap, but most users were underwhelmed by the concept overall.</p>
+					<p>Frequent, confident riders had the most negative feedback, including, <em>"I'm very happy already with Strava, where I can measure myself and set my own goals. I don't need someone else inventing arbitrary tasks for me."</em>Under half of inexperienced riders said were interested in changing their cycling behavior, and even fewer said they would participate in challenges orchestrated by an app.
+						<p>Despite the dreary feedback, my client asked us to continue to develop three cycling games in the last two months of our contract.</p>
+					<h3>GAMIFYING <em>MOTIVATION</em> TASKS AND USER GOALS</h3>
+					<p> After identifying the most popular concepts for our user base, and checking them against our list of motivational tasks and persona goals, I wrote outlines for three games our chatbot could support.</p>
 				</div>
 				<div class = "fig-container">
 					<figure class = "fig-container-col img-med-big">
@@ -288,7 +296,12 @@
 					</figure>
 				</div>
 				<div class="copy">
-					<p>With approval from our client, I started writing detailed game logic and conversation scripts, and my developer started coding. Designing, developing, and shipping three games took over a month to complete.</p>
+					<p>I wrote game logic and copy for each game, while my developer started coding. Designing, developing, and shipping three games took over a month to complete. Our three games were:</p>
+					<ul class = "copy-ul">
+						<li><em>Zero to One:</em> Transitioning from non-cyclist to regular cyclist</li>
+						<li><em>Marco Polo:</em> Setting goals to bike to local attractions</li>
+						<li><em>Workplace Warrior:</em> Setting goals for bike-to-work commutes
+					</ul>
 				</div>
 				<div class = "fig-container">
 					<figure class = "fig-container-col img-gif">
@@ -304,9 +317,9 @@
 						<figcaption class = "multi-caption img-gif"><em>Marco Polo</em> challenged users to take more recreational rides, recommending destinations along the way</figcaption>
 					</figure>
 				</div>
-				<div class="copy">
-					<h3>BUILDING HABITS INTO ONBOARDING</h3>
-					<p>Once our games were live, I added a simple onboarding process during users’ first login. The onboarding process asked users to self-select their persona type, and a game that best fits their cycling goals. I also used this opportunity to introduce users to our character, recommend tools they may find useful, and share two helpful navigation tricks.</p>
+				<!-- <div class="copy">
+					<h3>ENROLLING USERS DURING ONBOARDING</h3>
+					<p>Once our games were live, I added a simple onboarding process that asks users to self-select their persona type, and a game that best fits their cycling goals. I used this opportunity to also introduce our character, and recommend tools they may find useful.</p>
 				</div>
 				<div class = "fig-container">
 					<figure class = "fig-container-col img-gif">
@@ -315,29 +328,42 @@
 						</div>
 						<figcaption class = "multi-caption img-gif">Our onboarding process required users to make two selections that would guide the rest of their experience with our chatbot</figcaption>
 	 				</figure>
+				</div> -->
+				<div class="copy">
+					<p>Testing games was a continuous and time-intensive iterative process. Early usability testing revealed that <em>less text</em>, <em>more bullets and visual content</em>, and <em>regular communication of in-game progress</em> was helpful and motivating to stay engaged over time.</p>
+					<h3>OBSERVING LOW USER ENGAGEMENT</h3>
+					<p>In our last two weeks, we made a big push for more users, but received a lackluster response from our cycling games. While disappointed, we were not overly surprised, based on the results of our latest survey, and plenty of skepticism we received throughout the development process.</p>
+					<p><a href="https://www.facebook.com/cyclingcompanion">Michael: Cycling Companion</a> is now live on <a href="https://www.messenger.com">Facebook Messenger</a>, and I check-in regularly with my client to see how user engagement fluctuates. Ultimately, the product did not succeed at its goal of the motivating a high percentage of reluctant cyclists to start cycling. My client is now in contact with cycling manufacturers, and advocacy groups, where he (and I) hope its functionality may serve useful.</p>
 				</div>
 			</section>
 			<section class = "bg-color-light" id="impact" name="impact">
 				<div class="copy">
 					<h1>ASSESSING IMPACT</h1>
-					<h2>IDENTIFYING POOR DECISIONS</h2>
-					<p>In our last few weeks, we made a big push for more users, but received a lackluster response. While disappointed, we were not overly surprised. We had received plenty of skepticism towards our product concept.</p>
-					<p>As I reached the end of my six month contract, I had many ideas where  both I and our team could have made different decision to benefit the outcome of the project. I think two changes would have had the most impact.</p>
+					<h2>REFLECTING ON DECISIONS</h2>
+					<p>As I reached the end of my six month contract, I had many ideas where  both I and our team could have made different decision to benefit the outcome of the project.</p>
 					<h3>STARTING WITH A PRODUCT IN MIND</h3>
-					<p>This project began as a product searching for a user base, which ultimately clouded our decision-making throughout the project. When faced with low interst, our efforts to course-correct were often directed towards the initial vision, rather than exploring new ideas which may have better solved user needs.</p>
-					<p>I wish I had pushed back on my client’s product vision, and encouraged open-mindedness while exploring solutions to the problem. Considering platforms outside of chatbots, and directions outside of broad, full-service motivation might have lead to a more successful solution.
-					<h3>TAKING TOO BROAD AN APPROACH TO PROBLEM SOLVING</h3>
-					<p>While games, our most developed feature, were built on sound motivational tactics, they were limited by the problems we failed to solve for users. By focusing on full-service motivation, we were ignoring the details of users’ emotions and experiences within each step of the process. As a result, our motivational triggers failed to be convincing, and became more annoying than useful.</p>
+					<p>This project started as a product searching for a user base. I believe this particially clouded our team's decision-making throughout the project. For example, when faced with low user interest, our efforts to course-correct were often directed towards modifying the initial vision, rather than exploring new concepts which may have better addressed user needs.</p>
+					<p>In the future, I hope to give stronger pushback, and encourage more open-mindedness, whenever a client's product vision is particularly set in stone. As it relates to this project, considering platforms outside of chatbots and directions outside of broad, full-service motivation might have lead to a more successful solution.</p>
+					<h3>PROBLEM SOLVING AT TOO BROAD A SCALE</h3>
+					<p>I believe the scope of problems this project addressed was too broad. By focusing on full-service motivation, we were ignoring the details of users’ emotions and experiences within each step of the process. For example, <em>Challenges</em> were built on sound motivational tactics for cycling motivation as a whole, but failed to address micro-problems users face during the cycling educative process. As a result, our motivational triggers failed to be convincing.</p>
 					<p>Were I to start this project again, I would pick a problem identified in our research phase, such as bicycle purchasing or commute planning, and use more research methods to understand it deeply. In-person research such as ride-alongs, shop-alongs, repair-alongs, could have uncovered rich insights that lead to more focused, and potentially successful solution.</p>
-					<h1 style="margin: 0 auto"><a href="/index.html">Thanks for reading. Want to go back?</a></h1>
+					<h3>LENGTHY DEVELOPMENT AND TEST SPRINTS</h3>
+					<p>Our team designed and iterated hundreds of pieces of educational content and chatbot conversations during our development process. Rather than create a few artifacts for usability testing, we often created many more to test usability <em>and</em> functionality. I think this categorically slowed down our learning process, leading to fewer insights that came later than would be ideal.</p>
+				</section>
+				<section class = "bg-color-dark" style="background-color: #2B132A">
+					<div class = "wide-copy">
+						<h1 style = "padding-bottom: 0em">Thanks for reading.</h1>
+						<div class = "fig-container-row">
+							<h2 style = "padding: 1em 3em 0 0">
+								<a href="/index.html">Next case</a>
+							</h2>
+							<h2 style = "padding: 1em 1em 0 0">
+								<a href="/work.html">Back</a>
+							</h2>
+						</div>
+						<p style = "padding-top: 3em; margin: 0 auto; text-align: center">© 2018 Henry Harboe</p>
 				</div>
 			</section>
 		</article>
-				<!-- <footer>
-				<ul>
-				    <li><a href="mailto:henry.harboe@gmail.com">email</a></li>
-				    <li><a href="https://github.com/hharboe">github.com/hharboe</a></li>
-				</ul>
-				</footer> -->
-				</body>
-				</html>
+	</body>
+</html>
