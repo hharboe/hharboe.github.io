@@ -92,7 +92,7 @@
 						<li>Utility: Attract regular use from frequent cyclists</li>
 						<li>Mascot: Create a brand cycling evangelists can rally behind</li>
 					</ul>
-					<p>Given our limited resources, I pushed to find one area to focus on. At the start of our contract, I lead a “NUF” (Novelty, Usefulness, Feasibility) brainstorming session to rank our potential directions.</p>
+					<p>Given our limited resources, I pushed to find one area to focus on. At the start of our contract, I lead a <a href="https://www.nngroup.com/articles/affinity-diagram/">“NUF”</a> (Novelty, Usefulness, Feasibility) brainstorming session to rank our potential directions.</p>
 				</div>
 				<div class = "fig-container no-caption">
 					<figure class = "fig-container-col img-med-big">
@@ -119,10 +119,10 @@
 					 	<li><em>Reluctant to Cycle:</em> &nbsp;Non-cyclists facing irrevocable deterents</li></em>
 				 	</ol>
 				 	<p>We turned our focus to <em>Enthused and Confident</em>, cyclists who could use tools to plan or enjoy more rides, and <em>Interested but Concerned</em> non-cyclists, who need an extra nudge or lesson before starting.</p>
-				 	<h3>2. HOW DO WE HELP OUR DEMOGRAPHIC?</h3>
+				 	<h3>2. WHICH PROBLEMS CAN WE ADDRESS?</h3>
 				 	<p>While exploring factors of cycling motivation, I found many studies on cycling deterrents. Environmental barriers such as <em>hilly terrains</em>, <em>high-traffic density</em>, or <em>routes over 10km</em> are by far the most deterring. We decided early on that helping users bypass these environmental barriers would be out of scope.</p>
 				 	<p>When environments are slightly more favorabe to cycling, research shows that <em>confidence,</em> <em>perceived benefits of cycling</em>, and <em>social support</em> can be the next-strongest factors to promote cycling. Focusing on these factors looked like our next-best approach.</p>
-				 	<h3>3. WHAT IS OUR PROCESS FOR CYCLING MOTIVATION?</h3>
+				 	<h3>3. WHAT IS OUR MODEL OF CYCLING MOTIVATION?</h3>
 				 	<p>As I read more into studies of motivation and behavioral change, and found a model published by Stanford University’s Persuasive Technology Lab. This model served as inspiration for the educative process we would design for our target demographic.</p>
 			 	</div>
 				<div class = "fig-container">
@@ -134,7 +134,7 @@
 				 	</figure>
 				</div>
 				<div class="copy">
-					<p>At the end of my literature review, we wrote our own process to convince our demographic to start cycling regularly.</p>
+					<p>At the end of my literature review, we wrote our own model of what's required to start cycling regularly.</p>
 			 	</div>
 				<div class = "fig-container">
 				 	<figure class = "fig-container-col img-med-big  no-caption">
@@ -146,7 +146,17 @@
 			 	<div class="copy">
 				 	<p>First, users had to find a purpose to cycle to renew their interest. Then, access to confidence-boosting tools would enable users to commit to the proces. Finally, motivational triggers would inspire behavioral change over time.</p>
 				 	<h2>USER INTERVIEWS</h2>
-				 	<p>To better understand the priorities in our target demographic, we spoke with 20 adults across a range of demographics, cities, and cycling aptitudes. We asked questions about recent cycling experiences, fitness and cycling goals, and priorities when making riding decisions.</p>
+				 	<p>To better understand the priorities in our target demographic, we spoke with 16 adults across a range of demographics, cities, and cycling aptitudes. We asked questions about recent cycling experiences, fitness and cycling goals, and priorities when making riding decisions.</p>
+				</div>
+				<div class = "fig-container-row">
+					<figure class = "fig-container-col img-med-big">
+						<div>
+							<img src = "/images2/michael/surveyfull.png">
+						</div>
+          	<figcaption>Sample of our interview questions, written with influence from Steve Portigal's <a href="https://www.amazon.com/Interviewing-Users-Uncover-Compelling-Insights/dp/193382011X">Interviewing Users</a>.</figcaption>
+					</figure>
+				</div>
+				<div class="copy">
 				 	<p>I formed distinct persona archetypes by aligning similar responses from interview subjects. This lead to three positive personas we would build for, and three we would avoid.</p>
 			 	</div>
 				<div class = "fig-container">
@@ -157,7 +167,8 @@
 				 	</figure>
 				</div>
 				<div class="copy">
-					<p>Using insights from our interviews, I was able to the most common and crucial tasks to our behavioral change process. This list would guide the direction for confidence-building and motivational trigger features.</p>
+					<h3>ADDING TASKS TO OUR MODEL OF MOTIVATION</h3>
+					<p>Using insights from our interviews, I was able to point to the most common and crucial tasks to our behavioral change process. This list would guide the direction for confidence-building and motivational trigger features.</p>
 			 	</div>
 				<div class = "fig-container">
 			 		<figure class = "fig-container-col img-med-big  no-caption">
@@ -167,10 +178,10 @@
 			 		</figure>
 				</div>
 				<div class="copy">
-					<h2>EXPLORING TECH CONSTRAINTS</h2>
+					<h2>TECH CONSTRAINTS</h2>
 					<p>Before any prototyping, we had to decide whether we wanted to release our chatbot in a native app, or through a chatbot platform like Facebook Messenger or Slack. We opted to release on Facebook Messenger, partially because of its cross-device support and ubiquity, and partially due to our limited budget and timeline.</p>
 				 	<h3>TWO-SIDED CONVERSATIONS</h3>
-				 	<p>We found that Messenger offered a few unique chatbot affordances: Card Carousels and Quick Replies.</p>
+				 	<p>We found that Messenger offered a few unique chatbot affordances that would be helpful for our bootstrapping: Card Carousels and Quick Replies.</p>
 				</div>
 			 	<div class = "fig-container">
 					<figure class = "fig-container-col img-gif">
@@ -200,14 +211,14 @@
 					</figure>
 				</div>
 				<div class="copy">
-					<p>We hoped supporting free text responses would be necessary given users’ experience and understanding of the Messenger interface. As an added benefit, we could map user-inputted keywords to common features or functions. For example, keywords such as “Weather” or “Exit” could respectively direct users to our weather feature, or escape from the middle of an in-progress conversation.</p>
+					<p>We felt supporting free text responses would be a requirement given users’ experience and understanding of the Messenger interface. As an added benefit, we could map user-inputted keywords to common features or functions.</p>
 				</div>
 			</section>
 		 	<section class = "bg-color-med" id="design" name="design">
 				<div class="copy">
 					<h1>DESIGN</h1>
 					<h2>CREATING A CHARACTER</h2>
-					<p>My client was adamant about designing a rich character behind our chatbot’s messaging, to inspire emotional connections from our users. Keeping my original concept of Michael Faraday, I wrote guidelines for how our team should write conversation flows.</p>
+					<p>My client was adamant about designing a rich character behind our chatbot’s messaging, in effort to inspire an emotional connection from our users. Keeping my original concept of Michael Faraday, I wrote guidelines for how our team should write conversation flows.</p>
 				</div>
 				<figure class = "fig-container-row">
 					<div class="paragraph-container">
@@ -230,11 +241,11 @@
 				 		<h4><s>“Great job! You are doing amazing.”</s></h4>
 				 		<h4>“21 miles cycled this week. How about 30 next week?”</h4>
 			 		</div>
-					<figcaption class = "single-caption">Above is a sample from my full list of guidelines, published <a href="https://paper.dropbox.com/doc/Dialogue-Style-Guide-nSx8XXsOCb9MGjDOXsorh">here</a>.</figcaption>
+					<figcaption class = "single-caption">My full list of guidelines are published <a href="https://paper.dropbox.com/doc/Dialogue-Style-Guide-nSx8XXsOCb9MGjDOXsorh">here</a>.</figcaption>
 				</figure>
 			 	<div class="copy">
 					<p>My guidelines were inspired by a few books and articles on <a href="https://www.goodreads.com/book/show/12910715-designing-for-emotion">designing for emotion</a>, <a href="https://www.nngroup.com/articles/legibility-readability-comprehension/">writing for mobile interfaces</a>, and <a href-"https://www.goodreads.com/book/show/32758034-designing-bots">avoiding common pitfalls</a> of monotonous software characters.</p>
-				 	<h2>ITERATING ON CONTENT</h2>
+				 	<h2>ITERATING ON EDUCATIONAL CONTENT</h2>
 				 	<p>The first educational content we worked on were <em>Knowledge Cards</em>, images providing bite-size motivational and confidence-boosting information on topics and tasks we identified were important or challenging for our users.</p>
 			 	</div>
 				<div class = "fig-container">
@@ -339,7 +350,7 @@
 			<section class = "bg-color-light" id="impact" name="impact">
 				<div class="copy">
 					<h1>ASSESSING IMPACT</h1>
-					<h2>REFLECTING ON DECISIONS</h2>
+					<h2>REFLECTING ON THE WORK</h2>
 					<p>As I reached the end of my six month contract, I had many ideas where  both I and our team could have made different decision to benefit the outcome of the project.</p>
 					<h3>STARTING WITH A PRODUCT IN MIND</h3>
 					<p>This project started as a product searching for a user base. I believe this particially clouded our team's decision-making throughout the project. For example, when faced with low user interest, our efforts to course-correct were often directed towards modifying the initial vision, rather than exploring new concepts which may have better addressed user needs.</p>
@@ -355,7 +366,7 @@
 						<h1 style = "padding-bottom: 0em">Thanks for reading.</h1>
 						<div class = "fig-container-row">
 							<h2 style = "padding: 1em 3em 0 0">
-								<a href="/index.html">Next case</a>
+								<a href="/lumened.html">Next case</a>
 							</h2>
 							<h2 style = "padding: 1em 1em 0 0">
 								<a href="/work.html">Back</a>
