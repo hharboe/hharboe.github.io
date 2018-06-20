@@ -15,7 +15,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 550px;
+  max-width: 565px;
   padding: 0 1em 0 1em;
 }
 
@@ -37,7 +37,7 @@ nav {
 
 .header-logo {
   max-width: 5.5em;
-  padding-top: 2.9em;
+  padding-top: 3em;
   /* margin: 0 auto; */
 }
 
@@ -110,7 +110,7 @@ nav ul li {
 }
 
 main {
-  max-width: 550px;
+  max-width: 565px;
   margin: 0 auto;
   padding: 0 1em 0 1em;
 }
@@ -128,7 +128,7 @@ a:hover {
 }
 
 p, ul li, a {
-  list-style: none;
+  /* list-style: none; */
   /* padding: 0; */
   /* margin: 0; */
   color: #cfcfcf;
@@ -136,6 +136,30 @@ p, ul li, a {
   font-size: 24px;
 }
 
+.main-ul, .main-ol {
+  padding: 8px 0 8px 25px;
+  /* line-height: var(--baseline-padding); */
+}
+
+.main-ul li, .main-ol li {
+  /* font-family: 'Calisto MT W01', 'Serif';
+  text-align: left;
+  font-weight: 200;
+  font-size: 23px;
+  line-height: 35px; */
+  line-height: 37px;
+  padding: 7px 0 7px 0;
+  /* list-style: none; */
+}
+
+.contact-ul li {
+  list-style: none;
+  /* line-height: 37px; */
+}
+
+.contact-ul {
+
+}
 
 h2, footer p, footer a {
   color: #887A87;
@@ -149,7 +173,7 @@ h2 {
 }
 
 .personal-photo {
-  padding: 2em 0 1.778em 0;
+  padding: 1em 0 1.778em 0;
   max-width: 100%;
 }
 
