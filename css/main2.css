@@ -45,6 +45,7 @@ nav {
   display: block;
   margin-right: 1em;
   position: relative;
+  text-decoration: none;
   /* padding-right: 6.8em; */
   /* align-self: flex-start; */
   /* min-width: 8.2em; */
@@ -56,7 +57,7 @@ nav {
   position: relative;
 }
 
-nav ul {
+nav ul, footer ul {
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -67,7 +68,7 @@ nav a {
   text-decoration: none;
 }
 
-nav ul li {
+nav ul li, footer ul li {
   display: inline-block;
   position: relative;
   margin-left: 1em;
@@ -123,7 +124,7 @@ main {
   text-indent: 1.5em;
 } */
 
-a:hover {
+a:hover, footer a:hover {
     color: #759DDA;
 }
 
@@ -148,7 +149,7 @@ p, ul li, a {
   font-size: 23px;
   line-height: 35px; */
   line-height: 37px;
-  padding: 7px 0 7px 0;
+  padding: 8px 0 8px 0;
   /* list-style: none; */
 }
 
@@ -187,15 +188,44 @@ h2 {
 
 footer {
   font-size: 24px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   margin: 0 auto;
   max-width: 550px;
   padding: 0 1.5em 0 1.5em;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.nav-links {
+display: block;
+list-style: none;
+position: relative;
+}
+
+nav ul {
+list-style: none;
+margin-bottom: 0;
+padding-left: 0;
+position: relative;
+}
+
+nav a {
+text-decoration: none;
+}
+
+nav ul li {
+display: inline-block;
+position: relative;
+margin-left: 1em;
 }
 
 .footer {
-  align-items: center;
+  align-items: start;
   border-top: 1.5px solid #cfcfcf;
   display: flex;
   flex-direction: row;
@@ -211,12 +241,26 @@ footer p {
   /* width: 550px; */
   font-size: .667em;
   line-height: 1.5em;
-  padding: 0.5em 0 1em 0;
+  padding: .66em 0 1em 0;
   margin: 0 0;
 }
 
-footer a{
-  font-size: 1em;
+.footer a {
+  font-size: .667em;
+  padding-top: 1em;
+  line-height: 1.5em;
+  padding: 0em 0 1em 0;
+  margin: 0 0;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #cfcfcf;
+}
+
+.footer ul li a {
+  padding: 0;
+  margin: 0;
 
 }
 
