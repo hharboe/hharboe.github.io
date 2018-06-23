@@ -226,6 +226,8 @@ h4 a {
 .case-container {
   display: flex;
   padding-top: .5em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .case-img-cell img {
@@ -323,6 +325,20 @@ footer a:hover{
     margin-right: .25em;
     font-size: .9em;
   }
+
+.case-img-cell img {
+  margin-right: 0;
+  padding-bottom: 1em;
+}
+
+.case-text-cell h3 a {
+  font-size: .9em;
+}
+
+.case-text-cell h4 {
+  font-size: .7em;
+}
+
   nav ul li a {
     margin-left: 0em;
     font-size: 1em;
