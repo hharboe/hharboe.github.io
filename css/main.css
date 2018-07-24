@@ -6,142 +6,208 @@
 }
 
 body {
-    font-size: 21px;
+    font-size: 24px;
     line-height: 32px;
     background-color: #2B132A;
     color: #eeeeee;
     font-family: 'Source Sans Pro', 'Sans-Serif';
+    letter-spacing: .1px;
 }
 
 header, main, footer {
   margin: 0 auto;
-  max-width: 688px;
-  padding: 0 56px 0 56px;
+  max-width: 464px;
+  padding: 0 40px 0 40px;
 }
 
-#home a {
-  text-decoration: none;
+header {
+  padding-top: 80px;
+  line-height: 36px;
 }
 
-#home a:hover {
-  color: #eee;
-}
-
-h1 {
-  font-size: 32px;
+.header a {
   font-weight: lighter;
-  padding-top: 104px;
-  line-height: 41px;
+  text-decoration: none;
+  color: #eeeeee;
+  border-bottom: none;
 }
 
-h2 {
+.header a:hover, footer ul li a:hover {
+  color: #759DDA;
+}
+
+.header h1 {
+  font-weight: lighter;
   font-size: 32px;
-  font-weight: bold;
-  padding-bottom: 16px;
-  line-height: 41px;
+  letter-spacing: .2px;
 }
 
-.separator {
-  background-color: #979797;
+.header h2 {
+  font-size: 32px;
+  padding-top: 16px;
+  letter-spacing: .5px;
+  font-weight: normal;
+}
+
+.separator-top {
+  background-color: #eeeeee;
   height: 1px;
   width: 100%;
-  max-width: 688px;
-  padding-top: 0;
+  margin-bottom: 16px;
+  margin-top: 24px;
 }
 
-.card {
-  padding-top: 40px;
-  padding-bottom: 48px;
-  display: flex;
-  flex-direction: row;
-  max-width: 688px;
+.center-img {
+  max-width: 176px;
+  margin: 0 auto;
+  padding-top: 10px;
+  /* padding-bottom: 2px; */
 }
 
-.card-img {
-  max-width: 312px;
-  padding-right: 56px;
+.resume-img {
+  max-width: 464px;
+  margin: 0 auto;
 }
 
-.callout {
-  font-weight: 200;
-  font-style: italic;
-  font-size: 21px;
-  letter-spacing: .4px;
+.emoji {
+  font-size: 27px;
+}
+.emoji-big {
+  font-size: 32px;
 }
 
-main h3 {
-  max-width: 312px;
-}
-
-main p {
-  max-width: 312px;
-  padding-top: 32px;
+.index-copy p {
   font-weight: lighter;
-}
-
-footer {
-  padding-bottom: 16px;
-}
-
-footer p, a, ul li {
+  font-size: 24px;
+  line-height: 33px;
   padding-top: 24px;
-  font-size: 21px;
+  padding-bottom: 8px;
+}
+
+.body-copy p, .work-copy p {
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  letter-spacing: 0px;
+}
+
+.body-copy h1 {
+  font-weight: normal;
+  font-size: 24px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  letter-spacing: .3px;
+}
+
+.work-copy h1 {
+  font-weight: normal;
+  font-size: 24px;
+  padding-top: 24px;
+  padding-bottom: 0px;
+  letter-spacing: .3px;
+}
+
+.work-copy h2 {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 24px;
+  padding-bottom: 16px;
+  letter-spacing: .3px;
+}
+
+.work-copy p {
+  padding-bottom: 32px;
+}
+
+.body-copy a, .work-copy p a {
   color: #eee;
   text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+.body-copy a:hover, .work-copy p a:hover, .contact-copy a:hover {
+  color: #759DDA;
+  border-bottom: 1px solid #759DDA;
+}
+
+.contact-copy p {
+  padding-top: 24px;
+  line-height: 40px;
+}
+
+.contact-copy a {
+  color: #eee;
+  font-weight: lighter;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+main a {
+  text-decoration: none;
+}
+
+a .work-copy  {
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover .work-copy h1, a:hover .work-copy h2 {
+  color: #759DDA;
+  text-decoration: none;
+}
+
+.work-div-break {
+  height: 24px;
+}
+
+.separator-bottom {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: #eeeeee;
+  height: 1px;
+  width: 100%;
+  max-width: 464px;
 }
 
 footer ul li {
   display: inline-block;
-  position: relative;
-  margin-right: 1.1em;
-  /* padding-top: 16px; */
+  margin-right: 32px;
+  font-size: 28px;
 }
 
-a:hover {
-  color: #759DDA;
+footer a, footer p {
+  color: #eee;
+  text-decoration: none;
+  border-bottom: 0;
+  font-weight: lighter;
+  font-size: 28px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  border-bottom: none;
 }
 
 footer {
+  padding-bottom: 40px;
+}
+
+main h2 {
+  font-weight: normal;
   font-size: 24px;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto .5em auto;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.tiny {
-  display: none;
-}
-
-.about a:hover {
-  color: #759DDA;
-}
-
-.work a:hover {
-  color: #FF6905;
-}
-
-.contact a:hover{
-  color: #FFD252;
-}
-
-.copyright {
-  font-weight: lighter;
 }
 
 @media all and (max-width: 791px) {
 
-  body {
+  /* body {
     padding: 2em 2em .5em 2em;
-  }
+  } */
 
-  body > * {
+  /* body > * {
     padding: 0;
-  }
+  } */
 
   h1 {
     font-size: 6.5vw;
@@ -149,10 +215,14 @@ footer {
     line-height: 1.2em;
   }
 
-  h2 {
+  /* h2 {
     font-size: 5.1vw;
     line-height: 2em;
-    padding-bottom: 8px;
+    /* padding-bottom: 8px;
+  } */
+
+  .work-card-copy h3 {
+    padding-top: 16px;
   }
 
   .card {
@@ -161,20 +231,27 @@ footer {
     padding-bottom: 32px;
   }
 
-  .card-img {
+  .index-card-img {
     /* max-width: 300px; */
     max-width: 60vw;
     padding-right: 0;
   }
 
-  main h3, .callout {
+  .index-card-copy h3, .callout {
     font-size: 4vw;
     padding-top: 24px;
     max-width: 100%;
     line-height: 6.8vw;
   }
 
-  main p {
+  .about_me h3 {
+    font-size: 4vw;
+    padding-top: 40px;
+    max-width: 100%;
+    line-height: 5.8vw;
+  }
+
+  .index-card-copy p {
     max-width: 100%;
     font-size: 4vw;
     line-height: 6.8vw;
@@ -198,11 +275,11 @@ footer {
   }
 
   footer ul li {
-    margin-left: 1px;
+    /* margin-left: 1px; */
     /* margin-right: 1em; */
-    padding-top: 24px;
+    /* padding-top: 24px;
     padding-bottom: 8px;
-    font-size: 4.6vw;
+    font-size: 4.6vw; */
   }
 
   nav ul li a {
@@ -218,7 +295,7 @@ footer {
     font-size: 1em;
   }
 
-  .card  {
+  .index-card  {
     padding-bottom: 32px;
   }
 
@@ -226,7 +303,7 @@ footer {
 
 @media all and (max-width: 558px) {
 
-  .card-img {
+  .index-card-img {
     max-width: 100%;
     /* padding-right: 56px; */
   }
@@ -239,13 +316,13 @@ footer {
     line-height: 7vw;
   }
 
-  .card  {
+  .index-card  {
     padding-bottom: 20px;
   }
 
   footer ul li {
-    padding-top: 16px;
-    padding-bottom: 0;
+    /* padding-top: 24px;
+    padding-bottom: 8px; */
   }
 
 }
