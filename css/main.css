@@ -17,11 +17,11 @@ body {
 header, main, footer {
   margin: 0 auto;
   max-width: 464px;
-  padding: 0 40px 0 40px;
+  padding: 0 32px 0 32px;
 }
 
 header {
-  padding-top: 80px;
+  padding-top: 96px;
   line-height: 36px;
 }
 
@@ -60,8 +60,8 @@ header {
 .center-img {
   max-width: 176px;
   margin: 0 auto;
-  padding-top: 10px;
-  /* padding-bottom: 2px; */
+  padding-top: 16px;
+  padding-bottom: 4px;
 }
 
 .resume-img {
@@ -81,7 +81,7 @@ header {
   font-size: 24px;
   line-height: 33px;
   padding-top: 24px;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 .body-copy p, .work-copy p {
@@ -191,7 +191,7 @@ footer a:hover {
 }
 
 footer {
-  padding-bottom: 40px;
+  padding-bottom: 32px;
 }
 
 main h2 {
@@ -201,13 +201,9 @@ main h2 {
 
 @media all and (max-width: 791px) {
 
-  /* body {
-    padding: 2em 2em .5em 2em;
-  } */
-
-  /* body > * {
-    padding: 0;
-  } */
+  header {
+    padding-top: 11vw;
+  }
 
   h1 {
     font-size: 6.5vw;
@@ -215,93 +211,72 @@ main h2 {
     line-height: 1.2em;
   }
 
-  /* h2 {
-    font-size: 5.1vw;
-    line-height: 2em;
-    /* padding-bottom: 8px;
-  } */
+  .index-copy p {
+    font-size: 23px;
+    line-height: 33px;
+  }
+}
 
-  .work-card-copy h3 {
-    padding-top: 16px;
+@media all and (max-width: 436px) {
+
+  header {
+    padding-top: 10vw;
   }
 
-  .card {
-    flex-wrap: wrap;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  .header h1 {
+    font-size: 6vw;
+    line-height: 6vw;
   }
 
-  .index-card-img {
-    /* max-width: 300px; */
-    max-width: 60vw;
-    padding-right: 0;
+  .header h2 {
+    font-size: 6vw;
+    line-height: 4vw;
   }
 
-  .index-card-copy h3, .callout {
-    font-size: 4vw;
-    padding-top: 24px;
+  .work-copy h1, .work-copy h2, .body-copy h1, .contact-copy p {
+    font-size: 5vw;
+  }
+
+  .center-img {
+    padding: 2vw 0 2vw 0;
+  }
+
+  .resume-img {
     max-width: 100%;
-    line-height: 6.8vw;
   }
 
-  .about_me h3 {
-    font-size: 4vw;
-    padding-top: 40px;
-    max-width: 100%;
-    line-height: 5.8vw;
+  .emoji {
+    font-size: 8vw;
+    letter-spacing: 5px;
   }
 
-  .index-card-copy p {
-    max-width: 100%;
-    font-size: 4vw;
-    line-height: 6.8vw;
+  .index-copy p, .work-copy p, .body-copy p {
+    font-size: 5.2vw;
+    line-height: 8vw;
+    padding: 1.5vw 0 6vw 0;
   }
 
-  .tiny {
-    display: block;
-  }
-
-  .standard {
-    display: none;
-  }
-
-  .copyright, .copyright a {
-    padding-top: 16px;
-    font-size: 4vw;
-  }
-
-  .bottom {
-    margin-top: 16px;
+  .separator-bottom {
+    margin-top: 2vw;
+    margin-bottom: 4vw;
   }
 
   footer ul li {
-    /* margin-left: 1px; */
-    /* margin-right: 1em; */
-    /* padding-top: 24px;
-    padding-bottom: 8px;
-    font-size: 4.6vw; */
+    margin-right: 6.5vw;
+    font-size: 5.5vw;
+    line-height: 5.5vw;
   }
 
-  nav ul li a {
-    margin-left: 0em;
-    font-size: 1em;
+  footer ul li a {
+      font-size: 5.5vw;
+      padding-right: 0vw;
+      padding-top: 0;
+      line-height: 5.5vw;
+    }
+
+  footer {
+    padding-bottom: 4vw;
   }
-
-  p, ul li {
-    font-size: .9em;
-  }
-
-  a {
-    font-size: 1em;
-  }
-
-  .index-card  {
-    padding-bottom: 32px;
-  }
-
-}
-
-@media all and (max-width: 558px) {
 
   .index-card-img {
     max-width: 100%;
@@ -320,9 +295,9 @@ main h2 {
     padding-bottom: 20px;
   }
 
-  footer ul li {
-    /* padding-top: 24px;
-    padding-bottom: 8px; */
+  header, main, footer {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
 }
