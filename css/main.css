@@ -57,11 +57,19 @@ header {
   margin-top: 24px;
 }
 
-.center-img {
+.center-img, .left-img {
   max-width: 176px;
   margin: 0 auto;
   padding-top: 16px;
   padding-bottom: 4px;
+}
+
+.left-img {
+  margin: 0;
+}
+
+#bob {
+  max-width: 210px;
 }
 
 .resume-img {
