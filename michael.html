@@ -43,16 +43,24 @@
 					<img class = "article-logo" src = "/images2/michael/michael-logo.png">
 				</div>
 				<div class="copy">
-					<h1>Michael: Cycling Assistant</h1>
-		      <p>In November 2017, an <a href="https://www.faradaybikes.com">electric bicycle startup</a> hired me to design the interface and identity for a new chatbot concept.</p>
-					<p>One month later, I was contracted to design a Beta version. I led research and design for 3 months, and collaborated with <a href="https://prakashpaudel.com" target = "_blank">one developer</a> and our <a href="https://medium.com/@tkreek" target="_blank">client/product manager</a>.</p>
+					<h1 style = "padding-bottom: 0px">Michael: Cycling Assistant</h1>
+					<!-- <h1 style = "font-weight: lighter; font-style: italic; font-size: 26px; padding-top: 0px">UX Researcher, Product Designer</h1> -->
+					<p>In November 2017, an <a href="https://www.faradaybikes.com">electric bike startup</a> hired me to design a prototype for their new chatbot. That December, I started a 4 month contract to build a Beta version, in collaboration with <a href="https://prakashpaudel.com" target = "_blank">one developer</a> and <a href="https://medium.com/@tkreek" target="_blank">our client</a>.</p>
+					<p>My work included:</p>
+					<ul class = "copy-ul">
+						<li>Designing a visual identity and prototype</li>
+    				<li>Leading generative research to refine our focus</li>
+    				<li>Making a design language for copy and visuals</li>
+    				<li>Conducting usability tests to optimize UI</li>
+    				<li>Using gamification to boost engagement</li>
+					</ul>
 				</div>
 				<div class = "copy center-container">
 					<h2>Sections</h2>
 				</div>
 				<div class = "copy">
-					<ul class = "flat-ul chapters">
-						<li><a href="#refinement">Scope</a></li>
+					<ul class = "flat-ul chapters copy-ul">
+						<li><a href="#scoping">Scoping</a></li>
 						<li><a href="#research">Research</a></li>
 						<li><a href="#design">Design</a></li>
 						<li><a href="#impact">Impact</a></li>
@@ -61,14 +69,14 @@
 			</section>
 			<section class = "bg-color-med">
         <div class="copy">
-          <h1 id="refinement" name="refinement">SCOPE</h1>
-          <h2>FIRST CONTRACT</h2>
-					 <p>In fall 2017, Faraday Bicycles Inc. wanted to build a chatbot to integrate with their electric bicycles. I was contracted for two weeks to refine their concept of a “cycling companion chatbot," and design an accompanying visual prototype.</p>
+        	<h1 id="scoping" name="scoping">SCOPING</h1>
+					<h2>PROTOTYPING THE CONCEPT</h2>
+					<p>In fall 2017, Faraday Bicycles Inc. wanted to build a chatbot to integrate with their electric bikes. I was contracted to refine their initial concept, and design a visual prototype.</p>
 					<h4>Requests</h4>
 					<ul class = "copy-ul">
-						<li>Design a character that's entertaining and brand-aligned</li>
-						<li>Brainstorm hardware/software integration points</li>
-						<li>Mockup interface components, including a customer support channel, and activity data visualizations</li>
+						<li>Design a chatbot character who is entertaining and brand-aligned</li>
+						<!-- <li>Brainstorm hardware/software integration points</li> -->
+						<li>Mockup interface components for customer support, and activity data visualizations</li>
 					</ul>
 					<h4>Results</h4>
         </div>
@@ -83,18 +91,17 @@
 						<div>
 							<video autoplay muted loop src = "/vids/proto.mov">
 						</div>
-						<figcaption>My proof-of-concept prototype used Faraday brand colors and provided a variety of activity and bike tracking features</figcaption>
+						<figcaption>My proof of concept prototype used Faraday brand colors and provided a variety of activity and bike tracking features</figcaption>
 				 	</figure>
 				</div>
 				<div class="copy">
 					<p>Faraday opted to pass the project, but one employee, Thomas Kreek, decided to continue on his own. He offered me and a developer contracts to build a functional Beta version.</p>
-					<h2>SECOND CONTRACT</h2>
+					<h2>SCOPING THE BETA</h2>
 					<h4>Refining goals</h4>
-					<p>Our second contract's functional goals felt ambitious, given our resources. In the first meeting, I led a "<a href="https://www.youtube.com/watch?v=FWIJosey8nI">NUF" brainstorm</a> to help refine our focus and define success metrics.</p>
-
+					<p>Our contract's initial goals felt ambitious, so I suggested we narrow our focus, and success metrics, with a "<a href="https://www.youtube.com/watch?v=FWIJosey8nI">NUF" brainstorm</a>.</p>
 					<ul class = "copy-ul">
 						<li>Educate: Teach non-cylists to become capable riders</li>
-						<li>Engage: Attract regular use from frequent cyclists</li>
+						<li>Engage: Help frequent cyclists plan their rides</li>
 						<li>Mobilize: Create a brand for cycling evangelists to rally behind</li>
 					</ul>
 				</div>
@@ -108,24 +115,22 @@
 			 	</div>
 			 	<div class="copy">
 					<h4>Defining success metrics</h4>
-					<p>Despite the risk shown by our "NUF" brainstorm, my client decided to focus on the <em>Education</em> direction, hoping to convince new and irregular cyclists to adopt new cycling routines.</p>
-					<p>We would ask <em>how many days/week users cycled</em>, at and up to 3 months after sign up, as a proxy for a users' cycling routine durability.</p>
+					<p>Despite the feasibility risks, our client chose to focus on <em>Motivation</em>, with a goal of helping users increase their cycling habits.</p>
+					<p>To track progress, we would focus on <em>days per week cycled</em>, from 0–4 weeks after sign up. We would also ask users to periodically rate their <em>cycling confidence</em>.</P>
 			 	</div>
 		 	</section>
 		 	<section class = "bg-color-light" id="research" name="research">
 				<div class="copy">
 					<h1>RESEARCH</h1>
-					<h2>RESEARCH PLANNING</h2>
-					<p>My generative research plan included a literature review to identify cycling pain points, and user interviews to understand rider types.</p>
-				 	<h2>LITERATURE REVIEW</h2>
+					<h2>GENERATIVE RESEARCH</h2>
+					<p>My research included a literature review and user interviews. My literature review had two objectives:</p>
 					<h4>Objectives</h4>
 					<ul class = "copy-ul">
-						<li>Identify cycling problems in scope</li>
-						<li>Narrow target demographic</li>
-						<li>Prepare questionnaire for upcoming interviews</li>
+						<li>Identify problem(s) to focus on</li>
+						<li>Refine demographic of target cyclists/non-cyclists</li>
 					</ul>
-					<h4>Identifying cycling problems</h4>
-					<p>I searched existing literature for problems facing new and irregular cyclists, and affinity mapped categories across multiple studies. I crossed-out problems I felt were <em>unsolvable</em> by software.</p>
+					<h4>Identifying problems</h4>
+					<p>I read studies on new and irregular cyclists' behavior, and mapped common deterrents into three categories. I crossed-out problems that looked <em>unsolvable</em> by software.</p>
 			 	</div>
 				<div class = "fig-container-col img-med-big">
 					<div class = "center-container img-med-big">
@@ -159,9 +164,9 @@
 					</figure>
 				</div>
 				<div class="copy">
-					<p>We learned that the most prevalent problems were <em>unsolvable</em>, or out of our scope, and many <em>solvable</em> problems had existing solutions. For example, cities often have classes to teach riding skills and bicycle shops to fix equipment.</p>
-					<p>I hoped to uncover <em>why</em> new and irregular cyclists didn't utilize existing solutions—perhaps they faced confounding deterrents, or their solutions were inaccessible.</p>
-					<h4>Understanding rider types</h4>
+					<p>Based on the literature, the most prevalent problems were out of our scope. Many <em>solvable</em> problems had existing solutions, including cycling education classes, and shops that fix bicycle equipment.</p>
+					<p>I hoped to uncover <em>why</em> existing solutions weren't being utilized—perhaps many people face confounding deterrents, or local solutions are inaccessible.</p>
+					<h4>Understanding demographics</h4>
 					<p>Many studies categorize cyclists based on psychological qualities. One convincing <a href="http://web.pdx.edu/~jdill/Types_of_Cyclists_PSUWorkingPaper.pdf">Portland-based study</a> built a typology of cyclists based on rider <em>confidence</em> and <em>enthusiasm</em>.
 				</div>
 				<div class = "fig-container">
@@ -187,14 +192,14 @@
  				</div>
  				<div class="copy">
  					<p> This simple model became the foundation for our chatbot's educative process. We hoped our interviews would identify the elements of <em>Ability</em>, <em>Motivation</em>, and <em>Triggers</em> prioritized by our target users.</p>
-					<h2>USER INTERVIEWS</h2>
+					<h2>CYCLIST INTERVIEWS</h2>
 					<h4>Objectives</h4>
 					<ul class = "copy-ul">
 						<li>Understand interactions between solvable/unsolvable problems</li>
 						<li>Identify crucial tasks in journeys to develop cycling routines</li>
 						<li>Distinguish behavioral differences between rider types</li>
 					</ul>
-					<h4>Asking open questions</h4>
+					<h4>Asking open-ended questions</h4>
 					<p>We spoke with 16 adults across a range of demographics, cities, and cycling aptitudes. Our discussion addressed past cycling experiences, and habits related to maintaining cycling routines.</p>
 					<div class = "survey-container">
 						<div class = "survey-card">
@@ -215,9 +220,8 @@
 					</div>
 						<figcaption>Examples of questions from our interviews</figcaption>
 					<h4>Identifying a niche audience</h4>
-					<p>Our interviews showed that our target proportion of adults (those who face <em>only</em> solvable deterrents) was smaller than we expected. The most common deterrents they faced included <em>traffic fears</em>, <em>weather discomfort</em>, and <em>bike maintainance</em>. </p>
-					<h4>Avoiding negative personas</h4>
-					<p>After interviews, I constructed user personas to align our team on who and <em>who not</em> to design for. Pointing to names and faces was very helpful when discussing design decisions.</p>
+					<p>Our interviews showed that our target demographic was smaller than expected. Their most common deterrents included <em>traffic fears</em>, <em>weather discomfort</em>, and <em>bike maintainance</em>. </p>
+					<p>I constructed user personas to align our team on who and <em>who not</em> to design for. Having names and faces to point to was very helpful during the design process.</p>
 				</div>
 				<div class = "fig-container">
 					<figure class = "fig-container-col img-med-big no-caption">
@@ -228,8 +232,8 @@
 					</figure>
 				</div>
 				<div class="copy">
-					<h4>Designing around tasks</h4>
-					<p>I also categorized all tasks our respondents described as crucial to maintain cycling routines. We would later design our product roadmap around making these tasks more approachable.</p>
+					<h4>Focusing on crucial tasks</h4>
+					<p>We used interviews to identify and categorize tasks that are crucial to developing cycling routines. The goal of our chatbot would be to make these tasks more approachable for our target demographic.</p>
 				</div>
 				<div class = "fig-container">
 					<figure class = "fig-container-col img-med-big no-caption">
@@ -242,14 +246,14 @@
 			<section class = "bg-color-med" id="design" name="design">
 				<div class="copy">
 					<h1>DESIGN</h1>
-					<h2>PICKING A PLATFORM</h2>
+					<h2>CHOOSING TECHNOLOGY</h2>
 					<h4>Goals</h4>
 					<ul class = "copy-ul">
-						<li>Pick our chatbot's development and distribution platform</li>
+						<li>Choose our chatbot's development and distribution platform</li>
 						<li>Identify chosen platform's affordances and constraints</li>
 					</ul>
-					<h4>Comparing platform affordances</h4>
-					<p>After considering using an existing chatbot platform, or building a native app, we decided to release on <a href="https://messenger.fb.com">Facebook Messenger</a>. Messenger would allow us to boostrap the quickest, and its popularity and unique affordances were attractive from a design perspective.</p>
+					<h4>Comparing affordances</h4>
+					<p>We decided to release on <a href="https://messenger.fb.com">Facebook Messenger</a>, rather than a native app, or different chatbot platform. Messenger would be the quickest to bootstrap, and its popularity and affordances were attractive.</p>
 				</div>
 				<div class = "fig-container">
 					<figure class = "fig-container-col img-gif">
@@ -267,11 +271,10 @@
 				</div>
 				<div class="copy">
 					<h4>Documenting constraints</h4>
-					<p style = "padding-bottom: 16px">Early on, I documented the constraints we faced by using Messenger's conversational features and UI:</p>
+					<p style = "padding-bottom: 16px">Before designing, I documented the constraints we faced by using Messenger's conversational features and UI:</p>
 					<ul class = "copy-ul">
 						<li style="padding-bottom: 8px">Character limits and layout restrictions of card templates</li>
 						<li style="padding-bottom: 8px">Absence of traditional navigation affordances</li>
-						<li style="padding-bottom: 8px">Reliance on conversational experience in user onboarding</li>
 						<li>Brevity required for a chat-based, mobile UI</li>
 					</ul>
 					<h2>CHARACTER DESIGN</h2>
@@ -282,7 +285,7 @@
 						<!-- <li>Document client preferences before design</li> -->
 					</ul>
 					<h4>Creating a personality</h4>
-					<p>My client wanted to add emotional weight to our user interactions with meaningful and authentic copy, written from our character's perspective. I described Michael Faraday as, "a curious scientist, and caring fitness coach, with high expectations," and wrote guidelines for how our team should write copy.</p>
+					<p>My client wanted to add emotional weight to our user interactions with meaningful, character-driven copy. I wrote copywriting guidelines, describing Michael as, "a curious scientist, and caring fitness coach, with high expectations."</p>
 				</div>
 				<div class = "fig-container">
 					<figure class = "fig-container-col img-med-big no-caption">
@@ -320,7 +323,7 @@
 				</figure>
 				<div class = "copy">
 					<h4>Optimizing for mobile</h4>
-					<p>To display visual information to users, I designed a simple, flexible card template. The first applications of this template were <em>Knowledge Cards</em>, which contained bite-size information related to tasks identified in our research.</p>
+					<p>To display visual information, I designed a simple, flexible card template. <em>Knowledge Cards</em> were the first template application, using bite-size information to guide users through crucial cycling tasks.</p>
 				</div>
 				<div class = "fig-container">
 					<figure class = "fig-container-col">
@@ -336,148 +339,138 @@
 					</figure>
 				</div>
 				<div class = "copy">
-					 	<h2>ITERATING ON UI</h2>
-						<h4>Objectives</h4>
-						<ul class = "copy-ul">
-							<li>Minimize friction of conversational navigation affordances</li>
-							<li>Fit information architecture to users' mental models</li>
-						<li>Prototype and test for unknown frictions in chatbot interface</li>
-						</ul>
-						<h4>Documenting frictions</h4>
-					 	<p>We built a two-level navigation system, where users could swipe through parent topics, before exploring detailed Knowledge Cards.</p>
-				 	</div>
-					<div class = "fig-container">
-			 			<figure class = "fig-container-col img-gif">
-				 			<div>
-				 				<video autoplay muted controls loop class = "img-gif" src = "/vids/knowledge.mov">
-				 			</div>
-				 			<figcaption>Users could browse cards by topic after selecting “Cycling Guide” from our menu</figcaption>
-			 			</figure>
-					</div>
-					<div class="copy">
-				 		<p>Early usability testing showed non-cyclists feeling intimidated to explore cards by topic. I compiled feedback into two problems:</p>
-					</div>
-					<div class = "fig-container-col img-med-big no-caption">
-						<div class = "center-container img-med-big">
-							<div class = "copy paragraph-basic" style="margin-right: 2em; padding-top: 16px; padding-bottom: 0">
-								<h3>1. Lack of Substance</h3>
-								<ul class = "copy-ul">
-									<li>Knowledge Cards alone did not create a lasting effect on users’ confidence.</li>
-								</ul>
-								<h5>“This is hard for me. To be honest, I’m not sure what to learn about.”</h5>
-							</div>
-							<div class = "copy paragraph-basic" style="margin-right: 2em; padding-top: 16px; padding-bottom: 0">
-								<h3>2. Poor navigation</h3>
-								<ul class = "copy-ul">
-									<li>Our navigation structure did not match users’ mental models for learning</li>
-								</ul>
-								<h5>“I can see this being helpful, but I think it’s too tedious for me."</h5>
-							</div>
+				 	<h2>ITERATIONS ON UI</h2>
+					<h4>Objectives</h4>
+					<ul class = "copy-ul">
+						<li>Minimize friction of conversation-based navigation</li>
+						<li>Fit information architecture to users' mental models</li>
+					<li>Prototype and test for unknown frictions in chatbot interface</li>
+					</ul>
+					<h4>Documenting frictions</h4>
+				 	<p>We built a two-level navigation system, where users could swipe through parent topics, before exploring detailed Knowledge Cards.</p>
+			 	</div>
+				<div class = "fig-container">
+		 			<figure class = "fig-container-col img-gif">
+			 			<div>
+			 				<video autoplay muted controls loop class = "img-gif" src = "/vids/knowledge.mov">
+			 			</div>
+			 			<figcaption>Users could browse cards by topic after selecting “Cycling Guide” from our menu</figcaption>
+		 			</figure>
+				</div>
+				<div class="copy">
+			 		<p>Early usability testing showed non-cyclists feeling intimidated to explore cards by topic. I compiled feedback into two problems:</p>
+				</div>
+				<div class = "fig-container-col img-med-big no-caption">
+					<div class = "center-container img-med-big">
+						<div class = "copy paragraph-basic" style="margin-right: 2em; padding-top: 16px; padding-bottom: 0">
+							<h3>1. Lack of Substance</h3>
+							<ul class = "copy-ul">
+								<li>Knowledge Cards alone did not create a lasting effect on users’ confidence.</li>
+							</ul>
+							<h5>“This is hard for me. To be honest, I’m not sure what to learn about.”</h5>
+						</div>
+						<div class = "copy paragraph-basic" style="margin-right: 2em; padding-top: 16px; padding-bottom: 0">
+							<h3>2. Poor navigation</h3>
+							<ul class = "copy-ul">
+								<li>Our navigation structure did not match users’ mental models for learning</li>
+							</ul>
+							<h5>“I can see this being helpful, but I think it’s too tedious for me."</h5>
 						</div>
 					</div>
-					<div class="copy">
-				 		<h4>Matching real-life scenarios</h4>
-				 		<p>To give users more context, we combined multiple Knowledge Cards and API calls to create guidance around common cycling scenarios.</p>
-			 		</div>
-					<div class = "fig-container">
-				 		<figure class = "fig-container-col img-gif">
-							<div>
-								<video autoplay muted controls loop class = "img-gif" src = "/vids/safety.mov">
-							</div>
-							<figcaption>Instead of searching for and choosing cards from our <em>Maintenance</em> topic, users could now follow a guided <em>Bicycle Safety Check</em></figcaption>
-			 	 		</figure>
-					</div>
-			 		<div class="copy">
-					 	<h4>Supporting Q&A interactions</h4>
-					 	<p>We observed most users starting their chatbot interaction by asking a question. To fit these users' mental models, we trained a <a href="https://www.luis.ai/home">NLP model</a> to interpret user questions and direct them to the most relevant card.</p>
-			 		</div>
-					<div class = "fig-container">
-						<figure class = "fig-container-col img-gif">
-			 				<div>
-			 					<video autoplay muted controls loop class = "img-gif" src = "/vids/luis.mov">
-			 				</div>
-			 				<figcaption> We used <a href="https://www.luis.ai/home">Microsoft LUIS</a> to train our NLP model to map user queries to features</figcaption>
-						</figure>
-					</div>
-					<div class="copy">
-						<h2>PIVOTING OUR SOLUTION</h2>
-						<h4>Problem</h4>
-						<p>During usability testing, users were questioning the desirability of our features. Our cycling guide was called "uninteresting" and "incomplete." When asked if our chatbot was empowering towards fitness or commute goals, intermediate cyclists said "not at all."</p>
-						<h4>Solution</h4>
-						<p>Our team decided to <em>"gamify"</em> our chatbot, through conversation-based games. This meant incorporating our existing features into activity- or education-based challenges related to cycling.</p>
-						<!-- <h4>Goal</h4>
-						<ul class = "copy-ul">
-							<li>Use small, consecutive recommendations to guide users through long-term tasks</li>
-							<li>Increase user motivation by adding process-oriented goals to existing features</li>
-							<li>Add fun, engaging interactions with users' local environment through  API calls</li>
-						</ul> -->
-						<h4>Gauging interest with surveys</h4>
-						<p>I distributed a <a href="www.surveymonkey.com">SurveyMonkey</a> survey asking for feedback on our game ideas. About 25% of inexperienced riders had interest in cycling challenges orchestrated by an app, and experienced riders were not at all interested. One experienced rider said, "I'm very happy already with Strava, where I can measure myself and set my own goals. I don't need someone else inventing arbitrary tasks for me."</p>
-						<p>A broader, more disappointing piece of feedback was that less than 50% of inexperienced riders said were interested in changing their cycling behavior at all.  Despite this negative response, my client asked us to continue to develop three cycling games in the last two months of our contract.</p>
-						<!-- <ol class = "copy-ol">
-					 		<li style = "padding-bottom: 12px"><h3>Confident riders were uninterested</h3></li>
-							 <p>Quote:<em>"I'm very happy already with Strava, where I can measure myself and set my own goals. I don't need someone else inventing arbitrary tasks for me."</em></p>
-					 		<li><h3>Inexperienced riders were barely interested</h3>Under half of inexperienced riders said were interested in changing their cycling behavior, and even fewer said they would participate in challenges orchestrated by an app</li>
-				 		</ol> -->
-							<p>Despite the dreary feedback, my client asked us to continue to develop three cycling games in the last two months of our contract.</p>
-						<h4>Designing around user goals</h3>
-						<p>I wrote game logic and copy for each game. Each game's checkpoints were aimed at user goals and important tasks we identified during our research phase. Our games included:</p>
-						<ul class = "copy-ul">
-							<li><em>Zero to One:</em> Transitioning from non-cyclist to regular cyclist</li>
-							<li><em>Marco Polo:</em> Setting goals to bike to local attractions</li>
-							<li><em>Workplace Warrior:</em> Setting goals for bike-to-work commutes
-						</ul></p>
-					</div>
-					<div class = "fig-container">
-						<figure class = "fig-container-col img-med-big">
-							<div>
-								<a href="https://www.dropbox.com/s/mb6fj4jynozr7c6/Zero%20to%20One.pdf?dl=0">
-								<img src = "/images2/michael/mindmap.png"></a>
-							</div>
-							<figcaption class = "single-caption img-med-big">Sample of our map for the <em>Zero to One</em> game, created in <a href="https://mindnode.com">MindNode</a>. Click image for the full map.</figcaption>
-						</figure>
-					</div>
-					<div class="copy">
-						<p>Early usability testing revealed that "less text," "more visual content," and "explanation of in-game progress" were helpful to keep users engaged over time. To address this, I incorporated more frequent checkpoints, more emojis to break-up walls of text, and more image-based cards for richer information.</p>
-					</div>
-					<div class = "fig-container">
-						<figure class = "fig-container-col img-gif">
-			 				<div>
-								<video autoplay muted controls loop class = "img-gif" src = "/vids/zto.mov">
-							</div>
-							<figcaption>Non-cyclists could use <em>Zero to One</em> to refamiliarize themselves with cycling</figcaption>
-			 			</figure>
-						<figure class = "fig-container-col img-gif">
-							<div>
-								<video autoplay muted controls loop src = "/vids/mp.mov">
-							</div>
-							<figcaption><em>Marco Polo</em> challenged users to take more recreational rides, recommending destinations along the way</figcaption>
-						</figure>
-					</div>
-				<!-- <div class="copy">
-					<h3>ENROLLING USERS DURING ONBOARDING</h3>
-					<p>Once our games were live, I added a simple onboarding process that asks users to self-select their persona type, and a game that best fits their cycling goals. I used this opportunity to also introduce our character, and recommend tools they may find useful.</p>
+				</div>
+				<div class="copy">
+			 		<h4>Matching real-life scenarios</h4>
+			 		<p>To give users more context, we combined multiple Knowledge Cards and API calls to create guidance around common cycling scenarios.</p>
+		 		</div>
+				<div class = "fig-container">
+			 		<figure class = "fig-container-col img-gif">
+						<div>
+							<video autoplay muted controls loop class = "img-gif" src = "/vids/safety.mov">
+						</div>
+						<figcaption>Instead of searching for and choosing cards from our <em>Maintenance</em> topic, users could now follow a guided <em>Bicycle Safety Check</em></figcaption>
+		 	 		</figure>
+				</div>
+		 		<div class="copy">
+				 	<h4>Supporting Q&A interactions</h4>
+				 	<p>We observed most users starting their chatbot interaction by asking a question. To fit these users' mental models, we trained a <a href="https://www.luis.ai/home">NLP model</a> to interpret user questions and direct them to the most relevant card.</p>
+		 		</div>
+				<div class = "fig-container">
+					<figure class = "fig-container-col img-gif">
+		 				<div>
+		 					<video autoplay muted controls loop class = "img-gif" src = "/vids/luis.mov">
+		 				</div>
+		 				<figcaption> We used <a href="https://www.luis.ai/home">Microsoft LUIS</a> to train our NLP model to map user queries to features</figcaption>
+					</figure>
+				</div>
+				<div class="copy">
+					<h2>GAMIFYING FEATURES</h2>
+					<p>Throughout testing, users questioned the desirability of our features. Users called our cycling guide "uninteresting" and "incomplete." When asked if our chatbot was empowering towards fitness or commute goals, some intermediate cyclists said, "not at all."</p>
+					<p>Our team decided to <em>"gamify"</em> our chatbot. This meant incorporating our existing features into activity- or education-based challenges, that users could progress through via chatbot interactions.</p>
+					<h4>Collecting feedback</h4>
+					<p>In a survey collecting feedback on game ideas, 25% of inexperienced riders, and 0% of experienced riders expressed any interest. One rider said, "I'm very happy already with <a href="https://www.strava.com/" target="_blank">Strava</a>, where I can set my own goals. I don't need someone inventing arbitrary tasks for me."</p>
+					<p>Despite this negative response, my client asked us to continue to develop three cycling games in the last two months of our contract.</p>
+					<h4>Designing around user goals</h3>
+					<p>I wrote each game's logic and copy around users' cycling goals, and steps we recommended to achieve them. Our games included:</p>
+					<ul class = "copy-ul">
+						<li><em>Zero to One:</em> Transitioning from non-cyclist to regular cyclist</li>
+						<li><em>Marco Polo:</em> Biking to more local destinations</li>
+						<li><em>Workplace Warrior:</em> Starting a bike-to-work commute routine
+					</ul></p>
+				</div>
+				<div class = "fig-container">
+					<figure class = "fig-container-col img-med-big">
+						<div>
+							<a href="https://www.dropbox.com/s/mb6fj4jynozr7c6/Zero%20to%20One.pdf?dl=0">
+							<img src = "/images2/michael/mindmap.png"></a>
+						</div>
+						<figcaption class = "single-caption img-med-big">Sample of our map for the <em>Zero to One</em> game, created in <a href="https://mindnode.com">MindNode</a>. Click image for the full map.</figcaption>
+					</figure>
+				</div>
+				<div class="copy">
+					<h4>Improving usability</h4>
+					<p>Usability testing revealed users were frustrated by "walls of text," and didn't know "how far [they had] progressed" in each challenge. To address this, I added more frequent checkpoints, emojis to break-up text, and image cards for richer displays of data.</p>
+					<p>We also made adjustments to onboarding, with a richer introduction of our chatbot character, and a step that automatically enrolls users in the challenge that best fits their profile.</p>
 				</div>
 				<div class = "fig-container">
 					<figure class = "fig-container-col img-gif">
 		 				<div>
-							<video autoplay muted controls loop src = "/vids/onboard.mov">
+							<video autoplay muted controls loop class = "img-gif" src = "/vids/zto.mov">
 						</div>
-						<figcaption class = "multi-caption img-gif">Our onboarding process required users to make two selections that would guide the rest of their experience with our chatbot</figcaption>
-	 				</figure>
-				</div> -->
-				<div class="copy">
-					<h2>OBSERVING LOW ENGAGEMENT</h2>
-					<p>In our last two weeks, we made a big push for more users, but received a lackluster response from our cycling games. While disappointed, we were not overly surprised, based on the results of our latest survey, and plenty of skepticism we received throughout the development process.</p>
-					<p><a href="https://www.facebook.com/cyclingcompanion">Michael: Cycling Companion</a> is now live on <a href="https://www.messenger.com">Facebook Messenger</a>, and I check-in regularly with my client to see how user engagement fluctuates. Ultimately, the product did not succeed at its goal of the motivating a high percentage of reluctant cyclists to start cycling. My client is now in contact with cycling manufacturers, and advocacy groups, where he (and I) hope its functionality may serve useful.</p>
+						<figcaption>Non-cyclists could use <em>Zero to One</em> to refamiliarize themselves with cycling</figcaption>
+		 			</figure>
+					<figure class = "fig-container-col img-gif">
+						<div>
+							<video autoplay muted controls loop src = "/vids/mp.mov">
+						</div>
+						<figcaption><em>Marco Polo</em> challenged users to take more recreational rides, recommending destinations along the way</figcaption>
+					</figure>
+				</div>
+				<div class = "copy">
+					<h4>Launching Michael</h4>
+					<p>After this round of usability improvements, our contract was over, and <a href="https://www.facebook.com/cyclingcompanion">Michael: Cycling Companion went live on Messenger</a>.</p>
 				</div>
 			</section>
 			<section class = "bg-color-light" id="impact" name="impact">
 				<div class="copy">
-					<h1>ASSESSING IMPACT</h1>
+					<h1>IMPACT</h1>
 					<h2>REFLECTING ON THE WORK</h2>
-					<p>As I reached the end of my six month contract, I had many ideas where  both I and our team could have made different decision to benefit the outcome of the project.</p>
-					<h3>STARTING WITH A PRODUCT IN MIND</h3>
+					<p>After launching, our biggest push for users resulted in a lackluster response. While disappointed, we were not overly surprised, as many users had expressed skepticism throughout our process.</p>
+					<p>I have many thoughts on where our team made good decisions, and where different actions may have increased our chance of success.</p>
+					<h4>Our strengths</h4>
+					<ul class = "copy-ul">
+						<li>Minimize friction of conversational navigation</li>
+						<p>This project started as a product searching for a user base. I believe this particially clouded our team's decision-making throughout the project.</p>
+						<li>Minimize friction of conversational navigation affordances</li>
+						<p>This project started as a product searching for a user base. I believe this particially clouded our team's decision-making throughout the project.</p>
+					</ul>
+					<h4>Our mistakes</h4>
+					<ul class = "copy-ul">
+						<li>Minimize friction of conversational navigation affordances</li>
+						<p>This project started as a product searching for a user base. I believe this particially clouded our team's decision-making throughout the project.</p>
+						<li>Minimize friction of conversational navigation affordances</li>
+						<p>This project started as a product searching for a user base. I believe this particially clouded our team's decision-making throughout the project.</p>
+					</ul>
+
 					<p>This project started as a product searching for a user base. I believe this particially clouded our team's decision-making throughout the project. For example, when faced with low user interest, our efforts to course-correct were often directed towards modifying the initial vision, rather than exploring new concepts which may have better addressed user needs.</p>
 					<p>In the future, I hope to give stronger pushback, and encourage more open-mindedness, whenever a client's product vision is particularly set in stone. As it relates to this project, considering platforms outside of chatbots and directions outside of broad, full-service motivation might have lead to a more successful solution.</p>
 					<h3>PROBLEM SOLVING AT TOO BROAD A SCALE</h3>
