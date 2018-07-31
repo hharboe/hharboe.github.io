@@ -21,7 +21,7 @@ header, main, footer {
 }
 
 header {
-  padding-top: 88px;
+  padding-top: 48px;
   line-height: 36px;
 }
 
@@ -221,7 +221,7 @@ main h2 {
 @media all and (max-width: 791px) {
 
   header {
-    padding-top: 11vw;
+    padding-top: 6vw;
   }
 
   h1 {

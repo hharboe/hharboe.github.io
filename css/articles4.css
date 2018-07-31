@@ -108,7 +108,7 @@ header {
 }
 
 header {
-  padding-top: 88px;
+  padding-top: 48px;
   line-height: 36px;
 }
 
@@ -119,7 +119,7 @@ header {
   border-bottom: none;
 }
 
-.header a:hover, footer ul li a:hover, .fig-container a, .fig-container a:hover {
+.header a:hover, footer ul li a:hover, .fig-container a, .fig-container a:hover, {
   border-bottom: none;
 }
 
@@ -178,13 +178,14 @@ header {
 .bg-color-dark h2 {
   font-size: 32px;
   color: #eee;
-  padding-top: calc(1.25*var(--baseline-padding));
-  padding-bottom: calc(0.25*var(--baseline-padding));
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 
 .bg-color-dark p {
   padding-top: calc(.5*var(--baseline-padding));
   padding-bottom: calc(.5*var(--baseline-padding));
+  font-weight: lighter;
 }
 
 .flat-ul {
@@ -197,13 +198,9 @@ header {
   max-width: 580px;
 }
 
-.flat-ul li {
-  /* display: flex; */
-}
-
 .flat-ul a {
   font-size: 27px;
-  border-bottom: 0;
+  border-bottom: 1px solid #eee;
 }
 
 /* Body
@@ -270,6 +267,10 @@ h5 {
 .copy-ul, .copy-ol {
   padding: 0 0 var(--baseline-padding) calc(.7*(var(--baseline-padding)));
   line-height: var(--baseline-padding);
+}
+
+.copy-ol {
+  padding-bottom: 24px;
 }
 
 .copy ul li, .copy ol li {
@@ -512,7 +513,7 @@ footer a{
   }
 
   .bg-color-dark h1 {
-    font-size: 8.5vw;
+    font-size: 7.5vw;
     line-height: 11vw;
     padding: 6vw 0 6vw 0;
   }
@@ -528,13 +529,6 @@ footer a{
     padding-top: 6vw;
     padding-bottom: 0;
     font-size: 7vw;
-  }
-
-  .flat-ul {
-    font-size: 6vw;
-    padding-top: 2vw;
-    padding-bottom: 4vw;
-    /* padding-left: 28px; */
   }
 
   .flat-ul li a {
@@ -587,6 +581,10 @@ footer a{
   article .copy-ul, article .copy-ol {
     padding-bottom: 3vw;
   }
+
+  /* .bg-color-dark .copy .copy-ul li {
+    font-size: 1vw;
+  } */
 
   article .copy-ul li, article .copy-ol li {
     font-size: 5.2vw;
