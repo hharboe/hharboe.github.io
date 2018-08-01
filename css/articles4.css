@@ -377,6 +377,18 @@ h6 {
   /* Images
   -------------------------------- */
 
+  .img-new > *, .img-new >* > * {
+    max-width: 426px;
+    width: 100%;
+    padding: 16px 0 8px 0;
+  }
+
+  .new-title figcaption {
+    max-width: 672px;
+    font-size: 34px;
+    color: #eee;
+  }
+
   .img-gif > *, .img-gif > * > * {
     max-width: 300px;
     width: 100%;
@@ -600,6 +612,11 @@ footer a{
 
   article .fig-container {
     padding-top: 0;
+  }
+
+  article .big {
+    max-width: 1100px;
+    display: flex;
   }
 
   article .fig-container-col {

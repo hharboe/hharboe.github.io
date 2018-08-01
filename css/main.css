@@ -172,9 +172,14 @@ a .work-copy  {
   text-decoration: none;
 }
 
-a:hover .work-copy h1, a:hover .work-copy h2, a:hover .work-copy p {
+a .work-copy p {
+  /* display: none; */
+}
+
+a:hover .work-copy h1, a:hover .work-copy h2 {
   color: #759DDA;
   text-decoration: none;
+  display: block;
 }
 
 .work-div-break {
