@@ -4,7 +4,6 @@
 :root {
   --baseline-padding: 35px;
   --copy-width: 672px;
-  --wide-copy-width: 740px;
 }
 
 /* Structure
@@ -46,10 +45,6 @@ section {
   max-width: var(--copy-width);
 }
 
-.wide-copy {
-  max-width: var(--wide-copy-width);
-}
-
 .center-container {
   display: flex;
   flex-direction: row;
@@ -68,7 +63,7 @@ section {
 .bg-color-med {
   background-color: #DAD4DA;
   color: #111;
-  }
+}
 
 .bg-color-light {
   background-color: #ebebeb;
@@ -83,9 +78,11 @@ section {
 
 .bg-color-dark a {
   border-bottom: 1px solid #eee;
+  color: #eee;
 }
 
 .bg-color-dark h1 {
+  color: #eee;
   font-size: 44px;
   text-align: center;
   padding-top: calc(1.5*var(--baseline-padding));
@@ -172,7 +169,7 @@ header {
 
 .article-logo {
   max-width: 231px;
-  padding-top: var(--baseline-padding));
+  padding-top: var(--baseline-padding);
 }
 
 
@@ -422,6 +419,7 @@ footer {
   flex-wrap: wrap;
   margin: .5em 0 .5em 0;
   position: relative;
+  padding-bottom: 0px;
 }
 
 footer p {
