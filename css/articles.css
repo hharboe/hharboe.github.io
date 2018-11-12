@@ -358,7 +358,7 @@ h6 {
 
   .img-new > *, .img-new >* > * {
     /* width: 688px; */
-    width: 100%;
+    width: 300px;
     padding: 16px 0 8px 0;
   }
 
