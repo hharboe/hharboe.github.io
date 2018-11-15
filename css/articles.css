@@ -270,6 +270,18 @@ h5 {
   border-bottom: 1px solid #555;
 }
 
+.big a, .big a:hover {
+  border-bottom: 0px;
+}
+
+
+
+.big figcaption a {
+  color: #eee;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #eee;
+}
+
 .fig-container-col figcaption a:hover {
   color: #759DDA;
   border-bottom: 1px solid #759DDA;
